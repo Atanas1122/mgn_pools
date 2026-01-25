@@ -36,8 +36,7 @@ export default async function handler(req, res) {
 
         const payload = {
             from: 'MGN Pools <info@mgnpools.com>',
-            to: ['areke.zhake@gmail.com'],
-            // to: ['mgnpools@yahoo.com'],
+            to: ['mgnpools@yahoo.com'],
             subject: `New contact form message: ${subject}`,
             text: [
                 `First name: ${firstName}`,
