@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pool Service & Management Company Northern Virginia | MGN Pools</title>
+  <meta name="description"
+    content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, Washington DC, and across Northern Virginia. Trusted pool company since 2010." />
+
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://mgnpools.com/" />
+  
+  <!-- Prevent FOUC (Flash of Unstyled Content) on Safari/MacBook -->
+  <style>
+    /* Hide content until React hydrates to prevent flickering */
+    .js-loading * {
+      animation-duration: 0s !important;
+      transition-duration: 0s !important;
+    }
+  </style>
+  <script>
+    document.documentElement.classList.add('js-loading');
+    window.addEventListener('load', function() {
+      // Small delay to ensure React has hydrated
+      setTimeout(function() {
+        document.documentElement.classList.remove('js-loading');
+      }, 100);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+</html>
