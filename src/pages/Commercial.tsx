@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import PoolImage from '../assets/images/commercial/swimming_pool1.jpg';
 import backgroundWater from '../assets/images/home/background_water.webp';
+import heroBackground from '../assets/images/commercial/hero_background.png';
 
 // We Serve - типы объектов
 const weServe = [
@@ -204,7 +205,7 @@ export const CommercialPage = () => {
       <PageHeader
         title="Commercial Pool Management Company in Northern Virginia and Washington DC metro area"
         subtitle="Professional pool management for apartments, HOAs, hotels and recreation facilities in Washington DC, Springfield VA and the DC metro areaProfessional pool management for apartments, HOAs, hotels and recreation facilities in Northern Virginia and Washington DC metro area"
-        backgroundImage="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1600&q=80"
+        backgroundImage={heroBackground}
         smallText
         bottomAlign
       />

@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ChevronDown, Building2, Home as HomeIcon, Wrench, Search, GraduationCap, Droplets } from 'lucide-react';
 import LifeGuard from '../assets/images/home/lifeguad.png';
 import backgroundWater from '../assets/images/home/background_water.webp';
+import heroBackground from '../assets/images/home/hero_background.png';
 import { CitySelector } from '../components/CitySelector';
 
 // Company logos
@@ -177,7 +178,7 @@ export const HomePage = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            src={heroBackground}
             alt="Professional pool services and pool management services in Springfield VA, Washington DC, Alexandria, Woodbridge, Mount Vernon, and Northern Virginia"
             className="w-full h-full object-cover"
           />
