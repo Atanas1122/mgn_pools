@@ -40,8 +40,8 @@ const locationLinks = [
 ];
 
 const serviceAreas = {
-  fairfax: "Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Herndon, Lorton, Mclean, Oakton, Reston, Springfield, Vienna",
-  loudoun: "Aldie, Ashburn, Bluemont, Dulles, Great Falls, Hamilton, Hillsboro, Lansdowne, Leesburg, Lovettsville, Middleburg, Paeonian Springs, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stoneridge, Waterford",
+  fairfax: "Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna",
+  loudoun: "Aldie, Ashburn, Bluemont, Dulles, Hamilton, Hillsboro, Lansdowne, Leesburg, Lovettsville, Middleburg, Paeonian Springs, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stoneridge, Waterford",
   princeWilliam: "Bristow, Dale City, Dumfries, Gainesville, Haymarket, Manassas, Manassas Park, Nokesville, Occoquan, Quantico, Triangle, Woodbridge",
   spotsylvania: "Fredericksburg",
   montgomery: "Bethesda, Chevy Chase, Potomac, Rockville, Silver Spring, Takoma Park",

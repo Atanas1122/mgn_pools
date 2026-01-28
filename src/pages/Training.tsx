@@ -5,6 +5,7 @@ import { PageHeader } from '../components/PageHeader';
 import { ArrowRight, GraduationCap, Heart, Shield, Award } from 'lucide-react';
 import backgroundWater from '../assets/images/home/background_water.webp';
 import Training from '../assets/images/training/Lifeguard_training.jpg';
+import lifeguardTrainingNew from '../assets/images/training/lifeguard_training_new.png';
 
 const certifications = [
   {
@@ -115,12 +116,13 @@ export const TrainingPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4 }}
+              className="flex justify-end pl-8"
             >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl inline-block">
                 <img
-                  src={Training}
+                  src={lifeguardTrainingNew}
                   alt="American Red Cross lifeguard training and certification classes in Virginia"
-                  className="w-full h-[450px] object-cover"
+                  className="w-auto h-auto max-w-full max-h-[550px] block"
                 />
               </div>
             </motion.div>

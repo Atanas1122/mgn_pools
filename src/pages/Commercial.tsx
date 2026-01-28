@@ -11,6 +11,8 @@ import {
 import PoolImage from '../assets/images/commercial/swimming_pool1.jpg';
 import backgroundWater from '../assets/images/home/background_water.webp';
 import heroBackground from '../assets/images/commercial/hero_background.png';
+import poolManagementImage from '../assets/images/commercial/pool_management_image.png';
+import whyMgnPoolsImage from '../assets/images/commercial/why_mgn_pools_image.png';
 
 // We Serve - типы объектов
 const weServe = [
@@ -257,7 +259,7 @@ export const CommercialPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800&q=80"
+                  src={poolManagementImage}
                   alt="Commercial pool management services in Washington DC and Springfield VA for apartments, HOAs and hotels"
                   className="w-full h-[450px] object-cover"
                 />
@@ -382,7 +384,7 @@ export const CommercialPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src={PoolImage}
+                  src={whyMgnPoolsImage}
                   alt="Professional commercial swimming pool management and maintenance services"
                   className="w-full h-[600px] object-cover"
                 />

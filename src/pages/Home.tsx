@@ -72,14 +72,14 @@ export const HomePage = () => {
         <title>Pool Service & Management Company Northern Virginia | MGN Pools</title>
         <meta
           name="description"
-          content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010."
+          content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010."
         />
         <link rel="canonical" href="https://mgnpools.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Pool Service & Management Company Northern Virginia | MGN Pools" />
-        <meta property="og:description" content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010." />
+        <meta property="og:description" content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010." />
         <meta property="og:url" content="https://mgnpools.com/" />
         <meta property="og:site_name" content="MGN Pools" />
 
@@ -157,6 +157,14 @@ export const HomePage = () => {
               {
                 "@type": "City",
                 "name": "Mount Vernon"
+              },
+              {
+                "@type": "City",
+                "name": "McLean"
+              },
+              {
+                "@type": "City",
+                "name": "Great Falls"
               }
             ],
             "serviceType": [
@@ -210,7 +218,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base md:text-lg text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-            MGN Pools is a trusted pool management and pool service company delivering reliable, professional solutions for commercial and residential pools. We specialize in commercial pool management, pool repair, pool renovation, routine maintenance, and lifeguard services. Serving <strong>Springfield, VA</strong>, <strong>Alexandria, VA</strong>, <strong>Arlington, VA</strong>, <strong>Woodbridge</strong>, <strong>Manassas</strong>, and the entire <strong>Northern Virginia</strong>, <strong>Maryland</strong>, and <strong>Washington DC</strong> metro area, MGN Pools is committed to keeping pools safe, clean, and operating at their best year-round.
+            MGN Pools is a trusted pool management and pool service company delivering reliable, professional solutions for commercial and residential pools. We specialize in commercial pool management, pool repair, pool renovation, routine maintenance, and lifeguard services. Serving <strong>Springfield, VA</strong>, <strong>Alexandria, VA</strong>, <strong>Arlington, VA</strong>, <strong>McLean, VA</strong>, <strong>Great Falls, VA</strong>, <strong>Woodbridge</strong>, <strong>Manassas</strong>, and the entire <strong>Northern Virginia</strong>, <strong>Maryland</strong>, and <strong>Washington DC</strong> metro area, MGN Pools is committed to keeping pools safe, clean, and operating at their best year-round.
           </motion.p>
 
           <motion.div
@@ -241,7 +249,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-sm md:text-base text-sky-200/90 text-center mt-8"
           >
-            Serving Alexandria, Arlington, Springfield, Fairfax, Woodbridge, Mount Vernon, Northern Virginia, Maryland & Washington DC since 2010.
+            Serving Alexandria, Arlington, Springfield, McLean, Great Falls, Fairfax, Woodbridge, Mount Vernon, Northern Virginia, Maryland & Washington DC since 2010.
           </motion.p>
         </div>
       </section>
@@ -269,7 +277,7 @@ export const HomePage = () => {
               Trusted Pool Management, Repair and Renovation Company  in Northern Virginia
             </h2>
             <p className="text-lg text-gray-600">
-              Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, Washington DC, and across Northern Virginia, Maryland & the DC metro area
+              Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia, Maryland & the DC metro area
             </p>
           </motion.div>
 

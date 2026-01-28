@@ -198,11 +198,11 @@ export const RepairPage = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-white/90 backdrop-blur rounded-xl p-4">
+                  {/* <div className="bg-white/90 backdrop-blur rounded-xl p-4">
                     <p className="text-gray-900 font-semibold">
                       Request your free repair estimate and consultation
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>
@@ -211,7 +211,7 @@ export const RepairPage = () => {
       </section>
 
       {/* Request Form */}
-      <section  className="py-24 bg-slate-50">
+      <section className="py-24 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 15 }}

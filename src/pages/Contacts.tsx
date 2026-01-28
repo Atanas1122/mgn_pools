@@ -287,11 +287,11 @@ export const ContactsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-600">
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Fairfax County</h3>
-              <p>Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Herndon, Lorton, Mclean, Oakton, Reston, Springfield, Vienna</p>
+              <p>Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna</p>
             </div>
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Loudoun County</h3>
-              <p>Aldie, Ashburn, Bluemont, Dulles, Great Falls, Hamilton, Hillsboro, Lansdowne, Leesburg, Lovettsville, Middleburg, Paeonian Springs, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stoneridge, Waterford</p>
+              <p>Aldie, Ashburn, Bluemont, Dulles, Hamilton, Hillsboro, Lansdowne, Leesburg, Lovettsville, Middleburg, Paeonian Springs, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stoneridge, Waterford</p>
             </div>
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Prince William County</h3>
