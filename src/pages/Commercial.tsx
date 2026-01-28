@@ -8,7 +8,6 @@ import {
   Package, Truck, Snowflake, Search, Wrench, ShieldCheck,
   Star, Zap, Phone, Target, Award, DollarSign, Heart
 } from 'lucide-react';
-import PoolImage from '../assets/images/commercial/swimming_pool1.jpg';
 import backgroundWater from '../assets/images/home/background_water.webp';
 import heroBackground from '../assets/images/commercial/hero_background.png';
 import poolManagementImage from '../assets/images/commercial/pool_management_image.png';
@@ -343,7 +342,7 @@ export const CommercialPage = () => {
       </section>
 
       {/* Why MGN Pools */}
-      <section  className="py-24 bg-blue-900 text-white">
+      <section className="py-24 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div

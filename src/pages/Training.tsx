@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet-async';
 import { PageHeader } from '../components/PageHeader';
 import { ArrowRight, GraduationCap, Heart, Shield, Award } from 'lucide-react';
 import backgroundWater from '../assets/images/home/background_water.webp';
-import Training from '../assets/images/training/Lifeguard_training.jpg';
 import lifeguardTrainingNew from '../assets/images/training/lifeguard_training_new.png';
 
 const certifications = [
