@@ -163,7 +163,7 @@ export const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden xl:flex items-center gap-2 flex-1 justify-end">
+        <div className="hidden lg:flex items-center gap-2 flex-1 justify-end">
           <div className="flex items-center gap-1">
             {navLinks.map((link) => (
               <Link
@@ -243,7 +243,7 @@ export const Navbar = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
-          className={`xl:hidden p-2 rounded-lg ${
+          className={`lg:hidden p-2 rounded-lg ${
             isScrolled || !isHome ? 'text-gray-800' : 'text-white'
           }`}
         >
@@ -257,7 +257,7 @@ export const Navbar = () => {
           initial={{ opacity: 0, y: -5 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.15 }}
-          className="xl:hidden bg-white shadow-xl fixed top-[var(--navbar-height)] left-0 w-full h-[calc(100vh-var(--navbar-height))] overflow-y-auto z-40"
+          className="lg:hidden bg-white shadow-xl fixed top-[var(--navbar-height)] left-0 w-full h-[calc(100vh-var(--navbar-height))] overflow-y-auto z-40"
           style={{ 
             '--navbar-height': isScrolled || !isHome ? '75px' : '115px',
             WebkitTransform: 'translateZ(0)', 
