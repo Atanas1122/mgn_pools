@@ -193,16 +193,7 @@ export const HomePage = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-sky-300 text-lg md:text-xl mb-6 font-medium"
-          >
-            Trusted Pool Experts in Northern Virginia
-          </motion.p>
-
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-10 md:pt-14">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
