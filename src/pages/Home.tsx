@@ -190,7 +190,7 @@ export const HomePage = () => {
             alt="Professional pool services and pool management services in Springfield VA, Washington DC, Alexandria, Woodbridge, Mount Vernon, and Northern Virginia"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/80 to-sky-700/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
