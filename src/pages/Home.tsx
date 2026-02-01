@@ -313,7 +313,7 @@ export const HomePage = () => {
       </section>
 
       {/* How We Can Help Section */}
-      <section  className="py-24 bg-slate-100">
+      <section className="py-24 bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -356,7 +356,7 @@ export const HomePage = () => {
       </section>
 
       {/* Training Section */}
-      <section  className="py-24 bg-blue-900 text-white">
+      <section className="py-24 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div

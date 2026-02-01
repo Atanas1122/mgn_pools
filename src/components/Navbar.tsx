@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Phone, Mail, Menu, X, ChevronDown, MapPin } from 'lucide-react';
 import Logo from '../assets/images/logo.png';
+import LogoHero from '../assets/images/logo_final_v2.png';
 
 const SITE_CONFIG = {
   phones: ["571-275-3696", "571-332-2431"],
@@ -108,7 +109,7 @@ export const Navbar = () => {
           >
             <Link to="/" className="flex items-center gap-3">
               <img
-                src={Logo}
+                src={LogoHero}
                 alt="MGN Pools logo"
                 className="h-10 w-auto md:h-12"
               />
