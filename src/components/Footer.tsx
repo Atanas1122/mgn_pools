@@ -189,6 +189,21 @@ export const Footer = () => {
           </p>
         </div>
       </div>
+
+      {/* Credits */}
+      <div className="bg-gray-800/80 border-t border-gray-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+          <a
+            href="https://www.instagram.com/tanabiyev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 text-gray-300 hover:text-sky-400 transition-colors"
+          >
+            <span className="text-gray-400 text-sm">Made by</span>
+            <span className="text-base font-medium tracking-wide">@tanabiyev</span>
+          </a>
+        </div>
+      </div>
     </footer>
   );
 };
