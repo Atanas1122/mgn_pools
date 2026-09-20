@@ -72,14 +72,14 @@ export const HomePage = () => {
         <title>Pool Service & Management Company Northern Virginia | MGN Pools</title>
         <meta
           name="description"
-          content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010."
+          content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2007."
         />
         <link rel="canonical" href="https://mgnpools.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Pool Service & Management Company Northern Virginia | MGN Pools" />
-        <meta property="og:description" content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2010." />
+        <meta property="og:description" content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2007." />
         <meta property="og:url" content="https://mgnpools.com/" />
         <meta property="og:site_name" content="MGN Pools" />
 
@@ -240,7 +240,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-sm md:text-base text-sky-200/90 text-center mt-8"
           >
-            Serving Alexandria, Arlington, Springfield, McLean, Great Falls, Fairfax, Woodbridge, Mount Vernon, Northern Virginia, Maryland & Washington DC since 2010.
+            Serving Alexandria, Arlington, Springfield, McLean, Great Falls, Fairfax, Woodbridge, Mount Vernon, Northern Virginia, Maryland & Washington DC since 2007.
           </motion.p>
         </div>
       </section>
