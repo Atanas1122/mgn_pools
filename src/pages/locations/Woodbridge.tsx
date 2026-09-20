@@ -221,7 +221,7 @@ export const WoodbridgePage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-sm md:text-base text-sky-200/90 text-center mt-8"
           >
-            Serving {cityInfo.neighborhoods} and all of {cityInfo.fullName} since 2010.
+            Serving {cityInfo.neighborhoods} and all of {cityInfo.fullName} since 2007.
           </motion.p>
         </div>
       </section>
