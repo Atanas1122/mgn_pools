@@ -364,7 +364,7 @@ export const HomePage = () => {
                 Training and Certifications
               </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                MGN Pools Management is pleased to offer American Red Cross Lifeguard Classes. The Lifeguard classes include training in First Aid, AED and CPR for the Professional Rescuer.
+                MGN Pools Management is pleased to  offer American Red Cross Lifeguard Classes. The Lifeguard classes include training in First Aid, AED and CPR for the Professional Rescuer.
               </p>
               <Link
                 to="/training"
