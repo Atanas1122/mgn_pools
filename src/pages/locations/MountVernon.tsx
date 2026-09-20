@@ -79,7 +79,7 @@ export const MountVernonPage = () => {
         <title>Pool Company & Lifeguard Services in {cityInfo.fullName} | Pool Service, Management & Repairs | MGN Pools</title>
         <meta
           name="description"
-          content={`Top-rated pool company and lifeguard services in ${cityInfo.fullName}. Professional pool service, pool management, pool repairs, and certified pool lifeguard staffing. Trusted lifeguard company serving ${cityInfo.name} since 2010.`}
+          content={`Top-rated pool company and lifeguard services in ${cityInfo.fullName}. Professional pool service, pool management, pool repairs, and certified pool lifeguard staffing. Trusted lifeguard company serving ${cityInfo.name} since 2007.`}
         />
         <link
           rel="canonical"
