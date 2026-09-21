@@ -69,25 +69,22 @@ export const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Pool Service & Management Company Northern Virginia | MGN Pools</title>
+        <title>Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2007."
-        />
+          content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC."        />
         <link rel="canonical" href="https://mgnpools.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pool Service & Management Company Northern Virginia | MGN Pools" />
-        <meta property="og:description" content="Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia. Trusted pool company for commercial and residential pool cleaning, maintenance, repair and lifeguard training since 2007." />
-        <meta property="og:url" content="https://mgnpools.com/" />
+        <meta property="og:title" content="Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />        <meta property="og:url" content="https://mgnpools.com/" />
         <meta property="og:site_name" content="MGN Pools" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="MGN Pools | Premier Pool Management Company" />
-        <meta name="twitter:description" content="Trusted pool company providing pool service and pool management in Virginia, DC and Maryland." />
-
+        <meta name="twitter:title" content="Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools" />
+        <meta name="twitter:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -200,7 +197,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            Premier Pool Management, Repair and Renovation Company in Northern Virginia
+            Commercial Pool Management, Lifeguard, Repair & Renovation Services in Northern Virginia & Washington, DC
           </motion.h1>
 
           <motion.p
@@ -209,7 +206,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base md:text-lg text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-            MGN Pools is a trusted pool management and pool service company delivering reliable, professional solutions for commercial and residential pools. We specialize in commercial pool management, pool repair, pool renovation, routine maintenance, and lifeguard services. Serving <strong>Springfield, VA</strong>, <strong>Alexandria, VA</strong>, <strong>Arlington, VA</strong>, <strong>McLean, VA</strong>, <strong>Great Falls, VA</strong>, <strong>Woodbridge</strong>, <strong>Manassas</strong>, and the entire <strong>Northern Virginia</strong>, <strong>Maryland</strong>, and <strong>Washington DC</strong> metro area, MGN Pools is committed to keeping pools safe, clean, and operating at their best year-round.
+            MGN Pools provides professional commercial pool management, certified lifeguard staffing, pool repairs and renovations for apartments, condominiums, HOAs and commercial properties throughout Northern Virginia and Washington, DC.
           </motion.p>
 
           <motion.div
