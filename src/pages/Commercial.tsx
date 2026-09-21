@@ -142,17 +142,16 @@ export const CommercialPage = () => {
   return (
     <>
       <Helmet>
-        <title>Pool Management Services Washington DC | Springfield VA | MGN Pools</title>
+        <title>Commercial Pool Management Services Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Professional pool management services in Washington DC and Springfield VA. Commercial pool management for apartments, HOAs, hotels and recreation facilities throughout the DC metro area and Northern Virginia."
-        />
+          content="Commercial pool management services, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC."        />
         <link rel="canonical" href="https://mgnpools.com/commercial" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pool Management Services Washington DC | Springfield VA | MGN Pools" />
-        <meta property="og:description" content="Professional pool management services in Washington DC and Springfield VA. Commercial pool management for apartments, HOAs, hotels and recreation facilities throughout the DC metro area and Northern Virginia." />
+        <meta property="og:title" content="Commercial Pool Management Services | Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Commercial pool management services, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />
         <meta property="og:url" content="https://mgnpools.com/commercial" />
 
         {/* Structured Data */}
@@ -164,7 +163,7 @@ export const CommercialPage = () => {
             "provider": {
               "@id": "https://mgnpools.com/#localbusiness"
             },
-            "description": "Professional pool management services in Washington DC and Springfield VA. Commercial pool management for apartments, HOAs, hotels and recreation facilities throughout the DC metro area and Northern Virginia.",
+            "description": "Commercial pool management services, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC.",
             "url": "https://mgnpools.com/commercial"
           })}
         </script>
@@ -204,8 +203,8 @@ export const CommercialPage = () => {
         </script>
       </Helmet>
       <PageHeader
-        title="Commercial Pool Management Company in Northern Virginia and Washington DC metro area"
-        subtitle="Professional pool management for apartments, HOAs, hotels and recreation facilities in Washington DC, Springfield VA and the DC metro areaProfessional pool management for apartments, HOAs, hotels and recreation facilities in Northern Virginia and Washington DC metro area"
+        title="Commercial Pool Management Services in Northern Virginia & Washington, DC"
+        subtitle="Complete commercial pool management for apartments, condominiums, HOAs, and recreation facilities, including lifeguard staffing, maintenance, repairs, and renovations."
         backgroundImage={heroBackground}
         smallText
         bottomAlign
@@ -230,22 +229,21 @@ export const CommercialPage = () => {
               transition={{ duration: 0.4 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Commercial Pool Management Company in Washington DC & Springfield VA
+                Commercial Pool Management for Apartments, Condominiums & HOAs
               </h2>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                <strong>MGN Pools Management</strong> is a leading <strong>commercial pool management</strong> company specializing in professional <strong>pool management</strong>, <strong>pool renovation</strong> and <strong>pool repair</strong> solutions for public and private facilities. We provide reliable commercial pool management and certified <strong>lifeguard staffing services</strong> in <strong>Northern Virginia</strong>, and <strong>Washington DC</strong>, serving apartment complexes, HOA communities, recreation facilities, and hotels throughout the <strong>DC metro area</strong>, <strong>Northern Virginia</strong>, and <strong>Maryland</strong>.
+                MGN Pools provides complete commercial pool management for apartment communities, condominiums, HOAs, and recreation facilities throughout Northern Virginia and Washington, DC. Our services include certified lifeguard staffing, daily pool operations, water chemistry management, inspections, opening and winterization, equipment repairs, and pool renovations.             
               </p>
-
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                As a trusted commercial pool company, our experienced team is committed to fast response times and dependable service for all swimming pool needs. We offer customized commercial pool service solutions tailored to each client's unique requirements, ensuring safety, compliance, and smooth pool operations year-round.
+                 With nearly two decades of experience, MGN Pools works with property managers and community associations to provide dependable pool operations, responsive service, and preventive maintenance that helps keep facilities safe, compliant, and ready for residents.
               </p>
 
               <Link
                 to="/bid"
                 className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg hover:shadow-xl"
               >
-                Request a Bid
+                Request a Commercial Pool Proposal
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
