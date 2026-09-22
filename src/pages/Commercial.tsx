@@ -218,12 +218,7 @@ export const CommercialPage = () => {
   >
     Request a Pool Management Proposal
   </a>
-  <a
-    href="tel:+1571-332-2431"
-    className="border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50 font-bold px-8 py-4 rounded-lg transition-colors text-center"
-  >
-    Call MGN Pools
-  </a>
+  
 </div>      {/* Main Content */}
       <section
         className="py-24 relative water-bg"
