@@ -210,7 +210,21 @@ export const CommercialPage = () => {
         bottomAlign
       />
 
-      {/* Main Content */}
+      
+<div className="flex flex-col sm:flex-row justify-center items-center gap-4 py-6 px-4 bg-white">
+  <a
+    href="/bid"
+    className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold px-8 py-4 rounded-lg shadow-md transition-colors text-center"
+  >
+    Request a Pool Management Proposal
+  </a>
+  <a
+    href="tel:+1571-332-2431"
+    className="border-2 border-cyan-500 text-cyan-600 hover:bg-cyan-50 font-bold px-8 py-4 rounded-lg transition-colors text-center"
+  >
+    Call MGN Pools
+  </a>
+</div>      {/* Main Content */}
       <section
         className="py-24 relative water-bg"
         style={{
