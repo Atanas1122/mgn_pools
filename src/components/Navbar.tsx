@@ -16,7 +16,7 @@ const navLinks = [
   { name: 'Residential', path: '/residential' },
   { name: 'Renovations', path: '/renovations' },
   { name: 'Repair', path: '/repair' },
-  { name: 'Request Proposal', path: '/bid' },
+  
   { name: 'Training', path: '/training' },
   { name: 'Contacts', path: '/contacts' },
   { name: 'Jobs', path: '/jobs' },
