@@ -66,22 +66,22 @@ export const BidPage = () => {
   return (
     <>
       <Helmet>
-        <title>Request a Pool Service Quote in Springfield VA | MGN Pools</title>
+        <title>Request a Pool Service Proposal | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Request a free quote for commercial and residential pool services in Springfield and Northern Virginia. Get pricing for pool management, maintenance, repair and renovation."
+          content="Request a pool service proposal from MGN Pools for commercial pool management, lifeguard staffing, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC."
         />
         <link rel="canonical" href="https://mgnpools.com/bid" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Request a Pool Service Quote in Springfield VA | MGN Pools" />
-        <meta property="og:description" content="Request a free quote for commercial and residential pool services in Springfield and Northern Virginia. Get pricing for pool management, maintenance, repair and renovation." />
+        <meta property="og:title" content="Request a Pool Service Proposal | Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Request a pool service proposal from MGN Pools for commercial pool management, lifeguard staffing, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC." />
         <meta property="og:url" content="https://mgnpools.com/bid" />
       </Helmet>
       <PageHeader
         title="Request a Proposal"
-        subtitle="Request a quote for our pool services"
+        subtitle="Tell us about your property and pool service needs."
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
 
