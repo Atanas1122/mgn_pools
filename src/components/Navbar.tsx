@@ -16,7 +16,7 @@ const navLinks = [
   { name: 'Residential', path: '/residential' },
   { name: 'Renovations', path: '/renovations' },
   { name: 'Repair', path: '/repair' },
-  { name: 'Bid', path: '/bid' },
+  { name: 'Request Proposal', path: '/bid' },
   { name: 'Training', path: '/training' },
   { name: 'Contacts', path: '/contacts' },
   { name: 'Jobs', path: '/jobs' },
@@ -236,7 +236,7 @@ export const Navbar = () => {
               isScrolled || !isHome ? '' : ''
             }`}
           >
-            Get a Quote
+            Request a Proposal
           </Link>
         </div>
 
