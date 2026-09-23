@@ -80,7 +80,7 @@ export const BidPage = () => {
         <meta property="og:url" content="https://mgnpools.com/bid" />
       </Helmet>
       <PageHeader
-        title="Bid Request"
+        title="Request a Proposal"
         subtitle="Request a quote for our pool services"
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
@@ -150,7 +150,7 @@ export const BidPage = () => {
               className="bg-slate-50 rounded-2xl p-8"
               onSubmit={handleSubmit}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Bid</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Proposal</h3>
 
               <div className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
