@@ -53,6 +53,7 @@ export const BidPage = () => {
       }
 
       setStatus('success');
+      (window as any).gtag?.('event', 'generate_lead');
       form.reset();
     } catch (error) {
       console.error(error);
