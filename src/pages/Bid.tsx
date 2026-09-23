@@ -26,7 +26,7 @@ export const BidPage = () => {
       lastName: formData.get('lastName') as string,
       email: formData.get('email') as string,
       phone: (formData.get('phone') as string) || '',
-      subject: 'Bid Request',
+      subject: 'Proposal Request',
       message: [
         `Company/Property Name: ${formData.get('company') || '—'}`,
         `Property Address: ${formData.get('address') || '—'}`,
@@ -105,17 +105,16 @@ export const BidPage = () => {
             >
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="w-8 h-8 text-sky-500" />
-                <span className="text-sky-600 font-semibold uppercase tracking-wider text-sm">Bid Request</span>
+                <span className="text-sky-600 font-semibold uppercase tracking-wider text-sm">Request a Proposal</span>
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Get a Quote Now
+                Request a Proposal
               </h2>
 
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Fill out the form to request a bid for our pool services. We offer competitive pricing and customized solutions for both commercial and residential pools.
+                Fill out the form to request a proposal for our pool services. We offer competitive pricing and customized solutions for both commercial and residential pools.
               </p>
-
               <div className="bg-slate-50 rounded-2xl p-6 mb-8">
                 <h3 className="font-bold text-gray-900 mb-4">What We Offer:</h3>
                 <ul className="space-y-3">
