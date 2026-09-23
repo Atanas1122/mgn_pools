@@ -216,7 +216,7 @@ export const CommercialPage = () => {
     href="/bid"
     className="bg-cyan-500 hover:bg-cyan-600 text-white font-bold px-8 py-4 rounded-lg shadow-md transition-colors text-center"
   >
-    Request a Pool Management Proposal
+    Request a Proposal
   </a>
   
 </div>      {/* Main Content */}
