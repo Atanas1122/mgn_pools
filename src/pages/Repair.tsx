@@ -65,17 +65,17 @@ export const RepairPage = () => {
   return (
     <>
       <Helmet>
-        <title>Pool Leak Detection & Repair in Springfield VA | MGN Pools</title>
+        <title>Pool Leak Detection & Repair Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Expert swimming pool leak detection and repair in Springfield VA and the DC metro area. Save water, heat and chemicals with professional leak detection technology."
+          content="Professional pool leak detection and repair for commercial and residential pools throughout Northern Virginia and Washington, DC. Pressure testing, leak locating and pool repairs."
         />
         <link rel="canonical" href="https://mgnpools.com/repair" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pool Leak Detection & Repair in Springfield VA | MGN Pools" />
-        <meta property="og:description" content="Expert swimming pool leak detection and repair in Springfield VA and the DC metro area. Save water, heat and chemicals with professional leak detection technology." />
+        <meta property="og:title" content="Pool Leak Detection & Repair Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Professional pool leak detection and repair for commercial and residential pools throughout Northern Virginia and Washington, DC, including pressure testing, leak locating, and pool repairs." />
         <meta property="og:url" content="https://mgnpools.com/repair" />
 
         {/* Structured Data */}
@@ -87,7 +87,7 @@ export const RepairPage = () => {
             "provider": {
               "@id": "https://mgnpools.com/#localbusiness"
             },
-            "description": "Expert swimming pool leak detection and repair in Springfield VA and the DC metro area. Save water, heat and chemicals with professional leak detection technology.",
+            "description": "Professional pool leak detection and repair for commercial and residential pools throughout Northern Virginia and Washington, DC, including pressure testing, leak locating, and pool repairs.",
             "url": "https://mgnpools.com/repair"
           })}
         </script>
@@ -128,7 +128,7 @@ export const RepairPage = () => {
       </Helmet>
       <PageHeader
         title="Swimming Pool Leak Detection and Repair"
-        subtitle="Expert leak detection and repair services"
+        subtitle="Professional Pool Leak Detection and Repair in Northern Virginia & Washington, DC"
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
 
@@ -159,19 +159,19 @@ export const RepairPage = () => {
               </h2>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Swimming pools in Springfield and across Northern Virginia can leak through any of the fittings or accessories, plumbing, or even right through the shell.
+                Swimming pools throughout Northern Virginia and Washington, DC can develop leaks in plumbing, fittings, equipment, or the pool structure. MGN Pools provides professional leak detection and pressure testing to locate the source of water loss and determine the appropriate repair.
               </p>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                It is important to repair leaks, not only to save water, heat, and chemicals, but also to prevent undermining pool structural components and washing away fill dirt.
+                Prompt leak repair helps prevent unnecessary water, heat, and chemical loss while protecting the pool structure and surrounding areas from potential damage.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
                   { icon: Droplet, text: "Save water and chemicals" },
                   { icon: AlertTriangle, text: "Prevent structural damage" },
-                  { icon: Search, text: "Advanced detection technology" },
-                  { icon: Wrench, text: "Expert repair service" },
+                  { icon: Search, text: "Pressure Testing & Leak Detection" },
+                  { icon: Wrench, text: "Professional Pool Leak Repair" },
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -221,10 +221,10 @@ export const RepairPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Request Free Repair Estimate
+              Request a Pool Leak Detection & Repair Estimate
             </h2>
             <p className="text-lg text-gray-600">
-              Fill out the form below and we'll get back to you with a free estimate.
+              Tell us about your pool leak or suspected leak, and our team will contact you to discuss the next steps.
             </p>
           </motion.div>
 
@@ -279,7 +279,7 @@ export const RepairPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Address</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Pool / Property Address</label>
                 <input
                   type="text"
                   name="address"
@@ -288,13 +288,13 @@ export const RepairPage = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Describe the Problem *</label>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Describe the Leak or Pool Problem *</label>
                 <textarea
                   rows={4}
                   name="problem"
                   required
                   className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none resize-none"
-                  placeholder="Please describe the issue with your pool..."
+                  placeholder="Please describe the suspected leak, water loss, or other pool issue..."
                 />
               </div>
 
@@ -303,7 +303,7 @@ export const RepairPage = () => {
                 disabled={isSubmitting}
                 className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-sky-300 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2"
               >
-                {isSubmitting ? 'Sending...' : 'Submit Request'}
+                {isSubmitting ? 'Sending...' : 'Request Leak Detection Service'}
                 <ArrowRight className="w-5 h-5" />
               </button>
 
