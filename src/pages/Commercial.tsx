@@ -18,22 +18,22 @@ const weServe = [
   {
     icon: Building2,
     title: "Apartment Complexes",
-    description: "in Washington DC, Springfield VA and the DC metro area"
+    description: "throughout Northern Virginia and Washington, DC"
   },
   {
     icon: Users,
     title: "HOA Communities",
-    description: "across Washington DC, Northern Virginia and DC metro"
+    description: "throughout Northern Virginia and Washington, DC"
   },
   {
     icon: Shield,
     title: "Recreation Facilities",
-    description: "in Washington DC, Springfield, Alexandria and surrounding areas"
+    description: "throughout Northern Virginia and Washington, DC"
   },
   {
     icon: Clock,
     title: "Hotels & Resorts",
-    description: "throughout Washington DC, Northern Virginia and DC metro"
+    description: "throughout Northern Virginia and Washington, DC"
   },
 ];
 
@@ -42,62 +42,62 @@ const poolServices = [
   {
     icon: Sun,
     title: "Pre Season Pool Opening",
-    description: "Prepare your swimming pool for the summer season"
+    description: "Complete commercial pool opening and startup for the summer season"
   },
   {
     icon: FileCheck,
     title: "Health Department Inspections",
-    description: "Arrange inspections with the Health Department and obtain necessary permits"
+    description: "Coordinate health department inspections and required pool operating permits"
   },
   {
     icon: UserCheck,
     title: "Professional Lifeguards",
-    description: "Certified lifeguard staffing services - Hire professional lifeguards for your facility. As a trusted lifeguard company, we provide Red Cross and Pool Operator certified lifeguards"
+    description: "Certified professional lifeguard staffing for commercial pools, apartment communities, condominiums, HOAs, and recreation facilities."
   },
   {
     icon: Sparkles,
     title: "Daily Pool Maintenance",
-    description: "Daily pool inspection, cleaning and maintenance"
+    description: "Daily commercial pool inspections, water chemistry management, cleaning, and preventive maintenance"
   },
   {
     icon: ClipboardList,
     title: "Supervision & Reporting",
-    description: "Supervision and reporting from our highly trained employees"
+    description: "Professional supervision, routine facility inspections, and detailed operational reporting"
   },
   {
     icon: GraduationCap,
     title: "Continuing Training",
-    description: "Continuing bi-weekly training to ensure our people are the best in the business"
+    description: "Ongoing lifeguard and pool operations training to maintain professional service and safety standards"
   },
   {
     icon: Package,
     title: "Chemicals & Equipment",
-    description: "Supplying chemicals and pool equipment"
+    description: "Supply and management of commercial pool chemicals, equipment, and operating supplies"
   },
   {
     icon: Truck,
     title: "Supplies Delivery",
-    description: "Delivery of all bathroom supplies, janitorial supplies, refill first aid kit"
+    description: "Delivery and restocking of restroom supplies, janitorial supplies, and first-aid materials"
   },
   {
     icon: Snowflake,
     title: "Pool Winterization",
-    description: "Post season pool winterization - prepare your swimming pool for the winter season"
+    description: "Complete commercial pool closing and winterization to protect pool equipment, plumbing, and facilities during the off-season"
   },
   {
     icon: Search,
     title: "Winter Inspections",
-    description: "Winter inspections on your swimming pool"
+    description: "Scheduled winter pool inspections to monitor water levels, pool covers, equipment, and overall facility conditions throughout the off-season"
   },
   {
     icon: Wrench,
     title: "Service & Repair",
-    description: "Full in-house service and repair department"
+    description: "In-house commercial pool repair and equipment service for pumps, filters, heaters, plumbing, automation systems, and other pool equipment"
   },
   {
     icon: ShieldCheck,
     title: "Commercial Liability Insurance",
-    description: "Full commercial liability insurance coverage"
+    description: "Comprehensive commercial liability insurance coverage for professional pool management operations"
   },
 ];
 
@@ -105,35 +105,35 @@ const poolServices = [
 const whyMgnPools = [
   {
     icon: Star,
-    text: "Highly motivated and professional staff."
+    text: "Experienced, professional staff committed to reliable commercial pool operations and excellent customer service."
   },
   {
     icon: Zap,
-    text: "We guarantee the fastest response to any pool related problems."
+    text: "Prompt response to pool maintenance, equipment, and operational issues to help minimize downtime."
   },
   {
     icon: Phone,
-    text: "On-call staff available 24 hours a day 7 days a week."
+    text: "24/7 on-call support for urgent pool operational and equipment issues."
   },
   {
     icon: Target,
-    text: "We train our lifeguards how to perform on the facility assigned for them, keeping in mind the specific account profile. Safety is our top priority."
+    text: "Lifeguards receive site-specific training based on each facility’s operating procedures, safety requirements, and client expectations."
   },
   {
     icon: Award,
-    text: "Certified and experienced in-house service department."
+    text: "Experienced in-house service technicians for commercial pool equipment, repairs, maintenance, and renovations."
   },
   {
     icon: FileCheck,
-    text: "Free estimates for repairs and renovations."
+    text: "Free estimates for commercial pool repairs and renovation projects."
   },
   {
     icon: DollarSign,
-    text: "We guarantee the best prices on any parts and repairs needed."
+    text: "Competitive pricing on commercial pool equipment, replacement parts, and repairs."
   },
   {
     icon: Heart,
-    text: "Each MGN POOLS employee works hard to ensure that you can spend your summer relaxing."
+    text: "Our team works to keep your pool operating safely, reliably, and professionally throughout the swimming season."
   },
 ];
 
@@ -195,7 +195,7 @@ export const CommercialPage = () => {
                 "name": "How quickly can you respond to commercial pool emergencies?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "We guarantee the fastest response to any pool-related problems. Our on-call staff is available 24 hours a day, 7 days a week for commercial pool emergencies."
+                  "text": "We provide prompt response to commercial pool maintenance, equipment, and operational issues. Our on-call staff is available 24 hours a day, 7 days a week for urgent pool-related needs."
                 }
               }
             ]
@@ -266,7 +266,7 @@ export const CommercialPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={poolManagementImage}
-                  alt="Commercial pool management services in Washington DC and Springfield VA for apartments, HOAs and hotels"
+                  alt="Commercial pool management services in Northern Virginia and Washington, DC for apartments, condominiums, HOAs, and recreation facilities"
                   className="w-full h-[450px] object-cover"
                 />
               </div>
@@ -323,7 +323,7 @@ export const CommercialPage = () => {
               Our Pool Management Services Include
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Comprehensive pool management solutions for commercial facilities
+              Complete commercial pool management, lifeguard staffing, maintenance, repairs, and seasonal services.
             </p>
           </motion.div>
 
@@ -363,7 +363,7 @@ export const CommercialPage = () => {
               </h2>
 
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                We strive to provide the best service at the best possible price. We achieve that by:
+                We provide reliable, professional commercial pool management with responsive service and competitive pricing. Here’s what sets MGN Pools apart:
               </p>
 
               <div className="space-y-4">
@@ -416,13 +416,13 @@ export const CommercialPage = () => {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Contact us today for a free consultation and quote.
+            Contact us today for a free consultation and commercial pool management proposal.
           </p>
           <Link
             to="/bid"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-sky-600 px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl"
           >
-            Request a Bid
+            Request a Commercial Pool Proposal
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
