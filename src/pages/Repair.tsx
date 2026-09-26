@@ -166,6 +166,13 @@ export const RepairPage = () => {
                 Prompt leak repair helps prevent unnecessary water, heat, and chemical loss while protecting the pool structure and surrounding areas from potential damage.
               </p>
 
+              <Link
+  to="/bid"
+  className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold px-6 py-3 rounded-lg transition mb-8"
+>
+  Request Leak Detection Service
+  <ArrowRight className="w-5 h-5" />
+</Link>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {[
                   { icon: Droplet, text: "Save water and chemicals" },
