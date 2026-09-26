@@ -119,7 +119,7 @@ export const RepairPage = () => {
                 "name": "How long does pool leak repair take?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Most pool leak repairs can be completed within 1-2 days depending on the location and severity of the leak. We provide fast, efficient service to minimize disruption."
+                  "text": "Repair timelines vary depending on the location and severity of the leak. After testing, we will explain the findings and provide a recommended repair plan and timeline."
                 }
               }
             ]
