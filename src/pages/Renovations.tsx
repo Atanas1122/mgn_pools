@@ -21,17 +21,17 @@ export const RenovationsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Pool Repair & Renovation in Springfield VA | MGN Pools</title>
+        <title>Pool Repair & Renovation Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Licensed, certified and insured pool repair and renovation in Springfield VA and the DC metro area. Replastering, equipment installation, leak detection and more."
+          content="Professional commercial and residential pool repair and renovation throughout Northern Virginia and Washington, DC. Pool replastering, tile, coping, deck repairs, equipment upgrades, and complete pool renovations."
         />
         <link rel="canonical" href="https://mgnpools.com/renovations" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pool Repair & Renovation in Springfield VA | MGN Pools" />
-        <meta property="og:description" content="Licensed, certified and insured pool repair and renovation in Springfield VA and the DC metro area. Replastering, equipment installation, leak detection and more." />
+        <meta property="og:title" content="Pool Repair & Renovation Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Professional commercial and residential pool repair and renovation throughout Northern Virginia and Washington, DC. Pool replastering, tile, coping, deck repairs, equipment upgrades, and complete pool renovations." />
         <meta property="og:url" content="https://mgnpools.com/renovations" />
 
         {/* Structured Data */}
@@ -46,9 +46,18 @@ export const RenovationsPage = () => {
             "areaServed": [
               { "@type": "City", "name": "Springfield" },
               { "@type": "City", "name": "Alexandria" },
-              { "@type": "City", "name": "Arlington" }
-            ],
-            "description": "Licensed, certified and insured pool repair and renovation services including replastering, equipment installation and leak detection.",
+              { "@type": "City", "name": "Arlington" },
+              { "@type": "City", "name": "Fairfax" },
+{ "@type": "City", "name": "Falls Church" },
+{ "@type": "City", "name": "Washington" },
+            { "@type": "City", "name": "McLean" },
+{ "@type": "City", "name": "Vienna" },
+{ "@type": "City", "name": "Annandale" },
+{ "@type": "City", "name": "Lorton" },
+{ "@type": "City", "name": "Woodbridge" },
+{ "@type": "City", "name": "Manassas" }
+              ],
+      "description": "Professional commercial and residential pool repair and renovation throughout Northern Virginia and Washington, DC. Pool replastering, tile, coping, deck repairs, equipment upgrades, and complete pool renovations.",
             "url": "https://mgnpools.com/renovations"
           })}
         </script>
@@ -88,8 +97,8 @@ export const RenovationsPage = () => {
         </script>
       </Helmet>
       <PageHeader
-        title="Pool Repairs and Renovation"
-        subtitle="Licensed, certified and insured pool renovation services"
+        title="Pool Repair & Renovation"
+        subtitle="Professional Pool Repair & Renovation in Northern Virginia & Washington, DC"
         backgroundImage="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
       />
 
@@ -111,15 +120,15 @@ export const RenovationsPage = () => {
               transition={{ duration: 0.4 }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Pool Repairs and Renovation
+                Pool Repair & Renovation Services
               </h2>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                <strong>MGN POOLS</strong> provides expert pool repair and pool renovation services for residential and commercial pools throughout <strong>Northern Virginia</strong> and <strong>Washington DC</strong> metro area. Fully licensed, certified, and insured, our team is qualified to handle all types of pool repairs and pool renovations, ensuring safe, reliable, and long-lasting results.
+                <strong>MGN POOLS</strong> MGN Pools provides professional pool repair and renovation services for commercial and residential swimming pools throughout Northern Virginia and Washington, DC.
               </p>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                From pool equipment repairs to complete pool renovations, you can trust our experienced professionals to manage projects of any size. Whether you need minor pool repairs or a full pool transformation, MGN Pools delivers dependable service and fast response times across Northern Virginia.
+                From equipment repairs and upgrades to replastering, tile, coping, and complete pool renovations, our experienced team provides reliable solutions for both commercial and residential pools.
               </p>
 
               <ul className="space-y-4 mb-8">
@@ -127,7 +136,7 @@ export const RenovationsPage = () => {
                   "Fully licensed and certified",
                   "Insured services",
                   "Expert pool repair",
-                  "Complete renovations",
+                  "Replastering, tile and coping",
                   "Equipment upgrades"
                 ].map((item) => (
                   <li
@@ -158,7 +167,7 @@ export const RenovationsPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80"
-                  alt="Professional pool renovation and repair services in Springfield, Virginia"
+                  alt="Professional pool repair and renovation services in Northern Virginia and Washington, DC"
                   className="w-full h-[450px] object-cover"
                 />
               </div>
@@ -197,14 +206,14 @@ export const RenovationsPage = () => {
                 <div className="relative h-24 md:h-40">
                   <img
                     src={PoolRenovationImg}
-                    alt="Pool Repairs and Renovations"
+                    alt="Commercial and Residential Pool Renovation Services in Northern Virginia and Washington, DC"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Pool Repairs and Renovations</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Repairs and Renovations</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Swimming pool renovation. If you are looking for an expert to renovate your swimming pool or repair and replace your damaged or old equipment, MGN POOLS is the right choice. We can replace your tiles, coping stones and deck, we can resurface the shell of your swimming pool, we can repair or replace all structural, plumbing, decking, electrical, filter and pump equipment.
+                    MGN Pools provides professional pool renovation and repair services for commercial and residential swimming pools throughout Northern Virginia and Washington, DC, including replastering, coping and tile replacement, equipment upgrades, and structural repairs.
                   </p>
                 </div>
               </div>
@@ -227,9 +236,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Filter System Repair and Installation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Filter Repair and Installation</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    The filtration system is of high importance because it performs the functions of a mechanic cleaner of the water in your swimming pool. If the system is able to catch even the smallest fragments you will have perfectly clean water. If your pool water appears cloudy it might be time to service the filter or install a new one. MGN POOLS will give you the professional advice before you spend thousands in repairs.
+                    MGN Pools provides professional pool filter repair, replacement, and installation for commercial and residential swimming pools, including sand, cartridge, and DE filtration systems.
                   </p>
                 </div>
               </div>
@@ -252,9 +261,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Pump and Motor Repair and Replacement</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Pump and Motor Repair</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    The heart of your circulation system, your pool pump pulls water from one or more suction ports (i.e., skimmer and main drain), and then pushes it through the filter and heater (if you have one) and back to the pool's return ports. If your motor is leaking, noisy or does not pump water as usual it is time for repair or replacement. MGN POOLS will diagnose the problem and provide an expert repair.
+                    MGN Pools provides professional pool pump and motor repair, replacement, and installation for commercial and residential swimming pools, helping restore proper circulation, filtration, and reliable system operation.
                   </p>
                 </div>
               </div>
@@ -277,10 +286,10 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Leak Detection and Pressure Test</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Leak Detection and Pressure Testing</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Swimming pools can leak through any of the fittings or accessories, plumbing, or even right through the shell. It is important to repair leaks, not only to save water, heat, and chemicals, but also to prevent undermining pool structural components and washing away fill dirt. MGN POOLS will gladly consult with you regarding your pool leak findings and price quote.
-                  </p>
+                    MGN Pools provides professional swimming pool leak detection and pressure testing to identify leaks in plumbing lines, fittings, equipment, main drains, skimmers, and the pool shell.
+                  </p>                
                 </div>
               </div>
             </motion.div>
@@ -302,9 +311,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Deck, Pool Perimeter and Expansion Joint Caulking</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Pool Deck, Perimeter & Expansion Joint Caulking</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Deck, pool perimeter and expansion joint caulking is important in keeping water out of areas that could be damaged during winter, such as water seeping and freezing under coping stones and behind the tiles.
+                    MGN Pools provides professional pool deck, perimeter, and expansion joint caulking to help prevent water intrusion, protect surrounding structures, and maintain a watertight joint between the pool deck and pool shell.
                   </p>
                 </div>
               </div>
@@ -327,15 +336,15 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Pressure Washing</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Pool Interior and Deck Pressure Washing</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Pressure washing is a fast and affordable way to make your decks, pools and bathrooms look fresh and clean. The best time to have your deck pressure washed is right before opening. Contact MGN POOLS for a free estimate.
+                    MGN Pools provides professional pressure washing for pool interiors, pool decks, and surrounding pool areas to remove dirt, algae, stains, and buildup and prepare surfaces for opening, maintenance, or renovation.
                   </p>
                 </div>
               </div>
             </motion.div>
 
-            {/* Whitecoating */}
+            {/* Swimming Pool Whitecoating and Replastering*/}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -352,9 +361,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Whitecoating (Re-plastering)</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Replastering and Whitecoating</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    The lifetime for plaster is about 4-7 years. A nice and smooth finish of your swimming pool shell will make the water look clear and sparkling. After we apply the new plaster, MGN POOLS will provide the special attention and treatments, which are required by your facility for the next few weeks. And last but not the least we will give you the best warranty in the industry.
+                    MGN Pools provides professional swimming pool replastering and whitecoating for commercial and residential pools. We restore worn, rough, stained, or deteriorated pool surfaces to provide a smooth, durable, and attractive finish.
                   </p>
                 </div>
               </div>
@@ -377,9 +386,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Skimmer Replacement</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Skimmer Repair and Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    The interface of the plastic skimmer to the concrete pool, plaster, tile and coping creates many opportunities for problems to occur. Even when the pool is properly winterized, excessive rain, snow, and low temperatures can cause damage to a skimmer body that will require replacing the entire skimmer. Contact MGN POOLS for a professional opinion.
+                    MGN Pools provides professional swimming pool skimmer repair and replacement for commercial and residential pools. We repair leaks and deterioration around the skimmer and replace damaged skimmers when necessary to restore proper circulation and prevent water loss.
                   </p>
                 </div>
               </div>
@@ -402,9 +411,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Main Drain and Hydrostatic Valve Installation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Main Drain Repair, Replacement and Hydrostatic Valve Installation</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Damaged or poorly maintained main drains can become an entrapment hazard for swimmers. As of December 20, 2008 all Commercial and Semi Commercial Swimming Pools will have to Replace all their Main Drain and Side Wall Suctions Covers to come into compliance with the new "Virginia Graeme Baker Pool and Spa Safety Act (A112.19.8-2007)". Hydrostatic valves are very simple devices that have an extremely important function: They adjust the water pressure that builds up below the pool. MGN POOLS can assist you in replacing your Main Drains and Hydrostatic valves for the best price in the industry.
+                    MGN Pools provides swimming pool main drain repair and replacement, including drain covers, sumps, connecting plumbing, and hydrostatic valves. We can evaluate damaged or deteriorated main drain components and perform the necessary repairs or replacement to restore safe and proper pool circulation.
                   </p>
                 </div>
               </div>
@@ -427,9 +436,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Safety Pool Cover Installation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Safety Cover Installation & Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    Any pool. Any size. Any style. You'll probably never need a safety pool cover strong enough to support the weight of the African elephant. But imagine how safe you'll feel owning the only pool cover that's proven it can.
+                    MGN Pools provides professional swimming pool safety cover installation and replacement for commercial and residential pools. We install properly fitted safety covers and replacement anchors to help protect the pool during the off-season.
                   </p>
                 </div>
               </div>
@@ -452,9 +461,9 @@ export const RenovationsPage = () => {
                   />
                 </div>
                 <div className="p-5 md:p-6 flex flex-col justify-center">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">Vinyl Liner Installation</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Vinyl Liner Installation & Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    A designer in-ground pool liner can be the spectacular centerpiece of your backyard environment, transforming your pool into a work of art. Whether you would like to update the look of your current in-ground pool, or enhance the beauty of a new pool, MGN POOLS can install the vinyl liner for you.
+                    MGN Pools provides professional swimming pool vinyl liner installation and replacement for residential and commercial pools. We replace worn, faded, leaking, or damaged liners and install properly fitted new liners to restore the appearance and watertight integrity of the pool.
                   </p>
                 </div>
               </div>
@@ -467,16 +476,16 @@ export const RenovationsPage = () => {
       <section className="py-20 bg-blue-900">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">
-            Ready to Transform Your Pool?
+            Need Pool Repair or Renovation?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Contact us for a free renovation estimate and consultation.
+            Contact MGN Pools for a free pool repair or renovation estimate and consultation.
           </p>
           <Link
             to="/repair"
             className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors"
           >
-            Get Free Estimate
+            Request a Free Estimate
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
