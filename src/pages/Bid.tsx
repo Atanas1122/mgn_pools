@@ -83,7 +83,7 @@ export const BidPage = () => {
       </Helmet>
       <PageHeader
         title="Request a Proposal"
-        subtitle="Tell us about your property and pool service needs."
+        subtitle="Tell us about your property and pool needs. We provide commercial and residential pool management, lifeguard staffing, maintenance, repairs, and renovations throughout Northern Virginia and Washington, DC."
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
 
@@ -115,7 +115,7 @@ export const BidPage = () => {
               </h2>
 
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Fill out the form to request a proposal for our pool services. We offer competitive pricing and customized solutions for both commercial and residential pools.
+                Fill out the form to request a proposal for your property. MGN Pools provides commercial and residential pool management, lifeguard staffing, repairs, renovations, and leak detection throughout Northern Virginia and Washington, DC.
               </p>
               <div className="bg-slate-50 rounded-2xl p-6 mb-8">
                 <h3 className="font-bold text-gray-900 mb-4">What We Offer:</h3>
@@ -125,7 +125,7 @@ export const BidPage = () => {
                     "Residential Pool Services",
                     "Pool Repairs and Renovations",
                     "Leak Detection and Repair",
-                    "Lifeguard Training and Certification"
+                    "Certified Lifeguard Staffing"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-sky-500 shrink-0" />
