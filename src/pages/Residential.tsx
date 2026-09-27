@@ -86,7 +86,7 @@ export const ResidentialPage = () => {
         </script>
       </Helmet>
       <PageHeader
-        title="Residential Pool Services in Northern Virginia & Washington, DC"
+        title="Residential Pool Services in Northern Virginia & DC"
         subtitle="Professional pool maintenance, repairs, renovations, opening, and winterization for homeowners throughout Northern Virginia and Washington, DC"
         backgroundImage="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?w=1600&q=80"
       />
