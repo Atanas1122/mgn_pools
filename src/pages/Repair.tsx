@@ -127,10 +127,10 @@ export const RepairPage = () => {
         </script>
       </Helmet>
       <PageHeader
-        title="Swimming Pool Leak Detection and Repair"
-        subtitle="Professional Pool Leak Detection and Repair in Northern Virginia & Washington, DC"
-        backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
-      />
+  title="Pool Leak Detection & Repair in Northern Virginia & Washington, DC"
+subtitle="Professional leak detection, pressure testing, and pool leak repair for commercial and residential swimming pools"
+  backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
+/>
 
       <section
         className="py-24 relative water-bg"
