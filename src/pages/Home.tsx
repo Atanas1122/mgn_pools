@@ -20,25 +20,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: "MGN Pools Management specializes in providing quality commercial pool management services in Washington DC, Springfield VA, and throughout Virginia, DC and MD. Our team guarantee the fastest response to anything related to your swimming pool. We offer customized solutions that will fit our clients unique needs.",
+    description: "MGN Pools provides complete commercial pool management for apartments, condominiums, HOAs, and recreation facilities throughout Northern Virginia and Washington, DC.",
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN POOLS understands that the swimming pool is not only an important asset to you, but it is a place for relaxation and fun.",
+    description: "MGN Pools provides professional residential pool maintenance, repairs, renovations, opening, closing, and seasonal pool services throughout Northern Virginia and Washington, DC.",
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs and Renovation",
-    description: "MGN POOLS offers expert pool repair service. We are fully licensed, certified and insured to perform any type of pool repairs and renovations. You can trust our professionals with any pool repair from equipment to renovations.",
+    description: "MGN Pools provides professional swimming pool repairs and renovations, including plaster, tile, coping, equipment replacement, plumbing repairs, and pool restoration.",
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: "Swimming pools can leak through any of the fittings or accessories, plumbing, or even right through the shell. It is important to repair leaks, not only to save water, heat, and chemicals, but also to prevent undermining pool structural components and washing away fill dirt.",
+    description: "MGN Pools provides professional pool leak detection, pressure testing, and leak repair for plumbing, fittings, equipment, and pool structures.",
     link: "/repair"
   },
 ];
@@ -47,19 +47,19 @@ const howWeHelp = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: "MGN Pools Management specializes in providing quality commercial pool management services in Washington DC and Springfield VA to apartment complexes, HOAs, hotels and recreation facilities.",
+    description: "MGN Pools provides complete commercial pool management for apartments, condominiums, HOAs, and recreation facilities throughout Northern Virginia and Washington, DC.",
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN Pools understands that the swimming pool is not only an important asset to you, but it is a place for relaxation and fun.",
+    description: "MGN Pools provides professional residential pool maintenance, repairs, renovations, opening, closing, and seasonal pool services throughout Northern Virginia and Washington, DC.",
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs And Renovations",
-    description: "We are fully licensed, certified and insured to perform any type of pool repairs and renovations. You can trust our professionals.",
+    description: "MGN Pools provides professional swimming pool repairs and renovations, including plaster, tile, coping, equipment replacement, plumbing repairs, and pool restoration.",
     link: "/renovations"
   },
 ];
@@ -69,7 +69,7 @@ export const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools</title>
+        <title>Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
           content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC."        />
@@ -77,19 +77,19 @@ export const HomePage = () => {
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools" />
+        <meta property="og:title" content="Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools" />
         <meta property="og:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />        <meta property="og:url" content="https://mgnpools.com/" />
         <meta property="og:site_name" content="MGN Pools" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Commercial Pool Management & Services | Northern Virginia & DC | MGN Pools" />
+        <meta name="twitter:title" content="Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools" />
         <meta name="twitter:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "HomeAndConstructionBusiness",
+            "@type": "GeneralContractor",
             "@id": "https://mgnpools.com/#localbusiness",
             "name": "MGN Pools",
             "image": "https://mgnpools.com/logo.png",
@@ -124,12 +124,8 @@ export const HomePage = () => {
                 "name": "Virginia"
               },
               {
-                "@type": "State",
-                "name": "Maryland"
-              },
-              {
                 "@type": "City",
-                "name": "Washington DC"
+                "name": "Washington, DC"
               },
               {
                 "@type": "City",
@@ -148,12 +144,24 @@ export const HomePage = () => {
                 "name": "Fairfax"
               },
               {
+  "@type": "City",
+  "name": "Falls Church"
+},
+              {
+  "@type": "City",
+  "name": "Lorton"
+},
+              {
+  "@type": "City",
+  "name": "Manassas"
+},
+              {
                 "@type": "City",
                 "name": "Woodbridge"
               },
               {
                 "@type": "City",
-                "name": "Mount Vernon"
+                "name": "Vienna"
               },
               {
                 "@type": "City",
@@ -165,16 +173,16 @@ export const HomePage = () => {
               }
             ],
             "serviceType": [
-              "Pool Services",
-              "Pool Service",
-              "Pool Management",
-              "Pool Management Services",
-              "Pool Maintenance",
-              "Pool Repair",
-              "Pool Renovation",
-              "Pool Water Treatment",
-              "Lifeguard Service",
-              "Lifeguard Training"
+              "Commercial Pool Management",
+"Residential Pool Service",
+"Pool Maintenance",
+"Pool Repair",
+"Pool Leak Detection and Repair",
+"Pool Renovation",
+"Pool Opening and Winterization",
+"Pool Water Treatment",
+"Lifeguard Staffing",
+"Lifeguard Training"
             ]
           })}
         </script>
@@ -197,7 +205,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            Commercial Pool Management, Lifeguard, Repair & Renovation Services in Northern Virginia & Washington, DC
+            Commercial & Residential Pool Management, Repair & Renovation Services in Northern Virginia & Washington, DC
           </motion.h1>
 
           <motion.p
@@ -206,7 +214,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base md:text-lg text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-            MGN Pools provides professional commercial pool management, certified lifeguard staffing, pool repairs and renovations for apartments, condominiums, HOAs and commercial properties throughout Northern Virginia and Washington, DC.
+           MGN Pools provides professional commercial pool management, residential pool services, certified lifeguard staffing, pool repairs and renovations throughout Northern Virginia and Washington, DC.
           </motion.p>
 
           <motion.div
@@ -219,7 +227,7 @@ export const HomePage = () => {
               to="/bid"
               className="bg-sky-500 hover:bg-sky-400 text-white text-lg px-8 py-4 rounded-lg font-semibold transition-all shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
             >
-              Get a Free Quote in 24 Hours
+              Request a Pool Proposal
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
@@ -237,7 +245,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-sm md:text-base text-sky-200/90 text-center mt-8"
           >
-            Serving Alexandria, Arlington, Springfield, McLean, Great Falls, Fairfax, Woodbridge, Mount Vernon, Northern Virginia, Maryland & Washington DC since 2007.
+            Serving Alexandria, Arlington, Springfield, Fairfax, Falls Church, McLean, Great Falls, Lorton, Woodbridge, Manassas, and communities throughout Northern Virginia and Washington, DC.
           </motion.p>
         </div>
       </section>
@@ -262,10 +270,10 @@ export const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Trusted Pool Management, Repair and Renovation Company  in Northern Virginia
+              Commercial & Residential Pool Management, Repair & Renovation Services in Northern Virginia & Washington, DC
             </h2>
             <p className="text-lg text-gray-600">
-              Premier pool company providing pool service and pool management in Springfield VA, Alexandria VA, Arlington VA, McLean VA, Great Falls VA, Washington DC, and across Northern Virginia, Maryland & the DC metro area
+              MGN Pools provides commercial pool management and lifeguard staffing, along with commercial and residential pool repairs, renovations, and maintenance throughout Northern Virginia and Washington, DC.
             </p>
           </motion.div>
 
@@ -311,9 +319,9 @@ export const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              How We Can Help You
+              How MGN Pools Can Help
             </h2>
-            <p className="text-lg text-gray-600">from MGN Pools!</p>
+            <p className="text-lg text-gray-600">Professional Pool Services for Commercial and Residential Properties</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -358,16 +366,16 @@ export const HomePage = () => {
                 <span className="text-sky-300 font-semibold uppercase tracking-wider text-sm">Training</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Training and Certifications
+                Lifeguard Training & Certification
               </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                MGN Pools Management is pleased to  offer American Red Cross Lifeguard Classes. The Lifeguard classes include training in First Aid, AED and CPR for the Professional Rescuer.
+                MGN Pools offers American Red Cross lifeguard training and certification courses to help prepare professional lifeguards for commercial aquatic facilities.
               </p>
               <Link
                 to="/training"
                 className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-white px-8 py-4 rounded-lg font-semibold transition-colors"
               >
-                Learn More About Training
+                View Lifeguard Training
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </motion.div>
@@ -403,13 +411,13 @@ export const HomePage = () => {
         <div className="absolute inset-0 bg-sky-500/70 md:bg-sky-500/85"></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Don't Wait, Use Our Form To Contact Us.
+            Request a Pool Service Proposal or Estimate
           </h2>
           <Link
             to="/contacts"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-sky-600 px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl"
           >
-            Contact Us
+            Request a Proposal
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -429,7 +437,7 @@ export const HomePage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Companies That We Work With
+              Trusted by Property Management Companies and Communities
             </h2>
           </motion.div>
 
