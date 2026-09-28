@@ -34,17 +34,16 @@ export const TrainingPage = () => {
   return (
     <>
       <Helmet>
-        <title>Lifeguard Training & Certification in Springfield VA | MGN Pools</title>
+        <title>Lifeguard Training & Certification Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="American Red Cross lifeguard training with First Aid, CPR and AED in Springfield VA and the DC metro area. Professional lifeguard and pool operator certification."
-        />
+          content="American Red Cross lifeguard training and certification in Northern Virginia and Washington, DC, including First Aid, CPR, AED and professional rescuer skills."        />
         <link rel="canonical" href="https://mgnpools.com/training" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Lifeguard Training & Certification in Springfield VA | MGN Pools" />
-        <meta property="og:description" content="American Red Cross lifeguard training with First Aid, CPR and AED in Springfield VA and the DC metro area. Professional lifeguard and pool operator certification." />
+        <meta property="og:title" content="Lifeguard Training & Certification Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="American Red Cross lifeguard training and certification in Northern Virginia and Washington, DC, including First Aid, CPR, AED and professional rescuer skills." />
         <meta property="og:url" content="https://mgnpools.com/training" />
 
         {/* Structured Data */}
@@ -53,8 +52,8 @@ export const TrainingPage = () => {
             "@context": "https://schema.org",
             "@type": "Course",
             "name": "Lifeguard Training and Certification",
-            "description": "American Red Cross lifeguard classes with First Aid, CPR and AED training.",
-            "provider": {
+            "description": "American Red Cross lifeguard training and certification in Northern Virginia and Washington, DC, including First Aid, CPR, AED and professional rescuer skills.",
+      "provider": {
               "@id": "https://mgnpools.com/#localbusiness"
             },
             "url": "https://mgnpools.com/training"
@@ -62,8 +61,8 @@ export const TrainingPage = () => {
         </script>
       </Helmet>
       <PageHeader
-        title="Training and Certifications"
-        subtitle="American Red Cross Lifeguard Classes"
+        title="Lifeguard Training & Certification in Northern Virginia & Washington, DC"
+        subtitle="American Red Cross lifeguard training with First Aid, CPR, AED"
         backgroundImage="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&q=80"
       />
 
@@ -90,15 +89,15 @@ export const TrainingPage = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Training and Certifications
+                American Red Cross Lifeguard Training & Certification
               </h2>
 
               <p className="text-lg text-gray-600 mb-4 leading-relaxed">
-                <strong>MGN Pools Management</strong> is pleased to offer American Red Cross Lifeguard Classes in Springfield and across Northern Virginia.
+                <strong>MGN Pools</strong> offers American Red Cross lifeguard training and certification for future and current lifeguards throughout Northern Virginia and the Washington, DC area.
               </p>
 
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                The Lifeguard classes include training in First Aid, AED and CPR for the Professional Rescuer.
+                The lifeguard course includes training in First Aid, CPR, AED, water rescue techniques, surveillance, and emergency response skills.
               </p>
 
               <Link
@@ -120,7 +119,7 @@ export const TrainingPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl inline-block">
                 <img
                   src={lifeguardTrainingNew}
-                  alt="American Red Cross lifeguard training and certification classes in Virginia"
+                  alt="American Red Cross lifeguard training and certification in Northern Virginia and Washington DC"
                   className="w-auto h-auto max-w-full max-h-[550px] block"
                 />
               </div>
@@ -134,7 +133,7 @@ export const TrainingPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">What You'll Learn</h2>
-            <p className="text-xl text-blue-100">Comprehensive training for future and current lifeguards.</p>
+            <p className="text-xl text-blue-100">Essential rescue, safety, and emergency response skills for future and current lifeguards.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -169,13 +168,13 @@ export const TrainingPage = () => {
             Ready to Get Certified?
           </h2>
           <p className="text-xl text-white/90 mb-8">
-            Contact us today to learn about upcoming training sessions.
+            Contact MGN Pools to learn about upcoming lifeguard training and certification classes.
           </p>
           <Link
             to="/contacts"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-sky-600 px-8 py-4 rounded-lg font-bold text-lg transition-colors"
           >
-            Contact Us
+            Ask About Training
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
