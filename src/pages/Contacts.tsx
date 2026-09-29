@@ -65,22 +65,22 @@ export const ContactsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Contact MGN Pools | Springfield VA Pool Service</title>
+        <title>Contact MGN Pools | Pool Services Northern Virginia & DC</title>
         <meta
           name="description"
-          content="Contact MGN Pools in Springfield VA for commercial and residential pool services. Call 571-275-3696 or email mgnpools@yahoo.com. Serving Northern Virginia, DC and Maryland."
+          content="Contact MGN Pools for commercial and residential pool management, maintenance, repair and renovation services throughout Northern Virginia and Washington, DC."
         />
         <link rel="canonical" href="https://mgnpools.com/contacts" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Contact MGN Pools | Springfield VA Pool Service" />
-        <meta property="og:description" content="Contact MGN Pools in Springfield VA for commercial and residential pool services. Call 571-275-3696 or email mgnpools@yahoo.com. Serving Northern Virginia, DC and Maryland." />
+        <meta property="og:title" content="Contact MGN Pools | Pool Services Northern Virginia & DC" />
+        <meta property="og:description" content="Contact MGN Pools for commercial and residential pool management, maintenance, repair and renovation services throughout Northern Virginia and Washington, DC." />
         <meta property="og:url" content="https://mgnpools.com/contacts" />
       </Helmet>
       <PageHeader
-        title="Contact Us"
-        subtitle="Get in touch with MGN Pools"
+        title="Contact MGN Pools"
+        subtitle="Contact us for commercial and residential pool services throughout Northern Virginia and Washington, DC"
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
 
@@ -180,7 +180,7 @@ export const ContactsPage = () => {
               className="bg-slate-50 rounded-2xl p-8"
               onSubmit={handleSubmit}
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Request Information or Service</h2>
 
               <div className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -232,10 +232,11 @@ export const ContactsPage = () => {
                   >
                     <option value="">Select a subject...</option>
                     <option value="general">General Inquiry</option>
-                    <option value="commercial">Commercial Services</option>
-                    <option value="residential">Residential Services</option>
-                    <option value="repair">Repair Request</option>
-                    <option value="training">Training Information</option>
+                    <option value="commercial">Commercial Pool Management</option>
+                    <option value="residential">Residential Pool Services</option>
+                    <option value="repair">Pool Repair & Leak Detection</option>
+                    <option value="renovation">Pool Renovation & Resurfacing</option>
+                    <option value="training">Lifeguard Training & Certification</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
@@ -247,7 +248,7 @@ export const ContactsPage = () => {
                     required
                     name="message"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none resize-none bg-white"
-                    placeholder="How can we help you?"
+                    placeholder="Tell us about your property, pool, service needs, or project..."
                   />
                 </div>
 
@@ -256,7 +257,7 @@ export const ContactsPage = () => {
                   disabled={isSubmitting}
                   className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-sky-300 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : 'Submit Request'}
                   <ArrowRight className="w-5 h-5" />
                 </button>
 
@@ -280,14 +281,18 @@ export const ContactsPage = () => {
       {/* Service Areas */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Service Areas</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Pool Service Areas</h2>
           <p className="text-center text-gray-600 mb-8">
-            We provide swimming pool management, repair and renovation services in Northern Virginia, Maryland and DC.
+            We provide commercial and residential pool management, maintenance, repair, and renovation services throughout Northern Virginia, Washington, DC, and select areas of Maryland.
           </p>
+          <div className="bg-white p-4 rounded-lg">
+             <h3 className="font-semibold text-gray-900 mb-2">Arlington & Alexandria</h3>
+             <p>Arlington, Alexandria</p>
+          </div>          
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-gray-600">
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Fairfax County</h3>
-              <p>Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna</p>
+              <p>Annandale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna</p>
             </div>
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Loudoun County</h3>
@@ -298,12 +303,8 @@ export const ContactsPage = () => {
               <p>Bristow, Dale City, Dumfries, Gainesville, Haymarket, Manassas, Manassas Park, Nokesville, Occoquan, Quantico, Triangle, Woodbridge</p>
             </div>
             <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Spotsylvania County</h3>
-              <p>Fredericksburg</p>
-            </div>
-            <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Montgomery County</h3>
-              <p>Bethesda, Chevy Chase, Potomac, Rockville, Silver Spring, Takoma Park</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Fredericksburg Area</h3>
+              <p>Fredericksburg and surrounding areas</p>
             </div>
             <div className="bg-white p-4 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Washington DC</h3>
