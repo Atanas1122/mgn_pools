@@ -71,7 +71,8 @@ export const BidPage = () => {
         <title>Request a Commercial Pool Proposal | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Request a commercial pool proposal from MGN Pools for pool management, lifeguard staffing, repairs, renovations, leak detection, and residential pool services throughout Northern Virginia and Washington, DC."
+          content="Request a commercial pool proposal from MGN Pools for pool management, lifeguard staffing, repairs, renovations, leak detection, and residential pool services throughout Northern Virginia and Washington, DC." 
+          />
         <link rel="canonical" href="https://mgnpools.com/bid" />
 
         {/* Open Graph */}
