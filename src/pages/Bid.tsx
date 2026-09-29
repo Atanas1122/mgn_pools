@@ -26,6 +26,7 @@ export const BidPage = () => {
       lastName: formData.get('lastName') as string,
       email: formData.get('email') as string,
       phone: (formData.get('phone') as string) || '',
+      website: (formData.get('website') as string) || '',
       subject: 'Proposal Request',
       message: [
         `Company / Property / Community Name: ${formData.get('company') || '—'}`,
@@ -156,6 +157,14 @@ export const BidPage = () => {
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Tell Us About Your Pool</h3>
 
               <div className="space-y-5">
+<input
+  type="text"
+  name="website"
+  tabIndex={-1}
+  autoComplete="off"
+  aria-hidden="true"
+  className="hidden"
+/>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">First Name *</label>
