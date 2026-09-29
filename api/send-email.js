@@ -16,8 +16,28 @@ export default async function handler(req, res) {
         }
 
         const data = body ? JSON.parse(body) : {};
-        const { firstName, lastName, email, phone, subject, message } = data;
+        const { firstName, lastName, email, phone, website, subject, message } = data;
+        // Honeypot spam protection
+if (website) {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ success: true }));
+    return;
+}
+        // Basic spam validation
+const combinedText = `${firstName} ${lastName} ${email} ${message}`.toLowerCase();
 
+const spamPatterns = [
+    /\[url=/i,
+    /<a\s/i,
+];
+
+if (spamPatterns.some((pattern) => pattern.test(combinedText))) {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'application/json');
+    res.end(JSON.stringify({ success: true }));
+    return;
+}
         if (!firstName || !lastName || !email || !subject || !message) {
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
