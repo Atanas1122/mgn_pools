@@ -35,7 +35,7 @@ const positions = [
   {
     title: "Lifeguard",
     type: "Full-time / Part-time",
-    description: "We are looking for certified lifeguards for commercial pool facilities.",
+    description: "We are hiring certified lifeguards for commercial swimming pools throughout Northern Virginia and Washington, DC.",
     requirements: [
       "American Red Cross Lifeguard Certification",
       "CPR/AED/First Aid Certification",
@@ -45,8 +45,8 @@ const positions = [
   },
   {
     title: "Pool Technician",
-    type: "Full-time",
-    description: "Experienced pool technicians for maintenance and repair work.",
+    type: "Full-time / Seasonal",
+    description: "We are hiring experienced pool technicians for commercial and residential pool maintenance, opening, closing, equipment service, and repair work.",
     requirements: [
       "Experience with pool equipment",
       "Knowledge of water chemistry",
@@ -56,8 +56,8 @@ const positions = [
   },
   {
     title: "Pool Manager",
-    type: "Full-time",
-    description: "Experienced pool managers for commercial pool facilities.",
+    type: "Full-time / Seasonal",
+    description: "We are hiring experienced pool managers to supervise daily operations, lifeguard teams, and safety at commercial pool facilities.",
     requirements: [
       "Previous management experience",
       "Strong leadership skills",
@@ -65,6 +65,19 @@ const positions = [
       "CPO certification preferred"
     ]
   },
+  {
+  title: "Commercial Pool Area Supervisor",
+  type: "Full-time / Seasonal",
+  description: "We are hiring experienced Commercial Pool Area Supervisors to oversee multiple commercial pool facilities, supervise staff, and ensure safe and professional daily operations.",
+  requirements: [
+    "Previous commercial pool management or supervisory experience",
+    "Strong leadership and communication skills",
+    "Knowledge of pool operations and water chemistry",
+    "Ability to supervise lifeguards and pool staff",
+    "Valid driver's license",
+    "CPO certification preferred"
+  ]
+},
 ];
 
 export const JobsPage = () => {
@@ -72,22 +85,22 @@ export const JobsPage = () => {
   return (
     <>
       <Helmet>
-        <title>Pool Jobs & Careers in Springfield VA | MGN Pools</title>
+        <title>Lifeguard & Pool Jobs in Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Join MGN Pools in Springfield VA. We're hiring lifeguards, pool technicians and pool managers with competitive pay, flexible schedules and career growth."
+          content="Join MGN Pools in Northern Virginia and Washington, DC. Explore lifeguard, pool technician and pool manager jobs with competitive pay and flexible schedules."
         />
         <link rel="canonical" href="https://mgnpools.com/jobs" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Pool Jobs & Careers in Springfield VA | MGN Pools" />
-        <meta property="og:description" content="Join MGN Pools in Springfield VA. We're hiring lifeguards, pool technicians and pool managers with competitive pay, flexible schedules and career growth." />
+        <meta property="og:title" content="Lifeguard & Pool Jobs in Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Join MGN Pools in Northern Virginia and Washington, DC. Explore lifeguard, pool technician and pool manager jobs with competitive pay and flexible schedules." />
         <meta property="og:url" content="https://mgnpools.com/jobs" />
       </Helmet>
       <PageHeader
-        title="Jobs"
-        subtitle="Join the MGN Pools team"
+        title="Lifeguard & Pool Jobs in Northern Virginia & Washington, DC"
+        subtitle="Join our team of lifeguards, pool technicians, and pool management professionals"
         backgroundImage="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=1600&q=80"
       />
 
@@ -114,8 +127,8 @@ export const JobsPage = () => {
               Join Our Team
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              MGN Pools Management is always looking for dedicated professionals to join our team.
-              We offer competitive pay, flexible schedules, and opportunities for career growth.
+              MGN Pools is looking for dependable lifeguards, pool technicians, and pool managers to join our team throughout Northern Virginia and Washington, DC.
+              We offer competitive pay, flexible schedules, and opportunities to develop valuable skills and advance within our company.
             </p>
           </motion.div>
 
@@ -156,7 +169,9 @@ export const JobsPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Open Positions</h2>
-            <p className="text-lg text-gray-600">Current opportunities at MGN Pools</p>
+            <p className="text-lg text-gray-600">
+              Explore current lifeguard, pool technician, pool management, and supervisory opportunities with MGN Pools.
+            </p>
           </motion.div>
 
           <div className="space-y-6">
@@ -205,7 +220,7 @@ export const JobsPage = () => {
             Interested in Working With Us?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Send us your resume and we'll be in touch about available opportunities.
+            Send us your resume to apply for lifeguard, pool technician, pool manager, or area supervisor opportunities with MGN Pools.
           </p>
           <a
             href={`mailto:${SITE_CONFIG.email}?subject=Job Application`}
