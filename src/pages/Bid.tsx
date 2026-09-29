@@ -29,7 +29,7 @@ export const BidPage = () => {
       website: (formData.get('website') as string) || '',
       subject: 'Proposal Request',
       message: [
-        `Company / Property / Community Name: ${formData.get('company') || '—'}`,
+        `Company / Property /  Community Name: ${formData.get('company') || '—'}`,
         `Property Address: ${formData.get('address') || '—'}`,
         `Service Type: ${formData.get('serviceType') || '—'}`,
         '',
