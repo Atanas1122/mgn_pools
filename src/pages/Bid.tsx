@@ -28,7 +28,7 @@ export const BidPage = () => {
       phone: (formData.get('phone') as string) || '',
       subject: 'Proposal Request',
       message: [
-        `Company/Property Name: ${formData.get('company') || '—'}`,
+        `Company / Property / Community Name: ${formData.get('company') || '—'}`,
         `Property Address: ${formData.get('address') || '—'}`,
         `Service Type: ${formData.get('serviceType') || '—'}`,
         '',
@@ -68,17 +68,16 @@ export const BidPage = () => {
   return (
     <>
       <Helmet>
-        <title>Request a Pool Service Proposal | Northern Virginia & DC | MGN Pools</title>
+        <title>Request a Commercial Pool Proposal | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="Request a pool service proposal from MGN Pools for commercial pool management, lifeguard staffing, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC."
-        />
+          content="Request a commercial pool proposal from MGN Pools for pool management, lifeguard staffing, repairs, renovations, leak detection, and residential pool services throughout Northern Virginia and Washington, DC."
         <link rel="canonical" href="https://mgnpools.com/bid" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Request a Pool Service Proposal | Northern Virginia & DC | MGN Pools" />
-        <meta property="og:description" content="Request a pool service proposal from MGN Pools for commercial pool management, lifeguard staffing, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC." />
+        <meta property="og:title" content="Request a Commercial Pool Proposal | Northern Virginia & DC | MGN Pools" />
+        <meta property="og:description" content="Request a commercial pool proposal from MGN Pools for pool management, lifeguard staffing, repairs, renovations, leak detection, and residential pool services throughout Northern Virginia and Washington, DC." />
         <meta property="og:url" content="https://mgnpools.com/bid" />
       </Helmet>
       <PageHeader
@@ -111,11 +110,11 @@ export const BidPage = () => {
               </div>
 
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Request a Proposal
+                Get a Pool Service Proposal
               </h2>
 
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Fill out the form to request a proposal for your property. MGN Pools provides commercial and residential pool management, lifeguard staffing, repairs, renovations, and leak detection throughout Northern Virginia and Washington, DC.
+                Fill out the form to request a proposal from MGN Pools. We provide commercial pool management, lifeguard staffing, residential pool services, repairs, renovations, and leak detection throughout Northern Virginia and Washington, DC.
               </p>
               <div className="bg-slate-50 rounded-2xl p-6 mb-8">
                 <h3 className="font-bold text-gray-900 mb-4">What We Offer:</h3>
@@ -123,8 +122,9 @@ export const BidPage = () => {
                   {[
                     "Commercial Pool Management",
                     "Residential Pool Services",
-                    "Pool Repairs and Renovations",
-                    "Leak Detection and Repair",
+                    "Pool Equipment & Plumbing Repair",
+                    "Pool Renovation, Plaster, Tile & Coping",
+                    "Pool Leak Detection & Repair",
                     "Certified Lifeguard Staffing"
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -136,9 +136,9 @@ export const BidPage = () => {
               </div>
 
               <div className="bg-blue-900 rounded-2xl p-6 text-white">
-                <h3 className="font-bold mb-2">Quick Response Guaranteed</h3>
-                <p className="text-blue-100 text-sm">
-                  Our team guarantees the fastest response to anything related to your swimming pool.
+                <h3 className="font-bold mb-2">Responsive Pool Service</h3>
+                  <p className="text-blue-100 text-sm">
+                   Our team responds promptly to proposal requests, service questions, and pool repair needs.
                 </p>
               </div>
             </motion.div>
@@ -152,7 +152,7 @@ export const BidPage = () => {
               className="bg-slate-50 rounded-2xl p-8"
               onSubmit={handleSubmit}
             >
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Proposal</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Tell Us About Your Pool</h3>
 
               <div className="space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -224,10 +224,9 @@ export const BidPage = () => {
                     <option value="">Select a service...</option>
                     <option value="commercial">Commercial Pool Management</option>
                     <option value="residential">Residential Pool Services</option>
-                    <option value="renovation">Pool Renovation</option>
-                    <option value="repair">Pool Repair</option>
-                    <option value="leak">Leak Detection</option>
-                    <option value="other">Other</option>
+                    <option value="renovation">Pool Renovation, Plaster, Tile & Coping</option>
+                    <option value="repair">Pool Equipment & Plumbing Repair</option>
+                    <option value="leak">Pool Leak Detection & Repair</option>
                   </select>
                 </div>
 
@@ -237,7 +236,7 @@ export const BidPage = () => {
                     rows={4}
                     name="details"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2 focus:ring-sky-500 focus:border-transparent outline-none resize-none bg-white"
-                    placeholder="Please provide any additional information about your pool or service needs..."
+                    placeholder="Tell us about your property, pool, operating schedule, lifeguard needs, or requested services..."
                   />
                 </div>
 
@@ -246,13 +245,13 @@ export const BidPage = () => {
                   disabled={isSubmitting}
                   className="w-full bg-sky-500 hover:bg-sky-600 disabled:bg-sky-300 text-white font-semibold py-4 rounded-lg transition-all flex items-center justify-center gap-2"
                 >
-                  {isSubmitting ? 'Sending...' : 'Submit Bid Request'}
+                  {isSubmitting ? 'Sending...' : 'Request a Proposal'}
                   <ArrowRight className="w-5 h-5" />
                 </button>
 
                 {status === 'success' && (
                   <p className="mt-3 text-sm text-emerald-600">
-                    Thank you! Your bid request has been submitted successfully. We'll get back to you soon.
+                    Thank you! Your proposal request has been submitted successfully. We'll get back to you soon.
                   </p>
                 )}
 
