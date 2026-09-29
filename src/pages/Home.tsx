@@ -37,7 +37,7 @@ const services = [
   },
   {
     icon: Search,
-    title: "Swimming Pool Leak Detection and Repair",
+    title: "Pool Leak Detection, Pressure Testing & Repair",
     description: "MGN Pools provides professional pool leak detection, pressure testing, and leak repair for plumbing, fittings, equipment, and pool structures.",
     link: "/repair"
   },
@@ -72,19 +72,20 @@ export const HomePage = () => {
         <title>Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools</title>
         <meta
           name="description"
-          content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC."        />
+          content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC."
         <link rel="canonical" href="https://mgnpools.com/" />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools" />
-        <meta property="og:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />        <meta property="og:url" content="https://mgnpools.com/" />
+        <meta property="og:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC." />
+        <meta property="og:url" content="https://mgnpools.com/" />
         <meta property="og:site_name" content="MGN Pools" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools" />
-        <meta name="twitter:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations for apartments, condominiums and HOAs throughout Northern Virginia and Washington, DC." />
+        <meta name="twitter:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC." />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -177,7 +178,7 @@ export const HomePage = () => {
 "Residential Pool Service",
 "Pool Maintenance",
 "Pool Repair",
-"Pool Leak Detection and Repair",
+"Pool Leak Detection, Pressure Testing and Repair",
 "Pool Renovation",
 "Pool Opening and Winterization",
 "Pool Water Treatment",
@@ -192,7 +193,7 @@ export const HomePage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src={heroBackground}
-            alt="Professional pool services and pool management services in Springfield VA, Washington DC, Alexandria, Woodbridge, Mount Vernon, and Northern Virginia"
+            alt="Commercial pool management, lifeguard staffing, pool repair and renovation services in Northern Virginia and Washington DC"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
@@ -205,7 +206,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            Commercial & Residential Pool Management, Repair & Renovation Services in Northern Virginia & Washington, DC
+Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residential Pool Services in Northern Virginia & Washington, DC
           </motion.h1>
 
           <motion.p
@@ -214,7 +215,7 @@ export const HomePage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-base md:text-lg text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-           MGN Pools provides professional commercial pool management, residential pool services, certified lifeguard staffing, pool repairs and renovations throughout Northern Virginia and Washington, DC.
+           MGN Pools provides professional commercial pool management, certified lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC.
           </motion.p>
 
           <motion.div
@@ -270,10 +271,10 @@ export const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Commercial & Residential Pool Management, Repair & Renovation Services in Northern Virginia & Washington, DC
+              Professional Pool Services for Commercial & Residential Properties
             </h2>
             <p className="text-lg text-gray-600">
-              MGN Pools provides commercial pool management and lifeguard staffing, along with commercial and residential pool repairs, renovations, and maintenance throughout Northern Virginia and Washington, DC.
+              MGN Pools provides commercial pool management, certified lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC.
             </p>
           </motion.div>
 
@@ -321,7 +322,7 @@ export const HomePage = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               How MGN Pools Can Help
             </h2>
-            <p className="text-lg text-gray-600">Professional Pool Services for Commercial and Residential Properties</p>
+            <p className="text-lg text-gray-600">Complete Pool Management, Maintenance, Repair & Renovation Solutions</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -389,7 +390,7 @@ export const HomePage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={LifeGuard}
-                  alt="Lifeguard Training"
+                  alt="American Red Cross lifeguard training and certification in Northern Virginia and Washington DC"
                   className="w-full h-[350px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
@@ -414,7 +415,7 @@ export const HomePage = () => {
             Request a Pool Service Proposal or Estimate
           </h2>
           <Link
-            to="/contacts"
+            to="/bid"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-sky-600 px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl"
           >
             Request a Proposal
