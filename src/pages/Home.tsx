@@ -71,8 +71,9 @@ export const HomePage = () => {
       <Helmet>
         <title>Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools</title>
         <meta
-          name="description"
-          content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC."
+  name="description"
+  content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC."
+/>
         <link rel="canonical" href="https://mgnpools.com/" />
 
         {/* Open Graph */}
