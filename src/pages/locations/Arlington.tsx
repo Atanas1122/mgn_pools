@@ -374,7 +374,7 @@ export const ArlingtonPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Your Trusted Commercial Pool Management & Residential Pool Services in {cityInfo.fullName}
+              Commercial & Residential Pool Services in {cityInfo.fullName}
             </h2>
             <div className="prose prose-lg text-gray-600 max-w-none">
               <p className="mb-4">
