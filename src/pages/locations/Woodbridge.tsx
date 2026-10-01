@@ -123,11 +123,6 @@ export const WoodbridgePage = () => {
               "postalCode": "22152",
               "addressCountry": "US"
             },
-            "geo": {
-  "@type": "GeoCoordinates",
-  "latitude": cityInfo.geo.latitude,
-  "longitude": cityInfo.geo.longitude
-},
             "url": "https://mgnpools.com",
             "priceRange": "$$",
             "openingHoursSpecification": [
