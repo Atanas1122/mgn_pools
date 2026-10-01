@@ -71,7 +71,7 @@ export const WoodbridgePage = () => {
   return (
     <>
       <Helmet>
-          <title>Commercial Pool Management & Residential Pool Services Woodbridge VA | MGN Pools</title>        <meta
+          <title>Commercial Pool Management & Residential Pool Services Woodbridge VA | MGN Pools</title>        
           <meta
             name="description"
             content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Woodbridge since 2007.`}
@@ -254,6 +254,7 @@ export const WoodbridgePage = () => {
             </h2>
             <p className="text-lg text-gray-600">
               Commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout {cityInfo.fullName} and surrounding Woodbridge communities.
+              </p>      
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
