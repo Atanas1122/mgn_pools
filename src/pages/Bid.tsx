@@ -55,7 +55,7 @@ export const BidPage = () => {
 
       setStatus('success');
       (window as any).gtag?.('event', 'generate_lead');
-      (window as any).gtag?.('event', 'conversion', {'send_to': 'AW-18389411654/5gGnCLHZoYQdEMbO4MBE'});
+      (window as any).gtag?.('event', 'conversion', {'send_to': 'AW-18389411654/MaXnCNWl3ZMdEMbO4MBE'});
       form.reset();
     } catch (error) {
       console.error(error);
