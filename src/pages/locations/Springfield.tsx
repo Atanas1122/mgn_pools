@@ -156,7 +156,7 @@ export const SpringfieldPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt=`Commercial pool management and residential pool services in ${cityInfo.fullName}`
+            alt="Commercial pool management and residential pool services in Springfield, VA"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
@@ -360,7 +360,7 @@ export const SpringfieldPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={LifeGuard}
-                  alt={`American Red Cross lifeguard training and certified lifeguard staffing in ${cityInfo.fullName}`}
+                  alt="American Red Cross lifeguard training and certified lifeguard staffing in Springfield, VA"
                   className="w-full h-[350px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
