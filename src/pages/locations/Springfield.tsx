@@ -59,7 +59,8 @@ const howWeHelp = [
   {
     icon: Wrench,
     title: "Pool Repairs And Renovations",
-    description: `Professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plumbing repairs, plaster and resurfacing, tile and coping repairs, and other pool improvements.`,    link: "/renovations"
+    description: `Professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plumbing repairs, plaster and resurfacing, tile and coping repairs, and other pool improvements.`,  
+    link: "/renovations"
   },
 ];
 
