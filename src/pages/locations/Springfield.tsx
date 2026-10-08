@@ -76,7 +76,7 @@ export const SpringfieldPage = () => {
         />
         <link
           rel="canonical"
-          href={`https://mgnpools.com/locations/springfield-pool-service`}
+          href="https://mgnpools.com/locations/springfield-pool-service"
         />
 
         {/* Open Graph */}
@@ -89,7 +89,7 @@ export const SpringfieldPage = () => {
          property="og:description"
          content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Serving Springfield since 2007."
          />
-        <meta property="og:url" content={`https://mgnpools.com/locations/springfield-pool-service`} />
+        <meta property="og:url" content="https://mgnpools.com/locations/springfield-pool-service" />
         <meta property="og:site_name" content="MGN Pools" />
 
         {/* Twitter Card */}
@@ -156,7 +156,7 @@ export const SpringfieldPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt={`Commercial pool management and residential pool services in ${cityInfo.fullName}`}
+            alt=`Commercial pool management and residential pool services in ${cityInfo.fullName}`
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
