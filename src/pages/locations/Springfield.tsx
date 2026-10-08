@@ -26,22 +26,26 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,    link: "/commercial"
+    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
+    link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,    link: "/residential"
+    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs and Renovation",
-    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,    link: "/renovations"
+    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
+    link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,    link: "/repair"
+    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
+    link: "/repair"
   },
 ];
 
@@ -49,12 +53,14 @@ const howWeHelp = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `Professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, hotels, and recreation facilities, including lifeguard staffing, maintenance, water chemistry, and seasonal operations.`,    link: "/commercial"
+    description: `Professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, hotels, and recreation facilities, including lifeguard staffing, maintenance, water chemistry, and seasonal operations.`,
+    link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `Professional residential pool services in ${cityInfo.fullName}, including maintenance, seasonal opening and winterization,    link: "/residential"
+    description: `Professional residential pool services in ${cityInfo.fullName}, including maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    link: "/residential"
   },
   {
     icon: Wrench,
@@ -382,10 +388,10 @@ export const SpringfieldPage = () => {
               Commercial & Residential Pool Services in {cityInfo.fullName}
             </h2>
             <div className="prose prose-lg text-gray-600 max-w-none">
-              <<p className="mb-4">
+              <p className="mb-4">
                MGN Pools provides <strong>commercial pool management</strong> in {cityInfo.fullName} for apartment communities, condominiums, HOAs, and recreation facilities. Our services include lifeguard staffing, routine maintenance, water chemistry management, seasonal opening and closing, and pool facility support.
               </p>
-              <<p className="mb-4">
+              <p className="mb-4">
                 We also provide <strong>residential pool services</strong> throughout Springfield, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
               </p>
               <p>
@@ -463,4 +469,3 @@ export const SpringfieldPage = () => {
     </>
   );
 };
-
