@@ -72,7 +72,7 @@ export const SpringfieldPage = () => {
       <title>Commercial Pool Management & Residential Pool Services Springfield VA | MGN Pools</title>
         <meta
           name="description"
-           content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Springfield since 2007.`}
+           content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Serving Springfield since 2007."
         />
         <link
           rel="canonical"
@@ -83,11 +83,11 @@ export const SpringfieldPage = () => {
         <meta property="og:type" content="website" />
         <meta
          property="og:title"
-         content={`Commercial Pool Management & Residential Pool Services in ${cityInfo.fullName} | MGN Pools`}
+         content="Commercial Pool Management & Residential Pool Services in Springfield, VA | MGN Pools"
         />
         <meta
          property="og:description"
-         content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Springfield since 2007.`}
+         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Serving Springfield since 2007."
          />
         <meta property="og:url" content={`https://mgnpools.com/locations/springfield-pool-service`} />
         <meta property="og:site_name" content="MGN Pools" />
@@ -96,12 +96,12 @@ export const SpringfieldPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
        <meta
          name="twitter:title"
-          content={`Commercial Pool Management & Residential Pool Services in ${cityInfo.fullName} | MGN Pools`}
+         content="Commercial Pool Management & Residential Pool Services in Springfield, VA | MGN Pools"
        />       
-<meta
-  name="twitter:description"
-  content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}.`}
-/>
+       <meta
+         name="twitter:description"
+         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA."
+       />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
