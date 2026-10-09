@@ -21,7 +21,7 @@ import { JobsPage } from './pages/Jobs';
 import { AlexandriaPage } from './pages/locations/Alexandria';
 import { ArlingtonPage } from './pages/locations/Arlington';
 import { WoodbridgePage } from './pages/locations/Woodbridge';
-import { MountVernonPage } from './pages/locations/MountVernon';
+import { FairfaxPage } from './pages/locations/Fairfax';
 import { MarylandPage } from './pages/locations/Maryland';
 import { WashingtonDCPage } from './pages/locations/WashingtonDC';
 import { SpringfieldPage } from './pages/locations/Springfield';
@@ -71,7 +71,7 @@ function App() {
           <Route path="/locations/alexandria-pool-service" element={<Layout><AlexandriaPage /></Layout>} />
           <Route path="/locations/arlington-pool-service" element={<Layout><ArlingtonPage /></Layout>} />
           <Route path="/locations/woodbridge-pool-service" element={<Layout><WoodbridgePage /></Layout>} />
-          <Route path="/locations/mount-vernon-pool-service" element={<Layout><MountVernonPage /></Layout>} />
+          <Route path="/locations/fairfax-pool-service" element={<Layout><FairfaxPage /></Layout>} />
           <Route path="/locations/maryland-pool-service" element={<Layout><MarylandPage /></Layout>} />
           <Route path="/locations/washington-dc-pool-service" element={<Layout><WashingtonDCPage /></Layout>} />
           <Route path="/locations/mclean-pool-service" element={<Layout><McLeanPage /></Layout>} />
