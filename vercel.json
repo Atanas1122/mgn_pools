@@ -19,6 +19,11 @@
   "permanent": true
 },
 {
+  "source": "/certification_mgn_pools_springfield_virginia.html",
+  "destination": "/training",
+  "permanent": true
+},
+{
   "source": "/free_repair_mgn_pools_springfield_virginia.html",
   "destination": "/repair",
   "permanent": true
