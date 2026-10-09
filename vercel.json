@@ -17,6 +17,16 @@
       "source": "/pool_leak_detection_springfield_virginia.html",
       "destination": "/repair",
       "permanent": true
+    },
+    {
+      "source": "/locations/mount-vernon-pool-service",
+      "destination": "/locations/fairfax-pool-service",
+      "permanent": true
+    },
+    {
+      "source": "/locations/maryland-pool-service",
+      "destination": "/locations/annandale-pool-service",
+      "permanent": true
     }
   ],
   "rewrites": [
