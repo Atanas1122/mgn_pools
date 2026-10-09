@@ -43,7 +43,7 @@ const services = [
   },
   {
     icon: Search,
-    title: "Swimming Pool Leak Detection and Repair",
+    title: "Swimming Pool Leak Detection and Repair ",
     description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
     link: "/repair"
   },
