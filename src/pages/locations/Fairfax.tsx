@@ -15,37 +15,36 @@ import Company5 from '../../assets/images/companies/company5.jpg';
 const companyLogos = [Company1, Company2, Company3, Company4, Company5];
 
 const cityInfo = {
-  name: "Mount Vernon",
+  name: "Fairfax",
   state: "VA",
-  fullName: "Mount Vernon, VA",
-  neighborhoods: "Mount Vernon Estate, Fort Belvoir, Hybla Valley",
-  description: "serving Mount Vernon Estate and Fort Belvoir areas",
-  geo: { latitude: "38.7232", longitude: "-77.1072" }
+  fullName: "Fairfax, VA",
+  neighborhoods: "Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby communities",
+  description: "serving Fairfax City, Fair Oaks, Mantua, Fairfax Station, and surrounding communities"
 };
 
 const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools Management specializes in providing quality commercial pool management services in ${cityInfo.fullName} and throughout Northern Virginia, DC and MD. Our team guarantee the fastest response to anything related to your swimming pool. We offer customized solutions that will fit our clients unique needs.`,
+    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN POOLS understands that the swimming pool is not only an important asset to you, but it is a place for relaxation and fun.",
+    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs and Renovation",
-    description: "MGN POOLS offers expert pool repair service. We are fully licensed, certified and insured to perform any type of pool repairs and renovations. You can trust our professionals with any pool repair from equipment to renovations.",
+    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: "Swimming pools can leak through any of the fittings or accessories, plumbing, or even right through the shell. It is important to repair leaks, not only to save water, heat, and chemicals, but also to prevent undermining pool structural components and washing away fill dirt.",
+    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
     link: "/repair"
   },
 ];
@@ -54,50 +53,61 @@ const howWeHelp = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools Management specializes in providing quality commercial pool management services in ${cityInfo.fullName} to apartment complexes, HOAs, hotels and recreation facilities.`,
+    description: `Professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, hotels, and recreation facilities, including lifeguard staffing, maintenance, water chemistry, and seasonal operations.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN Pools understands that the swimming pool is not only an important asset to you, but it is a place for relaxation and fun.",
+    description: `Professional residential pool services in ${cityInfo.fullName}, including maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs And Renovations",
-    description: "We are fully licensed, certified and insured to perform any type of pool repairs and renovations. You can trust our professionals.",
+    description: "Professional pool repairs and renovations in Fairfax, VA, including equipment replacement, plumbing repairs, plaster and resurfacing, tile and coping repairs, and other pool improvements.",
     link: "/renovations"
   },
 ];
 
-export const MountVernonPage = () => {
+export const FairfaxPage = () => {
 
   return (
     <>
       <Helmet>
-        <title>Pool Company & Lifeguard Services in {cityInfo.fullName} | Pool Service, Management & Repairs | MGN Pools</title>
+      <title>Commercial Pool Management & Residential Pool Services Fairfax VA | MGN Pools</title>
         <meta
           name="description"
-          content={`Top-rated pool company and lifeguard services in ${cityInfo.fullName}. Professional pool service, pool management, pool repairs, and certified pool lifeguard staffing. Trusted lifeguard company serving ${cityInfo.name} since 2007.`}
+           content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Fairfax, VA. Serving Northern Virginia since 2007."
         />
         <link
           rel="canonical"
-          href={`https://mgnpools.com/locations/mount-vernon-pool-service`}
+          href="https://mgnpools.com/locations/fairfax-pool-service"
         />
 
         {/* Open Graph */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={`Pool Company & Lifeguard Services in ${cityInfo.fullName} | MGN Pools`} />
-        <meta property="og:description" content={`Top-rated pool company and lifeguard services in ${cityInfo.fullName}. Professional pool service, pool management, pool repairs, and certified pool lifeguard staffing. ${cityInfo.description}.`} />
-        <meta property="og:url" content={`https://mgnpools.com/locations/mount-vernon-pool-service`} />
+        <meta
+         property="og:title"
+         content="Commercial Pool Management & Residential Pool Services in Fairfax, VA | MGN Pools"
+        />
+        <meta
+         property="og:description"
+         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Fairfax, VA. Serving Northern Virginia since 2007."
+         />
+        <meta property="og:url" content="https://mgnpools.com/locations/fairfax-pool-service" />
         <meta property="og:site_name" content="MGN Pools" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`Pool Company & Lifeguard Services ${cityInfo.fullName} | MGN Pools`} />
-        <meta name="twitter:description" content={`Top-rated pool company and lifeguard services in ${cityInfo.fullName}. Pool service, pool management, pool repairs & pool lifeguard staffing.`} />
-
+       <meta
+         name="twitter:title"
+         content="Commercial Pool Management & Residential Pool Services in Fairfax, VA | MGN Pools"
+       />       
+       <meta
+         name="twitter:description"
+         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Fairfax, VA."
+       />
         {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify({
@@ -116,11 +126,6 @@ export const MountVernonPage = () => {
               "postalCode": "22152",
               "addressCountry": "US"
             },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": cityInfo.geo.latitude,
-              "longitude": cityInfo.geo.longitude
-            },
             "url": "https://mgnpools.com",
             "priceRange": "$$",
             "openingHoursSpecification": [
@@ -134,23 +139,21 @@ export const MountVernonPage = () => {
             "areaServed": [
               {
                 "@type": "City",
-                "name": cityInfo.name
+                "name": "Fairfax, VA"
               }
             ],
             "serviceType": [
-              "Pool Company",
-              "Pool Service",
-              "Pool Management",
-              "Pool Repairs",
-              "Pool Renovation",
-              "Lifeguard Company",
-              "Lifeguard Services",
-              "Pool Lifeguard",
-              "Lifeguard Staffing",
-              "Lifeguard Training",
-              "Pool Maintenance",
-              "Pool Cleaning"
-            ]
+  "Commercial Pool Management",
+  "Lifeguard Staffing",
+  "Residential Pool Services",
+  "Pool Maintenance",
+  "Pool Cleaning",
+  "Pool Opening and Winterization",
+  "Pool Leak Detection and Pressure Testing",
+  "Pool Repair",
+  "Pool Renovation and Resurfacing",
+  "Lifeguard Training and Certification"
+]
           })}
         </script>
       </Helmet>
@@ -159,7 +162,7 @@ export const MountVernonPage = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-            alt={`Pool company and lifeguard services in ${cityInfo.fullName} - pool service, pool management, pool repairs`}
+            alt="Commercial pool management and residential pool services in Fairfax, VA"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/65 via-blue-400/60 to-cyan-500/65" />
@@ -172,7 +175,7 @@ export const MountVernonPage = () => {
             transition={{ duration: 0.6 }}
             className="text-sky-300 text-lg md:text-xl mb-6 font-medium"
           >
-            Trusted Pool Experts in {cityInfo.fullName}
+           Serving Northern Virginia Since 2007
           </motion.p>
 
           <motion.h1
@@ -181,7 +184,7 @@ export const MountVernonPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
           >
-            Pool Company & Lifeguard Services in {cityInfo.fullName}
+            Commercial Pool Management & Residential Pool Services in {cityInfo.fullName}
           </motion.h1>
 
           <motion.p
@@ -190,7 +193,7 @@ export const MountVernonPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-            MGN Pools is your trusted <strong>pool company</strong> and <strong>lifeguard company</strong> serving {cityInfo.name} homeowners and businesses. We provide professional <strong>pool service</strong>, <strong>pool management</strong>, and <strong>pool repairs</strong> including cleaning, maintenance, and certified <strong>pool lifeguard</strong> staffing for commercial and residential pools in <strong>{cityInfo.fullName}</strong> and across Northern Virginia, Maryland & the DC metro area.
+            MGN Pools provides professional <strong>commercial pool management</strong>, <strong>certified lifeguard staffing</strong>, <strong>pool repairs and renovations</strong>, and <strong>residential pool services</strong> throughout <strong>{cityInfo.fullName}</strong>, including Georgetown, Capitol Hill, Dupont Circle, Navy Yard, and Southwest Waterfront.
           </motion.p>
 
           <motion.div
@@ -203,7 +206,7 @@ export const MountVernonPage = () => {
               to="/bid"
               className="bg-sky-500 hover:bg-sky-400 text-white text-lg px-8 py-4 rounded-lg font-semibold transition-all shadow-xl hover:shadow-2xl flex items-center justify-center gap-2"
             >
-              Get a Free Quote in 24 Hours
+              Request a Proposal
               <ArrowRight className="w-5 h-5" />
             </Link>
             <a
@@ -221,7 +224,7 @@ export const MountVernonPage = () => {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="text-sm md:text-base text-sky-200/90 text-center mt-8"
           >
-            Serving {cityInfo.neighborhoods} and all of {cityInfo.fullName} since 2007.
+            Serving {cityInfo.neighborhoods} and surrounding Northern Virginia communities.
           </motion.p>
         </div>
       </section>
@@ -245,10 +248,10 @@ export const MountVernonPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Trusted Pool Company & Management in {cityInfo.fullName}
+              Professional Pool Service Company in {cityInfo.fullName}
             </h2>
             <p className="text-lg text-gray-600">
-              Premier pool company providing pool service and pool management in {cityInfo.fullName}, {cityInfo.description}, and across Northern Virginia, Maryland & the DC metro area
+              Commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout {cityInfo.fullName} and surrounding Northern Virginia communities.
             </p>
           </motion.div>
 
@@ -295,7 +298,7 @@ export const MountVernonPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               How We Can Help You in {cityInfo.fullName}
             </h2>
-            <p className="text-lg text-gray-600">from MGN Pools!</p>
+            <p className="text-lg text-gray-600">Complete pool management, maintenance, repair and renovation solutions for commercial and residential properties.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -340,10 +343,10 @@ export const MountVernonPage = () => {
                 <span className="text-sky-300 font-semibold uppercase tracking-wider text-sm">Training</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Training and Certifications in {cityInfo.fullName}
+                Lifeguard Training & Certification in {cityInfo.fullName}
               </h2>
               <p className="text-xl text-blue-100 mb-8 leading-relaxed">
-                As a trusted <strong>lifeguard company</strong> in {cityInfo.fullName}, MGN Pools Management provides professional <strong>lifeguard staffing services</strong> and American Red Cross Lifeguard Classes. Our pool management solutions include hiring, training, and supervising certified lifeguards. The Lifeguard classes include training in First Aid, AED and CPR for the Professional Rescuer.
+                MGN Pools provides professional <strong>lifeguard training and certification</strong> in {cityInfo.fullName}. Our American Red Cross Lifeguard classes include First Aid, CPR, AED, and professional rescuer skills. We also provide certified <strong>lifeguard staffing</strong> for commercial swimming pools throughout Fairfax, VA.
               </p>
               <Link
                 to="/training"
@@ -363,7 +366,7 @@ export const MountVernonPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={LifeGuard}
-                  alt={`Lifeguard company and lifeguard staffing services in ${cityInfo.fullName}`}
+                  alt="American Red Cross lifeguard training and certified lifeguard staffing in Fairfax, VA"
                   className="w-full h-[350px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
@@ -382,24 +385,17 @@ export const MountVernonPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
-              Your Trusted Pool Company & Lifeguard Services in {cityInfo.fullName}
+              Commercial & Residential Pool Services in {cityInfo.fullName}
             </h2>
             <div className="prose prose-lg text-gray-600 max-w-none">
               <p className="mb-4">
-                Looking for a reliable <strong>pool company {cityInfo.fullName}</strong>? MGN Pools is your
-                trusted <strong>lifeguard company {cityInfo.fullName}</strong> providing comprehensive
-                <strong> pool service {cityInfo.fullName}</strong> for residential and commercial properties.
+               MGN Pools provides <strong>commercial pool management</strong> in {cityInfo.fullName} for apartment communities, condominiums, HOAs, and recreation facilities. Our services include lifeguard staffing, routine maintenance, water chemistry management, seasonal opening and closing, and pool facility support.
               </p>
               <p className="mb-4">
-                Our professional <strong>pool management {cityInfo.fullName}</strong> team handles everything
-                from routine maintenance to complete <strong>pool repairs {cityInfo.fullName}</strong>.
-                We also offer certified <strong>pool lifeguard {cityInfo.fullName}</strong> staffing
-                and <strong>lifeguard {cityInfo.fullName}</strong> training services.
+                We also provide <strong>residential pool services</strong> throughout Fairfax, VA, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
               </p>
               <p>
-                As the leading <strong>lifeguard company</strong> and <strong>pool company</strong> in {cityInfo.name},
-                we pride ourselves on delivering exceptional <strong>pool service</strong>, <strong>pool management</strong>,
-                and <strong>pool repairs</strong> throughout {cityInfo.fullName} and the surrounding areas.
+                 Established in 2007, MGN Pools provides professional pool services throughout Fairfax, Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby communities.
               </p>
             </div>
           </motion.div>
@@ -418,13 +414,13 @@ export const MountVernonPage = () => {
         <div className="absolute inset-0 bg-sky-500/70 md:bg-sky-500/85"></div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready for Professional Pool Services in {cityInfo.fullName}?
+            Request a Pool Service Proposal in {cityInfo.fullName}
           </h2>
           <Link
-            to="/contacts"
+            to="/bid"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-sky-600 px-8 py-4 rounded-lg font-bold text-lg transition-all shadow-xl"
           >
-            Contact Us
+            Request a Proposal
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -440,7 +436,7 @@ export const MountVernonPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-              Companies That We Work With in {cityInfo.fullName}
+              Commercial Pool Management for {cityInfo.fullName} Properties
             </h2>
           </motion.div>
 
@@ -473,4 +469,3 @@ export const MountVernonPage = () => {
     </>
   );
 };
-
