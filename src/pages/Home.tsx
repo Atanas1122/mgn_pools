@@ -87,104 +87,52 @@ export const HomePage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Commercial Pool Management & Lifeguard Services | Northern Virginia & DC | MGN Pools" />
         <meta name="twitter:description" content="MGN Pools provides commercial pool management, lifeguard staffing, pool repairs and renovations, and residential pool services throughout Northern Virginia and Washington, DC." />
-        {/* Structured Data */}
+        {/* Structured data: business identity and services */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "GeneralContractor",
-            "@id": "https://mgnpools.com/#localbusiness",
-            "name": "MGN Pools",
-            "image": "https://mgnpools.com/logo.png",
-            "telephone": "+1-571-275-3696",
-            "email": "mgnpools@yahoo.com",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "5954 Hall Street",
-              "addressLocality": "Springfield",
-              "addressRegion": "VA",
-              "postalCode": "22152",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": "38.7800",
-              "longitude": "-77.1900"
-            },
-            "url": "https://mgnpools.com",
-            "priceRange": "$$",
-            "openingHoursSpecification": [
+            "@graph": [
               {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "08:00",
-                "closes": "18:00"
-              }
-            ],
-            "areaServed": [
-              {
-                "@type": "State",
-                "name": "Virginia"
+                "@type": "LocalBusiness",
+                "@id": "https://mgnpools.com/#localbusiness",
+                "name": "MGN Pools",
+                "url": "https://mgnpools.com/",
+                "description": "Commercial swimming pool management, lifeguard staffing, pool maintenance, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC.",
+                "telephone": "+1-571-275-3696",
+                "email": "mgnpools@yahoo.com",
+                "foundingDate": "2007",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "5954 Hall Street",
+                  "addressLocality": "Springfield",
+                  "addressRegion": "VA",
+                  "postalCode": "22152",
+                  "addressCountry": "US"
+                },
+                "areaServed": [
+                  { "@type": "AdministrativeArea", "name": "Northern Virginia" },
+                  { "@type": "City", "name": "Washington, DC" },
+                  ...["Springfield", "Alexandria", "Arlington", "Woodbridge", "Fairfax", "Annandale", "Falls Church", "Lorton", "Manassas", "Vienna", "McLean", "Great Falls"].map(name => ({ "@type": "Place", name: `${name}, Virginia` }))
+                ]
               },
-              {
-                "@type": "City",
-                "name": "Washington, DC"
-              },
-              {
-                "@type": "City",
-                "name": "Springfield"
-              },
-              {
-                "@type": "City",
-                "name": "Alexandria"
-              },
-              {
-                "@type": "City",
-                "name": "Arlington"
-              },
-              {
-                "@type": "City",
-                "name": "Fairfax"
-              },
-              {
-  "@type": "City",
-  "name": "Falls Church"
-},
-              {
-  "@type": "City",
-  "name": "Lorton"
-},
-              {
-  "@type": "City",
-  "name": "Manassas"
-},
-              {
-                "@type": "City",
-                "name": "Woodbridge"
-              },
-              {
-                "@type": "City",
-                "name": "Vienna"
-              },
-              {
-                "@type": "City",
-                "name": "McLean"
-              },
-              {
-                "@type": "City",
-                "name": "Great Falls"
-              }
-            ],
-            "serviceType": [
-              "Commercial Pool Management",
-"Residential Pool Service",
-"Pool Maintenance",
-"Pool Repair",
-"Pool Leak Detection, Pressure Testing and Repair",
-"Pool Renovation",
-"Pool Opening and Winterization",
-"Pool Water Treatment",
-"Lifeguard Staffing",
-"Lifeguard Training"
+              ...[
+                ["Commercial Pool Management", "Management and maintenance of apartment, condominium, HOA, and community swimming pools."],
+                ["Lifeguard Staffing", "Lifeguard staffing and supervision for commercial swimming pools."],
+                ["Residential Pool Services", "Residential pool maintenance, opening, closing, and seasonal care."],
+                ["Pool Repairs and Renovations", "Swimming pool equipment repairs, plumbing repairs, plaster, tile, coping, and renovations."],
+                ["Pool Leak Detection and Pressure Testing", "Pool leak detection, plumbing pressure testing, and leak repairs."],
+                ["Lifeguard Training", "American Red Cross lifeguard training and certification courses."]
+              ].map(([name, description], index) => ({
+                "@type": "Service",
+                "@id": `https://mgnpools.com/#service-${index + 1}`,
+                "name": name,
+                "description": description,
+                "provider": { "@id": "https://mgnpools.com/#localbusiness" },
+                "areaServed": [
+                  { "@type": "AdministrativeArea", "name": "Northern Virginia" },
+                  { "@type": "City", "name": "Washington, DC" }
+                ]
+              }))
             ]
           })}
         </script>
