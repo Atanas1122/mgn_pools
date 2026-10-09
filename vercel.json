@@ -14,6 +14,11 @@
   "permanent": true
 },    
 {
+  "source": "/contact_us_mgn_pools_springfield_virginia.html",
+  "destination": "/contacts",
+  "permanent": true
+},
+{
   "source": "/free_repair_mgn_pools_springfield_virginia.html",
   "destination": "/repair",
   "permanent": true
