@@ -3,59 +3,59 @@ import { MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const cities = [
-  { 
-    name: "Springfield", 
-    state: "VA", 
-    path: "/locations/springfield-pool-service", 
-    neighborhoods: "West Springfield, North Springfield, Burke" 
+  {
+    name: "Springfield",
+    state: "VA",
+    path: "/locations/springfield-pool-service",
+    neighborhoods: "West Springfield, North Springfield, Newington, Franconia, Saratoga, Kings Park"
   },
-  { 
-    name: "Alexandria", 
-    state: "VA", 
-    path: "/locations/alexandria-pool-service", 
-    neighborhoods: "Old Town, Del Ray, West End" 
+  {
+    name: "Alexandria",
+    state: "VA",
+    path: "/locations/alexandria-pool-service",
+    neighborhoods: "Old Town, Del Ray, West End, Rosemont, Kingstowne, Belle Haven, Fort Hunt"
   },
-  { 
-    name: "Arlington", 
-    state: "VA", 
-    path: "/locations/arlington-pool-service", 
-    neighborhoods: "Arlington Heights, Clarendon, Ballston" 
+  {
+    name: "Arlington",
+    state: "VA",
+    path: "/locations/arlington-pool-service",
+    neighborhoods: "Ballston, Clarendon, Rosslyn, Crystal City, Pentagon City, Shirlington, Columbia Pike"
   },
-  { 
-    name: "Woodbridge", 
-    state: "VA", 
-    path: "/locations/woodbridge-pool-service", 
-    neighborhoods: "Lake Ridge, Potomac Mills" 
+  {
+    name: "Woodbridge",
+    state: "VA",
+    path: "/locations/woodbridge-pool-service",
+    neighborhoods: "Lake Ridge, Dale City, Potomac Mills, Occoquan, Montclair"
   },
-  { 
-    name: "Mount Vernon", 
-    state: "VA", 
-    path: "/locations/mount-vernon-pool-service", 
-    neighborhoods: "Fort Hunt, Belle Haven" 
+  {
+    name: "Fairfax",
+    state: "VA",
+    path: "/locations/fairfax-pool-service",
+    neighborhoods: "Fairfax City, Fair Oaks, Fairfax Station, Mantua, Kings Park West, Burke"
   },
-  { 
-    name: "McLean", 
-    state: "VA", 
-    path: "/locations/mclean-pool-service", 
-    neighborhoods: "Tysons Corner, Langley, McLean Gardens" 
+  {
+    name: "McLean",
+    state: "VA",
+    path: "/locations/mclean-pool-service",
+    neighborhoods: "Tysons, Langley, Chesterbrook, Lewinsville, Pimmit Hills"
   },
-  { 
-    name: "Great Falls", 
-    state: "VA", 
-    path: "/locations/great-falls-pool-service", 
-    neighborhoods: "Colvin Run, Forestville, River Bend" 
+  {
+    name: "Great Falls",
+    state: "VA",
+    path: "/locations/great-falls-pool-service",
+    neighborhoods: "Forestville, Colvin Run, River Bend, Great Falls Village"
   },
-  { 
-    name: "Washington DC", 
-    state: "DC", 
-    path: "/locations/washington-dc-pool-service", 
-    neighborhoods: "Georgetown, Dupont Circle, Capitol Hill" 
+  {
+    name: "Washington DC",
+    state: "DC",
+    path: "/locations/washington-dc-pool-service",
+    neighborhoods: "Georgetown, Dupont Circle, Capitol Hill, Navy Yard, Foggy Bottom, Cleveland Park, Petworth"
   },
-  { 
-    name: "Maryland", 
-    state: "MD", 
-    path: "/locations/maryland-pool-service", 
-    neighborhoods: "Bethesda, Rockville, Silver Spring" 
+  {
+    name: "Annandale",
+    state: "VA",
+    path: "/locations/annandale-pool-service",
+    neighborhoods: "Ravensworth, Wakefield, Broyhill Crest, Canterbury Woods, North Springfield"
   },
 ];
 
@@ -115,4 +115,3 @@ export const CitySelector = () => {
     </section>
   );
 };
-
