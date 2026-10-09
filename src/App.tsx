@@ -22,7 +22,7 @@ import { AlexandriaPage } from './pages/locations/Alexandria';
 import { ArlingtonPage } from './pages/locations/Arlington';
 import { WoodbridgePage } from './pages/locations/Woodbridge';
 import { FairfaxPage } from './pages/locations/Fairfax';
-import { MarylandPage } from './pages/locations/Maryland';
+import { AnnandalePage } from './pages/locations/Annandale';
 import { WashingtonDCPage } from './pages/locations/WashingtonDC';
 import { SpringfieldPage } from './pages/locations/Springfield';
 import { McLeanPage } from './pages/locations/McLean';
@@ -72,7 +72,7 @@ function App() {
           <Route path="/locations/arlington-pool-service" element={<Layout><ArlingtonPage /></Layout>} />
           <Route path="/locations/woodbridge-pool-service" element={<Layout><WoodbridgePage /></Layout>} />
           <Route path="/locations/fairfax-pool-service" element={<Layout><FairfaxPage /></Layout>} />
-          <Route path="/locations/maryland-pool-service" element={<Layout><MarylandPage /></Layout>} />
+          <Route path="/locations/annandale-pool-service" element={<Layout><AnnandalePage /></Layout>} />
           <Route path="/locations/washington-dc-pool-service" element={<Layout><WashingtonDCPage /></Layout>} />
           <Route path="/locations/mclean-pool-service" element={<Layout><McLeanPage /></Layout>} />
           <Route path="/locations/great-falls-pool-service" element={<Layout><GreatFallsPage /></Layout>} />
