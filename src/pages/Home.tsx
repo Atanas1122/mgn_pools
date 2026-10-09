@@ -373,6 +373,40 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
         </div>
       </section>
 
+      {/* Internal links to local pool service pages */}
+      <section className="py-14 bg-slate-50" aria-labelledby="service-areas-heading">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="service-areas-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 text-center">
+            Pool Management and Pool Services by Location
+          </h2>
+          <p className="text-gray-600 text-center max-w-3xl mx-auto mb-8">
+            Explore MGN Pools' commercial pool management, lifeguard staffing, maintenance, and repair services in communities throughout Northern Virginia and Washington, DC.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: 'Springfield, VA', path: '/locations/springfield-pool-service' },
+              { name: 'Alexandria, VA', path: '/locations/alexandria-pool-service' },
+              { name: 'Arlington, VA', path: '/locations/arlington-pool-service' },
+              { name: 'Fairfax, VA', path: '/locations/fairfax-pool-service' },
+              { name: 'Woodbridge, VA', path: '/locations/woodbridge-pool-service' },
+              { name: 'McLean, VA', path: '/locations/mclean-pool-service' },
+              { name: 'Great Falls, VA', path: '/locations/great-falls-pool-service' },
+              { name: 'Annandale, VA', path: '/locations/annandale-pool-service' },
+              { name: 'Washington, DC', path: '/locations/washington-dc-pool-service' },
+            ].map((location) => (
+              <Link
+                key={location.path}
+                to={location.path}
+                className="inline-flex items-center rounded-lg border border-sky-200 bg-white px-4 py-3 text-sky-700 font-semibold hover:bg-sky-50 hover:border-sky-400 transition-colors"
+              >
+                Pool Services in {location.name}
+                <ArrowRight className="w-4 h-4 ml-2" aria-hidden="true" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* City Selector Section */}
       <CitySelector />
 
