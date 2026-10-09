@@ -5,7 +5,7 @@ import Logo from '../assets/images/logo.png';
 const SITE_CONFIG = {
   phones: ["571-275-3696", "571-332-2431"],
   email: "mgnpools@yahoo.com",
-  address: "5954 Hall Street, Springfield, VA, 22152",
+  address: "5954 Hall Street, Springfield, VA 22152",
   social: {
     instagram: "https://www.instagram.com/mgnpools?igsh=cmNrbGJqZXY0bWtu",
     facebook: "https://www.facebook.com/mgnpools",
@@ -32,15 +32,15 @@ const locationLinks = [
   { name: 'Alexandria, VA', path: '/locations/alexandria-pool-service' },
   { name: 'Arlington, VA', path: '/locations/arlington-pool-service' },
   { name: 'Woodbridge, VA', path: '/locations/woodbridge-pool-service' },
-  { name: 'Mount Vernon, VA', path: '/locations/mount-vernon-pool-service' },
+  { name: 'Fairfax, VA', path: '/locations/fairfax-pool-service' },
   { name: 'McLean, VA', path: '/locations/mclean-pool-service' },
   { name: 'Great Falls, VA', path: '/locations/great-falls-pool-service' },
-  { name: 'Washington DC', path: '/locations/washington-dc-pool-service' },
-  { name: 'Maryland', path: '/locations/maryland-pool-service' },
+  { name: 'Washington, DC', path: '/locations/washington-dc-pool-service' },
+  { name: 'Annandale, VA', path: '/locations/annandale-pool-service' },
 ];
 
 const serviceAreas = {
-  fairfax: "Alexandria, Arlington, Annadale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna",
+  fairfax: "Alexandria, Arlington, Annandale, Burke, Centreville, Chantilly, Clifton, Fairfax, Fairfax Station, Falls Church, Fort Belvoir, Great Falls, Herndon, Lorton, McLean, Oakton, Reston, Springfield, Vienna",
   loudoun: "Aldie, Ashburn, Bluemont, Dulles, Hamilton, Hillsboro, Lansdowne, Leesburg, Lovettsville, Middleburg, Paeonian Springs, Potomac Falls, Purcellville, Round Hill, South Riding, Sterling, Stoneridge, Waterford",
   princeWilliam: "Bristow, Dale City, Dumfries, Gainesville, Haymarket, Manassas, Manassas Park, Nokesville, Occoquan, Quantico, Triangle, Woodbridge",
   spotsylvania: "Fredericksburg",
@@ -62,10 +62,10 @@ export const Footer = () => {
               />
             </div>
             <p className="text-gray-400 mb-4">
-              MGN Pools Management specializes in commercial and residential swimming pool management, maintenance, repair, and renovation.
+              MGN Pools is a professional swimming pool management company serving Northern Virginia and Washington, DC since 2007. We specialize in commercial pool management, lifeguard staffing, residential pool maintenance, and swimming pool repairs and renovations.
             </p>
             <p className="text-gray-500 text-sm">
-              We are pool service company that provides pool management, pool renovations and pool repairs. Our pool contractor services also include pool leak detection and pool plaster.
+              Our experienced team provides comprehensive pool management services, includingcpool opening and closing, leak detection, equipment repairs, pool resurfacing, plastering, and preventive maintenance. With in-house technicians and trained lifeguards, we support safe, reliable pool operations for condominiums, apartment communities, HOAs, and residential properties.
             </p>
           </div>
 
@@ -172,11 +172,11 @@ export const Footer = () => {
             We provide swimming pool management, repair and renovation services in Northern Virginia, Maryland and DC.
           </p>
           <div className="mt-4 text-gray-500 text-xs space-y-2">
-            <p><span className="text-gray-400 font-medium">Fairfax County:</span> {serviceAreas.fairfax}</p>
+            <p><span className="text-gray-400 font-medium">Fairfax County and nearby Northern Virginia communities:</span> {serviceAreas.fairfax}</p>
             <p><span className="text-gray-400 font-medium">Loudoun County:</span> {serviceAreas.loudoun}</p>
             <p><span className="text-gray-400 font-medium">Prince William County:</span> {serviceAreas.princeWilliam}</p>
-            <p><span className="text-gray-400 font-medium">Spotsylvania County:</span> {serviceAreas.spotsylvania}</p>
-            <p><span className="text-gray-400 font-medium">Montgomery County:</span> {serviceAreas.montgomery}</p>
+            <p><span className="text-gray-400 font-medium">Fredericksburg area:</span> {serviceAreas.spotsylvania}</p>
+            <p><span className="text-gray-400 font-medium">Montgomery County, Maryland:</span> {serviceAreas.montgomery}</p>
           </div>
         </div>
       </div>
@@ -207,4 +207,3 @@ export const Footer = () => {
     </footer>
   );
 };
-
