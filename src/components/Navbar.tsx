@@ -27,11 +27,11 @@ const locationLinks = [
   { name: 'Alexandria, VA', path: '/locations/alexandria-pool-service' },
   { name: 'Arlington, VA', path: '/locations/arlington-pool-service' },
   { name: 'Woodbridge, VA', path: '/locations/woodbridge-pool-service' },
-  { name: 'Mount Vernon, VA', path: '/locations/mount-vernon-pool-service' },
+  { name: 'Fairfax, VA', path: '/locations/fairfax-pool-service' },
   { name: 'McLean, VA', path: '/locations/mclean-pool-service' },
   { name: 'Great Falls, VA', path: '/locations/great-falls-pool-service' },
   { name: 'Washington DC', path: '/locations/washington-dc-pool-service' },
-  { name: 'Maryland', path: '/locations/maryland-pool-service' },
+  { name: 'Annandale, VA', path: '/locations/annandale-pool-service' },
 ];
 
 export const Navbar = () => {
@@ -360,4 +360,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
