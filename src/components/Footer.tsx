@@ -65,7 +65,7 @@ export const Footer = () => {
               MGN Pools is a professional swimming pool management company serving Northern Virginia and Washington, DC since 2007. We specialize in commercial pool management, lifeguard staffing, residential pool maintenance, and swimming pool repairs and renovations.
             </p>
             <p className="text-gray-500 text-sm">
-              Our experienced team provides comprehensive pool management services, includingcpool opening and closing, leak detection, equipment repairs, pool resurfacing, plastering, and preventive maintenance. With in-house technicians and trained lifeguards, we support safe, reliable pool operations for condominiums, apartment communities, HOAs, and residential properties.
+              Our experienced team provides comprehensive pool management services, including pool opening and closing, leak detection, equipment repairs, pool resurfacing, plastering, and preventive maintenance. With in-house technicians and trained lifeguards, we support safe, reliable pool operations for condominiums, apartment communities, HOAs, and residential properties.
             </p>
           </div>
 
