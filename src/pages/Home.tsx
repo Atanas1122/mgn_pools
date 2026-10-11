@@ -258,6 +258,42 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
         </div>
       </section>
 
+{/* Commercial Pool Management SEO Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      Commercial Swimming Pool Management for Apartments, Condominiums & HOAs
+    </h2>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-5">
+      Since 2007, MGN Pools has provided commercial swimming pool management
+      services throughout Northern Virginia and Washington, DC. We help
+      property managers, condominium associations, HOAs, and residential
+      communities operate safe, clean, and professionally managed swimming pools.
+    </p>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-5">
+      Our services include certified lifeguard staffing, daily pool operations,
+      water chemistry management, routine maintenance, health department
+      inspections, pool opening and winterization, and ongoing supervision.
+    </p>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-8">
+      MGN Pools also provides in-house technical maintenance and equipment
+      repairs, helping commercial properties identify problems early and
+      respond efficiently without relying on multiple outside contractors.
+    </p>
+
+    <Link
+      to="/commercial"
+      className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-7 py-4 rounded-lg font-semibold transition-colors"
+    >
+      Explore Our Commercial Pool Management Services
+      <ArrowRight className="w-5 h-5" />
+    </Link>
+  </div>
+</section>
+      
       {/* How We Can Help Section */}
       <section className="py-24 bg-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
