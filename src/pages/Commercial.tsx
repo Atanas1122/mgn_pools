@@ -118,6 +118,10 @@ const whyMgnPools = [
   {
     icon: Target,
     text: "Lifeguards receive site-specific training based on each facility’s operating procedures, safety requirements, and client expectations."
+  }, 
+  {
+    icon: ShieldCheck,
+    text: "Regular on-site supervisor visits and lifeguard performance inspections throughout the swimming season. Our management team monitors staff performance, safety procedures, facility conditions, and compliance with site-specific operating requirements."
   },
   {
     icon: Award,
@@ -348,6 +352,47 @@ export const CommercialPage = () => {
         </div>
       </section>
 
+{/* Commercial Pool Management Experience */}
+<section className="py-20 bg-white">
+  <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      Commercial Pool Management Experience in Northern Virginia & Washington, DC
+    </h2>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-5">
+      Established in 2007, MGN Pools works with apartment communities,
+      condominium associations, HOAs, and property management companies
+      throughout Northern Virginia and Washington, DC. We understand
+      the importance of dependable staffing, consistent water quality,
+      regulatory compliance, and responsive communication with property managers.
+    </p>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-5">
+      Our commercial swimming pool management services combine certified
+      lifeguard staffing, daily pool operations, routine maintenance,
+      health department inspection coordination, and seasonal pool opening
+      and closing. We also provide regular supervisory visits and
+      site-specific lifeguard training to support consistent operations.
+    </p>
+
+    <p className="text-lg text-gray-600 leading-relaxed mb-8">
+      One of our key advantages is our in-house technical maintenance
+      and repair capability. Our technicians service commercial pool pumps,
+      filters, heaters, plumbing, and automation systems, helping
+      property managers address equipment issues without coordinating
+      multiple outside contractors.
+    </p>
+
+    <Link
+      to="/bid"
+      className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-7 py-4 rounded-lg font-semibold transition-colors"
+    >
+      Request a Commercial Pool Management Proposal
+      <ArrowRight className="w-5 h-5" />
+    </Link>
+  </div>
+</section>
+      
       {/* Why MGN Pools */}
       <section className="py-24 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
