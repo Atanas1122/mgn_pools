@@ -273,7 +273,12 @@ export const WoodbridgePage = () => {
                       to={service.link}
                       className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700"
                     >
-                      Learn More <ArrowRight className="w-4 h-4" />
+                     
+{service.link === "/commercial"
+  ? "Commercial Pool Management Services"
+  : "Learn More"}
+<ArrowRight className="w-4 h-4" />
+
                     </Link>
                   </div>
                 </div>
@@ -317,7 +322,12 @@ export const WoodbridgePage = () => {
                   to={item.link}
                   className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700"
                 >
-                  Read More <ArrowRight className="w-4 h-4" />
+                 
+{item.link === "/commercial"
+  ? "Explore Commercial Pool Management"
+  : "Read More"}
+<ArrowRight className="w-4 h-4" />
+
                 </Link>
               </motion.div>
             ))}
