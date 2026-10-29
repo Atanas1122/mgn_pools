@@ -26,25 +26,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
+    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our commercial pool services cover seasonal lifeguard staffing, daily water chemistry checks, cleaning, opening and winterization, routine equipment maintenance, inspections, and operational support for community swimming pools.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including scheduled water care, spring opening, fall winterization, pump and filter troubleshooting, leak detection, and improvements to aging pool surfaces and equipment.`,
     link: "/residential"
   },
   {
     icon: Wrench,
-    title: "Pool Repairs and Renovation",
-    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
+    title: "Pool Repairs and Renovations",
+    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including pump and filter replacement, plaster resurfacing, tile and coping repairs, plumbing work, and renovations that help extend the useful life of swimming pool facilities.`,
     link: "/renovations"
   },
   {
     icon: Search,
-    title: "Swimming Pool Leak Detection and Repair ",
-    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
+    title: "Swimming Pool Leak Detection and Repair",
+    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including plumbing pressure testing, investigation of unexplained water loss, and evaluation of pool fittings, skimmers, main drains, equipment, and shell conditions to guide the repair plan.`,
     link: "/repair"
   },
 ];
@@ -156,6 +156,80 @@ export const FairfaxPage = () => {
 ]
           })}
         </script>
+
+        {/* FAQ structured data: matches the visible questions below */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What commercial pool management services does MGN Pools offer in Fairfax, VA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGN Pools provides seasonal management for apartment, condominium, HOA, and community pools in Fairfax. Services can include lifeguard staffing, water chemistry monitoring, cleaning, opening and winterization, routine maintenance, and assistance with pool inspections. The exact scope depends on the property and agreement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can MGN Pools provide lifeguards for Fairfax condominium and HOA pools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. MGN Pools provides lifeguard staffing as part of commercial pool management for qualifying condominium, HOA, apartment, and community facilities. Staffing schedules and guard coverage are planned around the pool’s operating hours and requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does MGN Pools service residential swimming pools in Fairfax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Residential services include seasonal opening and winterization, routine pool care, equipment repairs, leak detection, and renovation work. Contact MGN Pools with your property location and requested service for availability."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer pool opening and winterization in Fairfax County?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGN Pools offers seasonal opening and winterization for commercial and residential pools in the Fairfax area. The work required depends on the equipment, pool configuration, and condition at the start or end of the swimming season."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you diagnose pool leaks and perform pressure testing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGN Pools evaluates suspected swimming pool leaks and offers pressure testing and leak detection. Investigation may involve pool plumbing, fittings, skimmers, main drains, equipment, or the pool structure. Findings help determine the next repair steps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What pool renovation services are available in Fairfax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGN Pools offers pool repair and renovation work such as plaster resurfacing, tile and coping repair, plumbing repairs, and pump or filter replacement. A site evaluation helps identify which repairs or upgrades are appropriate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which Fairfax neighborhoods and communities do you serve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "MGN Pools serves the Fairfax area, including Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby Fairfax County communities. Contact the team to confirm service availability for a specific address."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I request a commercial pool management proposal in Fairfax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use the Request a Proposal button on this page to share your property information and pool service needs. MGN Pools can review your requested operating schedule, staffing needs, maintenance scope, and any anticipated repair or renovation work."
+      }
+    }
+  ]
+})}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32">
@@ -193,7 +267,7 @@ export const FairfaxPage = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-white/90 mb-6 max-w-3xl mx-auto mt-4"
           >
-            MGN Pools provides professional <strong>commercial pool management</strong>, <strong>certified lifeguard staffing</strong>, <strong>pool repairs and renovations</strong>, and <strong>residential pool services</strong> throughout <strong>{cityInfo.fullName}</strong>, including Georgetown, Capitol Hill, Dupont Circle, Navy Yard, and Southwest Waterfront.
+            MGN Pools provides professional <strong>commercial pool management</strong>, <strong>certified lifeguard staffing</strong>, <strong>pool repairs and renovations</strong>, and <strong>residential pool services</strong> throughout <strong>{cityInfo.fullName}</strong>, including Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby Fairfax County communities.
           </motion.p>
 
           <motion.div
@@ -405,10 +479,55 @@ export const FairfaxPage = () => {
                 We also provide <strong>residential pool services</strong> throughout Fairfax, VA, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
               </p>
               <p>
-                 Established in 2007, MGN Pools provides professional pool services throughout Fairfax, Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby communities.
+                 Established in 2007, MGN Pools works with pool owners and community managers across Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby Fairfax County communities. For shared-use pools, we can discuss seasonal staffing, opening schedules, ongoing water care, and equipment needs before preparing a proposal.
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+
+      {/* Fairfax FAQs */}
+      <section className="py-20 bg-slate-50" aria-labelledby="fairfax-faq-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="fairfax-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-5">
+            Fairfax Pool Services — Frequently Asked Questions
+          </h2>
+          <p className="text-gray-600 text-center mb-10">Answers for Fairfax property managers, HOA boards, condominium communities, and homeowners.</p>
+          <div className="space-y-4">
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">What commercial pool management services does MGN Pools offer in Fairfax, VA?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">MGN Pools provides seasonal management for apartment, condominium, HOA, and community pools in Fairfax. Services can include lifeguard staffing, water chemistry monitoring, cleaning, opening and winterization, routine maintenance, and assistance with pool inspections. The exact scope depends on the property and agreement.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">Can MGN Pools provide lifeguards for Fairfax condominium and HOA pools?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">Yes. MGN Pools provides lifeguard staffing as part of commercial pool management for qualifying condominium, HOA, apartment, and community facilities. Staffing schedules and guard coverage are planned around the pool’s operating hours and requirements.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">Does MGN Pools service residential swimming pools in Fairfax?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">Yes. Residential services include seasonal opening and winterization, routine pool care, equipment repairs, leak detection, and renovation work. Contact MGN Pools with your property location and requested service for availability.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">Do you offer pool opening and winterization in Fairfax County?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">MGN Pools offers seasonal opening and winterization for commercial and residential pools in the Fairfax area. The work required depends on the equipment, pool configuration, and condition at the start or end of the swimming season.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">Can you diagnose pool leaks and perform pressure testing?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">MGN Pools evaluates suspected swimming pool leaks and offers pressure testing and leak detection. Investigation may involve pool plumbing, fittings, skimmers, main drains, equipment, or the pool structure. Findings help determine the next repair steps.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">What pool renovation services are available in Fairfax?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">MGN Pools offers pool repair and renovation work such as plaster resurfacing, tile and coping repair, plumbing repairs, and pump or filter replacement. A site evaluation helps identify which repairs or upgrades are appropriate.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">Which Fairfax neighborhoods and communities do you serve?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">MGN Pools serves the Fairfax area, including Fairfax City, Fair Oaks, Mantua, Fairfax Station, and nearby Fairfax County communities. Contact the team to confirm service availability for a specific address.</p>
+            </details>
+            <details className="group bg-white rounded-xl border border-slate-200 shadow-sm p-5">
+              <summary className="cursor-pointer font-semibold text-gray-900 flex items-center justify-between gap-4">How can I request a commercial pool management proposal in Fairfax?<ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" /></summary>
+              <p className="mt-4 text-gray-600 leading-relaxed">Use the Request a Proposal button on this page to share your property information and pool service needs. MGN Pools can review your requested operating schedule, staffing needs, maintenance scope, and any anticipated repair or renovation work.</p>
+            </details>
+          </div>
         </div>
       </section>
 
