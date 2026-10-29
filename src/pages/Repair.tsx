@@ -6,6 +6,17 @@ import { PageHeader } from '../components/PageHeader';
 import { ArrowRight, Search, Droplet, AlertTriangle, Wrench } from 'lucide-react';
 import backgroundWater from '../assets/images/home/background_water.webp';
 
+const leakFaqs = [
+  { question: 'How can I tell if my swimming pool has a leak?', answer: 'Common signs of a swimming pool leak include unusually rapid water loss, frequent refilling, increased water bills, wet ground around the pool, air entering circulation lines, or unexplained changes in water chemistry. Evaporation can also lower water levels, so water loss alone does not confirm a leak. MGN Pools can evaluate suspected leaks in commercial and residential pools throughout Northern Virginia and Washington, DC and recommend appropriate testing.' },
+  { question: 'How does MGN Pools locate swimming pool leaks?', answer: 'MGN Pools evaluates potential sources of water loss in pool plumbing, fittings, equipment, skimmers, main drains, and the pool shell. Depending on the symptoms and pool configuration, leak detection may involve plumbing pressure testing, visual inspection, dye testing, and specialized listening equipment. Testing helps narrow down the likely source before a repair is recommended. The methods used depend on site conditions and accessibility.' },
+  { question: 'Can you pressure test underground swimming pool plumbing?', answer: 'Yes. Pressure testing can help determine whether a pool plumbing line is holding pressure or may have a leak. This can be especially useful when investigating suspected leaks in underground suction or return plumbing at apartment, condominium, HOA, and residential swimming pools. A pressure test helps identify a problem line; additional investigation may be needed to pinpoint the precise leak location and determine the best repair method.' },
+  { question: 'Can MGN Pools repair leaks around skimmers, main drains, and fittings?', answer: 'MGN Pools provides swimming pool leak evaluation and repair services involving skimmers, main drains, plumbing connections, and other pool fittings. Leaks may develop around aging components, cracked fittings, deteriorated seals, or damaged plumbing. After inspecting the affected area and identifying the likely cause, our team can recommend an appropriate repair or replacement. The scope depends on the component, accessibility, and condition of the surrounding structure.' },
+  { question: 'Do you provide commercial swimming pool leak detection for HOAs and apartments?', answer: 'Yes. MGN Pools serves commercial swimming pools at condominium associations, homeowners associations, apartment communities, and other managed properties throughout Northern Virginia and Washington, DC. We understand that unexplained water loss can affect operating costs and pool availability. Our leak detection and repair services help property managers investigate the problem, understand the findings, and plan repairs with consideration for the facility’s operating schedule.' },
+  { question: 'Why is it important to repair a swimming pool leak promptly?', answer: 'An unresolved swimming pool leak can waste water, chemicals, and heating energy. Depending on the location and severity, escaping water may also affect soil around the pool, surrounding decks, plumbing, or structural components. Prompt investigation can help reduce unnecessary operating expenses and limit further damage. Not every drop in water level indicates a leak, but persistent unexplained water loss should be evaluated.' },
+  { question: 'How long does pool leak detection and repair take?', answer: 'The time required depends on the pool size, plumbing layout, access to equipment, the suspected leak location, and the extent of any necessary repairs. Some issues can be identified during an initial inspection or pressure test, while concealed underground leaks may require additional investigation. Once the problem is evaluated, MGN Pools can explain the findings and discuss a repair scope and anticipated schedule. We do not promise a fixed timeline before examining the pool.' },
+  { question: 'How do I request a pool leak detection or repair estimate?', answer: 'Use the repair request form on this page to provide your contact information, property address, and a description of the suspected leak. Helpful details include how quickly the water level drops, whether the loss changes when the pump is running, and any visible wet areas or equipment problems. MGN Pools will review the request and contact you about the next steps for commercial or residential swimming pool leak detection in Northern Virginia and Washington, DC.' },
+];
+
 export const RepairPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -92,40 +103,19 @@ export const RepairPage = () => {
           })}
         </script>
 
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "How do you detect pool leaks?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We use advanced leak detection technology including pressure testing, dye testing, and electronic listening devices to accurately locate leaks in your pool's plumbing, shell, or equipment."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Why is it important to repair pool leaks quickly?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Pool leaks waste water, heat, and chemicals, increasing your costs. They can also undermine pool structural components and wash away fill dirt, leading to serious damage if not addressed promptly."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long does pool leak repair take?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Repair timelines vary depending on the location and severity of the leak. After testing, we will explain the findings and provide a recommended repair plan and timeline."
-                }
-              }
-            ]
-          })}
-        </script>
-      </Helmet>
+                 {/* FAQ structured data matches the visible FAQ section below. */}
+         <script type="application/ld+json">
+           {JSON.stringify({
+             "@context": "https://schema.org",
+             "@type": "FAQPage",
+             "mainEntity": leakFaqs.map(({ question, answer }) => ({
+               "@type": "Question",
+               "name": question,
+               "acceptedAnswer": { "@type": "Answer", "text": answer }
+             }))
+           })}
+         </script>
+</Helmet>
       <PageHeader
   title="Pool Leak Detection & Repair in Northern Virginia & Washington, DC"
 subtitle="Professional leak detection, pressure testing, and pool leak repair for commercial and residential swimming pools"
@@ -159,11 +149,11 @@ subtitle="Professional leak detection, pressure testing, and pool leak repair fo
               </h2>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Swimming pools throughout Northern Virginia and Washington, DC can develop leaks in plumbing, fittings, equipment, or the pool structure. MGN Pools provides professional leak detection and pressure testing to locate the source of water loss and determine the appropriate repair.
+                MGN Pools provides commercial and residential swimming pool leak detection, plumbing pressure testing, and pool leak repair throughout Northern Virginia and Washington, DC. We investigate unexplained water loss involving underground plumbing lines, skimmers, main drains, fittings, pool equipment, and the pool shell. Our services help HOA boards, condominium and apartment property managers, and homeowners identify likely leak sources before choosing a repair approach.
               </p>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Prompt leak repair helps prevent unnecessary water, heat, and chemical loss while protecting the pool structure and surrounding areas from potential damage.
+                Pool leaks can increase water, heating, and chemical costs and, in some cases, contribute to damage around decks, plumbing, and the pool structure. Our evaluation may include visual inspection, pressure testing, dye testing, or other suitable methods depending on the facility and suspected leak. After investigating, we explain the findings and recommend practical next steps.
               </p>
 
               <Link
@@ -330,7 +320,26 @@ subtitle="Professional leak detection, pressure testing, and pool leak repair fo
         </div>
       </section>
 
-      {/* Related Services */}
+             {/* Helpful answers for property managers and homeowners */}
+       <section className="py-20 bg-white" aria-labelledby="leak-faq-heading">
+         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+           <h2 id="leak-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+             Pool Leak Detection &amp; Repair FAQs
+           </h2>
+           <div className="space-y-4">
+             {leakFaqs.map((faq, index) => (
+               <details key={index} className="group rounded-xl bg-slate-50 border border-slate-200 shadow-sm p-5 md:p-6">
+                 <summary className="cursor-pointer font-bold text-gray-900 leading-relaxed">
+                   {faq.question}
+                 </summary>
+                 <p className="mt-4 text-gray-700 leading-relaxed">{faq.answer}</p>
+               </details>
+             ))}
+           </div>
+         </div>
+       </section>
+
+{/* Related Services */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
@@ -385,4 +394,3 @@ subtitle="Professional leak detection, pressure testing, and pool leak repair fo
     </>
   );
 };
-
