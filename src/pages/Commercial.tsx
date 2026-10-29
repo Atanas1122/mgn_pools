@@ -141,6 +141,33 @@ const whyMgnPools = [
   },
 ];
 
+const commercialFaqs = [
+  {
+    "question": "What is included in commercial pool management?",
+    "answer": "Our commercial pool management services include lifeguard staffing, daily pool operations, water chemistry management, cleaning, supervisory visits, inspection coordination, seasonal opening and winterization, and routine maintenance."
+  },
+  {
+    "question": "Do you provide certified lifeguards for commercial pools?",
+    "answer": "Yes. MGN Pools provides certified lifeguards for apartment communities, condominium associations, HOAs, and recreation facilities, with site-specific training and regular supervision."
+  },
+  {
+    "question": "Do you coordinate health department inspections and permits?",
+    "answer": "Yes. We coordinate required health department inspections and pool operating permits as part of our commercial pool management services."
+  },
+  {
+    "question": "Can MGN Pools repair commercial pool equipment?",
+    "answer": "Yes. Our in-house technicians service commercial pool pumps, filters, heaters, plumbing, and automation systems."
+  },
+  {
+    "question": "Do you provide pool opening and winterization?",
+    "answer": "Yes. We provide seasonal commercial pool opening, startup, closing, winterization, and scheduled winter inspections."
+  },
+  {
+    "question": "What areas do you serve?",
+    "answer": "MGN Pools serves commercial swimming pool facilities throughout Northern Virginia and Washington, DC, including apartment communities, condominiums, HOAs, and recreation facilities."
+  }
+];
+
 export const CommercialPage = () => {
 
   return (
@@ -172,37 +199,16 @@ export const CommercialPage = () => {
           })}
         </script>
 
-        {/* FAQ Schema */}
+        {/* FAQ schema is generated from the same questions visible below. */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What commercial pool management services do you offer?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We offer comprehensive commercial pool management including daily maintenance, professional lifeguards, health department inspections, pool opening and closing, equipment repair, and complete facility management for apartments, HOAs, hotels and recreation facilities."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Do you provide lifeguards for commercial pools?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, we provide American Red Cross certified lifeguards and pool operators for commercial facilities. All our lifeguards are professionally trained and certified."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How quickly can you respond to commercial pool emergencies?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We provide prompt response to commercial pool maintenance, equipment, and operational issues. Our on-call staff is available 24 hours a day, 7 days a week for urgent pool-related needs."
-                }
-              }
-            ]
+            "mainEntity": commercialFaqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -335,6 +341,7 @@ export const CommercialPage = () => {
             {poolServices.map((service, index) => (
               <div
                 key={index}
+                id={`service-${index}`}
                 className="bg-slate-50 rounded-xl p-6 hover:shadow-lg transition-shadow group"
               >
                 <div className="flex items-start gap-4">
@@ -381,6 +388,18 @@ export const CommercialPage = () => {
       filters, heaters, plumbing, and automation systems, helping
       property managers address equipment issues without coordinating
       multiple outside contractors.
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">Since 2007</p><p className="text-sm text-gray-600">Serving local pool communities</p></div>
+      <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">Commercial Focus</p><p className="text-sm text-gray-600">Apartments, condominiums and HOAs</p></div>
+      <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">In-House Repairs</p><p className="text-sm text-gray-600">Equipment service and maintenance</p></div>
+    </div>
+    <p className="text-gray-600 mb-6">
+      Explore our <a className="text-sky-700 underline" href="#service-2">lifeguard staffing</a>,{' '}
+      <a className="text-sky-700 underline" href="#service-3">daily maintenance</a>,{' '}
+      <a className="text-sky-700 underline" href="#service-10">equipment repair</a>, and{' '}
+      <a className="text-sky-700 underline" href="#service-8">winterization</a> services.
     </p>
 
     <Link
@@ -442,6 +461,23 @@ export const CommercialPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions */}
+      <section className="py-20 bg-slate-50" aria-labelledby="commercial-faq-heading">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="commercial-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            Commercial Pool Management FAQs
+          </h2>
+          <div className="space-y-4">
+            {commercialFaqs.map(({ question, answer }) => (
+              <details key={question} className="rounded-xl bg-white p-6 shadow-sm group">
+                <summary className="cursor-pointer font-bold text-gray-900">{question}</summary>
+                <p className="text-gray-600 leading-relaxed mt-3">{answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
