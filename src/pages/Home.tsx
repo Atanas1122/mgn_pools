@@ -20,25 +20,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: "MGN Pools provides complete commercial pool management for apartments, condominiums, HOAs, and recreation facilities throughout Northern Virginia and Washington, DC.",
+    description: "Commercial pool management for apartment buildings, condominium associations, HOAs, and recreation facilities in Northern Virginia and Washington, DC. Services can include lifeguard staffing, water chemistry, routine cleaning, seasonal opening and closing, equipment maintenance, and operational supervision.",
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN Pools provides professional residential pool maintenance, repairs, renovations, opening, closing, and seasonal pool services throughout Northern Virginia and Washington, DC.",
+    description: "Residential swimming pool maintenance, seasonal opening and winterization, equipment troubleshooting and repairs, leak detection, and renovations for homeowners across our Northern Virginia and Washington, DC service area.",
     link: "/residential"
   },
   {
     icon: Wrench,
-    title: "Pool Repairs and Renovation",
-    description: "MGN Pools provides professional swimming pool repairs and renovations, including plaster, tile, coping, equipment replacement, plumbing repairs, and pool restoration.",
+    title: "Pool Repairs and Renovations",
+    description: "Swimming pool repair and renovation services including pump and filter work, plumbing repairs, plaster and resurfacing, tile and coping replacement, and equipment upgrades for commercial and residential pools.",
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Pool Leak Detection, Pressure Testing & Repair",
-    description: "MGN Pools provides professional pool leak detection, pressure testing, and leak repair for plumbing, fittings, equipment, and pool structures.",
+    description: "Swimming pool leak detection, pressure testing, and repairs to help locate water loss in underground plumbing, fittings, equipment connections, and pool structures.",
     link: "/repair"
   },
 ];
@@ -47,21 +47,57 @@ const howWeHelp = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: "MGN Pools provides complete commercial pool management for apartments, condominiums, HOAs, and recreation facilities throughout Northern Virginia and Washington, DC.",
+    description: "Commercial pool management for apartment buildings, condominium associations, HOAs, and recreation facilities in Northern Virginia and Washington, DC. Services can include lifeguard staffing, water chemistry, routine cleaning, seasonal opening and closing, equipment maintenance, and operational supervision.",
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: "MGN Pools provides professional residential pool maintenance, repairs, renovations, opening, closing, and seasonal pool services throughout Northern Virginia and Washington, DC.",
+    description: "Residential swimming pool maintenance, seasonal opening and winterization, equipment troubleshooting and repairs, leak detection, and renovations for homeowners across our Northern Virginia and Washington, DC service area.",
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs And Renovations",
-    description: "MGN Pools provides professional swimming pool repairs and renovations, including plaster, tile, coping, equipment replacement, plumbing repairs, and pool restoration.",
+    description: "Swimming pool repair and renovation services including pump and filter work, plumbing repairs, plaster and resurfacing, tile and coping replacement, and equipment upgrades for commercial and residential pools.",
     link: "/renovations"
   },
+];
+
+
+const homepageFaqs = [
+  {
+    question: "What does commercial pool management include?",
+    answer: "MGN Pools supports apartment, condominium, HOA, and community swimming pools with lifeguard staffing, water chemistry management, routine cleaning, maintenance, seasonal opening and closing, and operational supervision. The exact scope is outlined in each property's proposal."
+  },
+  {
+    question: "Does MGN Pools provide lifeguards for apartment and condominium pools?",
+    answer: "Yes. We provide lifeguard staffing and supervision for commercial swimming pools in Northern Virginia and Washington, DC. Staffing plans depend on the pool's schedule, operating requirements, and property needs."
+  },
+  {
+    question: "Which areas does MGN Pools serve?",
+    answer: "MGN Pools serves Northern Virginia and Washington, DC, including Alexandria, Arlington, Springfield, Fairfax, Falls Church, McLean, Woodbridge, and surrounding communities. Contact us to confirm service at your property."
+  },
+  {
+    question: "Can MGN Pools handle pool opening and winterization?",
+    answer: "Yes. Seasonal pool services include opening, preparation for swimming season, and winterization. We can also discuss off-season pool care for properties that need additional visits."
+  },
+  {
+    question: "Do you repair commercial swimming pool equipment?",
+    answer: "Yes. Our pool repair services include troubleshooting and repairs involving pumps, filters, plumbing, and other pool equipment. We also offer renovation services such as plaster, tile, and coping work."
+  },
+  {
+    question: "Do you offer swimming pool leak detection?",
+    answer: "Yes. MGN Pools offers pool leak detection, plumbing pressure testing, and repair services to help identify and address water loss from pool plumbing, fittings, and structures."
+  },
+  {
+    question: "Does MGN Pools service residential swimming pools?",
+    answer: "Yes. Residential services include pool maintenance, seasonal opening and closing, equipment repairs, leak detection, and renovation work in our service area."
+  },
+  {
+    question: "How can a property manager request a pool management proposal?",
+    answer: "Use the Request a Pool Proposal button to share information about your property, pool, desired operating schedule, and service needs. MGN Pools can then discuss an appropriate service scope and pricing."
+  }
 ];
 
 export const HomePage = () => {
@@ -132,7 +168,16 @@ export const HomePage = () => {
                   { "@type": "AdministrativeArea", "name": "Northern Virginia" },
                   { "@type": "City", "name": "Washington, DC" }
                 ]
-              }))
+              })),
+              {
+                "@type": "FAQPage",
+                "@id": "https://mgnpools.com/#faq",
+                "mainEntity": homepageFaqs.map(({ question, answer }) => ({
+                  "@type": "Question",
+                  "name": question,
+                  "acceptedAnswer": { "@type": "Answer", "text": answer }
+                }))
+              }
             ]
           })}
         </script>
@@ -279,7 +324,7 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
     </p>
 
     <p className="text-lg text-gray-600 leading-relaxed mb-8">
-      MGN Pools also provides in-house technical maintenance and equipment
+      MGN Pools also provides technical maintenance and equipment
       repairs, helping commercial properties identify problems early and
       respond efficiently without relying on multiple outside contractors.
     </p>
@@ -381,6 +426,34 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent" />
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Visible FAQs: answers match FAQPage structured data above */}
+      <section className="py-20 bg-white" aria-labelledby="homepage-faq-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="homepage-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+            Frequently Asked Questions About Pool Management & Services
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-10">
+            Answers for property managers, condominium boards, HOAs, and homeowners in Northern Virginia and Washington, DC.
+          </p>
+          <div className="space-y-4">
+            {homepageFaqs.map((faq, index) => (
+              <details key={index} className="group rounded-2xl border border-slate-200 bg-slate-50 p-5 open:bg-white open:shadow-md">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-gray-900 [&::-webkit-details-marker]:hidden">
+                  <span>{faq.question}</span>
+                  <ChevronDown className="w-5 h-5 shrink-0 text-sky-600 transition-transform group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <p className="mt-4 leading-relaxed text-gray-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/bid" className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700">
+              Request a customized pool service proposal <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
