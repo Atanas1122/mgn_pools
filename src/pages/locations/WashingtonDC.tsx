@@ -26,25 +26,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
+    description: `For apartment buildings, condominium associations, HOAs, and shared-use pools in ${cityInfo.fullName}, MGN Pools coordinates seasonal operations, lifeguard staffing, water chemistry checks, cleaning, routine maintenance, opening and winterization, and pool equipment support. We work with property managers and boards to plan service schedules and address maintenance needs throughout the swim season.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    description: `Homeowners in ${cityInfo.fullName} can request seasonal pool opening and closing, recurring water care, equipment troubleshooting, and maintenance support. We also assess suspected leaks and help plan repairs or renovations based on the pool's condition and the work required.`,
     link: "/residential"
   },
   {
     icon: Wrench,
-    title: "Pool Repairs and Renovation",
-    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
+    title: "Pool Repairs and Renovations",
+    description: `MGN Pools provides pool repair and renovation services in ${cityInfo.fullName}, including pump and filter repairs, plumbing work, plaster and resurfacing projects, tile and coping repairs, and equipment replacements. We can discuss repair priorities with property managers and homeowners before preparing a scope of work.`,
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
+    description: `Unexplained water loss may come from underground plumbing, fittings, skimmers, main drains, equipment, or the pool shell. Our leak detection services in ${cityInfo.fullName} include investigation and pressure testing to help identify the source and determine appropriate repair options.`,
     link: "/repair"
   },
 ];
@@ -70,15 +70,50 @@ const howWeHelp = [
   },
 ];
 
+const faqs = [
+  {
+    question: "What does commercial pool management include in Washington, DC?",
+    answer: "Commercial pool management can include seasonal opening and closing, lifeguard staffing, water chemistry monitoring, pool cleaning, routine maintenance, equipment checks, and coordination with property managers. The exact scope depends on the facility and its agreement."
+  },
+  {
+    question: "Does MGN Pools provide lifeguards for DC apartment and condominium pools?",
+    answer: "Yes. MGN Pools offers lifeguard staffing for commercial swimming pools, including apartment communities and condominium properties in Washington, DC. Staffing schedules and coverage are planned around each facility's operating hours and needs."
+  },
+  {
+    question: "Which Washington, DC neighborhoods do you serve?",
+    answer: "MGN Pools serves swimming pool customers across Washington, DC, including Georgetown, Capitol Hill, Dupont Circle, Navy Yard, Southwest Waterfront, and surrounding neighborhoods. Contact us to discuss your property's location and service needs."
+  },
+  {
+    question: "Can you help a condominium board plan pool opening and winterization?",
+    answer: "Yes. We work with condominium associations and property managers on seasonal pool opening, winterization, maintenance planning, and related equipment needs. Service schedules and responsibilities are established for each property."
+  },
+  {
+    question: "Do you repair pool pumps, filters, tile, and plaster?",
+    answer: "MGN Pools provides pool equipment repairs and renovation services, including pumps, filters, plumbing, plaster or resurfacing, tile, and coping. We review the condition of the pool and equipment to determine an appropriate repair scope."
+  },
+  {
+    question: "How do you investigate a swimming pool that is losing water?",
+    answer: "We evaluate possible sources of water loss, which can include plumbing lines, fittings, skimmers, drains, equipment, and the pool shell. Pressure testing and other leak-location methods can help narrow down the problem before repairs are recommended."
+  },
+  {
+    question: "Do you offer residential pool maintenance in Washington, DC?",
+    answer: "Yes. Residential pool services can include seasonal opening and closing, routine maintenance, water care, equipment repairs, leak detection, and renovation work. Contact us to discuss your pool and the service schedule you need."
+  },
+  {
+    question: "How can I request a pool management proposal in Washington, DC?",
+    answer: "Use the Request a Proposal button on this page and share your property type, pool location, operating schedule, and the services you need. MGN Pools can then discuss the scope and next steps with you."
+  }
+];
+
 export const WashingtonDCPage = () => {
 
   return (
     <>
       <Helmet>
-      <title>Commercial Pool Management & Residential Pool Services Washington DC | MGN Pools</title>
+      <title>Commercial Pool Management & Lifeguards Washington DC | MGN Pools</title>
         <meta
           name="description"
-           content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Washington, DC. Serving the Washington, DC area since 2007."
+           content="MGN Pools provides commercial pool management, lifeguard staffing, maintenance, leak detection and pool repairs for Washington, DC properties. Established in 2007."
         />
         <link
           rel="canonical"
@@ -93,7 +128,7 @@ export const WashingtonDCPage = () => {
         />
         <meta
          property="og:description"
-         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Washington, DC. Serving the Washington, DC area since 2007."
+         content="MGN Pools provides commercial pool management, lifeguard staffing, maintenance, leak detection and pool repairs for Washington, DC properties. Established in 2007."
          />
         <meta property="og:url" content="https://mgnpools.com/locations/washington-dc-pool-service" />
         <meta property="og:site_name" content="MGN Pools" />
@@ -154,6 +189,18 @@ export const WashingtonDCPage = () => {
   "Pool Renovation and Resurfacing",
   "Lifeguard Training and Certification"
 ]
+          })}
+        </script>
+        {/* FAQ structured data matches the visible questions below. */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -397,17 +444,20 @@ export const WashingtonDCPage = () => {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
               Commercial & Residential Pool Services in {cityInfo.fullName}
             </h2>
-            <div className="prose prose-lg text-gray-600 max-w-none">
-              <p className="mb-4">
-               MGN Pools provides <strong>commercial pool management</strong> in {cityInfo.fullName} for apartment communities, condominiums, HOAs, and recreation facilities. Our services include lifeguard staffing, routine maintenance, water chemistry management, seasonal opening and closing, and pool facility support.
-              </p>
-              <p className="mb-4">
-                We also provide <strong>residential pool services</strong> throughout Washington, DC, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
-              </p>
-              <p>
-                 Serving the Washington, DC area since 2007, MGN Pools provides professional pool services throughout Georgetown, Capitol Hill, Dupont Circle, Navy Yard, Southwest Waterfront, and surrounding Washington, DC neighborhoods.
-              </p>
-            </div>
+                         <div className="prose prose-lg text-gray-600 max-w-none">
+               <p className="mb-4">
+                 MGN Pools supports <strong>commercial swimming pools in Washington, DC</strong>, including condominium buildings, apartment communities, HOAs, and recreation facilities. Property managers can arrange lifeguard staffing, seasonal pool opening and closing, water chemistry checks, cleaning, equipment maintenance, and repair coordination according to their property's needs.
+               </p>
+               <p className="mb-4">
+                 For shared-use pools, reliable operations involve more than keeping the water clear. Facility managers also need a plan for staffing coverage, daily maintenance, equipment concerns, and seasonal transitions. Our <Link to="/commercial" className="text-sky-600 hover:underline font-semibold">commercial pool management services</Link> help coordinate these responsibilities.
+               </p>
+               <p className="mb-4">
+                 We also offer <Link to="/residential" className="text-sky-600 hover:underline font-semibold">residential pool maintenance</Link>, <Link to="/renovations" className="text-sky-600 hover:underline font-semibold">pool repairs and renovations</Link>, and <Link to="/repair" className="text-sky-600 hover:underline font-semibold">leak detection and pressure testing</Link>. These services can help address pump and filter problems, deteriorated finishes, plumbing concerns, and unexplained water loss.
+               </p>
+               <p>
+                 Established in 2007, MGN Pools serves customers in Georgetown, Capitol Hill, Dupont Circle, Navy Yard, Southwest Waterfront, and surrounding Washington, DC neighborhoods. Contact our team to discuss your property, pool equipment, and preferred service schedule.
+               </p>
+             </div>
           </motion.div>
         </div>
       </section>
