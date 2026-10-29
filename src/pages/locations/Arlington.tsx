@@ -26,25 +26,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
+    description: `MGN Pools supports Arlington apartment communities, condominium associations, HOAs, and recreation facilities with seasonal commercial pool operations. Services include lifeguard staffing, water chemistry monitoring, routine cleaning, equipment checks, pool opening and winterization, and coordination of required inspections. We work with property managers and boards to plan staffing and maintenance around each facility’s operating schedule.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    description: `Homeowners in Arlington can request seasonal pool opening and winterization, routine water care, filtration and pump service, and help investigating unexplained water loss. We also assist with equipment repairs and renovation planning to keep residential pools operating reliably.`,
     link: "/residential"
   },
   {
     icon: Wrench,
     title: "Pool Repairs and Renovation",
-    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
+    description: `For aging or damaged Arlington pools, MGN Pools evaluates repair and renovation needs such as pump and filter replacement, plumbing problems, worn plaster, tile and coping deterioration, and deck-related repairs. The recommended scope depends on the condition of the pool and its equipment.`,
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
+    description: `If an Arlington pool is losing more water than expected, our leak detection services can help investigate plumbing lines, fittings, skimmers, main drains, equipment connections, and the pool shell. Pressure testing and other diagnostic methods help narrow down the source before a repair approach is recommended.`,
     link: "/repair"
   },
 ];
@@ -70,6 +70,17 @@ const howWeHelp = [
   },
 ];
 
+const arlingtonFaqs = [
+  { question: "Do you provide commercial pool management in Arlington, VA?", answer: "Yes. MGN Pools provides commercial pool management for Arlington apartment communities, condominium associations, HOAs, and recreation facilities. Services can include lifeguard staffing, water chemistry monitoring, cleaning, seasonal opening and winterization, and equipment support." },
+  { question: "Can MGN Pools staff lifeguards for Arlington apartment and condominium pools?", answer: "MGN Pools offers lifeguard staffing as part of commercial pool management. Staffing levels and schedules depend on the facility, operating hours, applicable requirements, and the agreed service plan." },
+  { question: "Which Arlington neighborhoods do you serve?", answer: "We serve properties throughout Arlington, including Ballston, Clarendon, Crystal City, Arlington Heights, and surrounding communities. Contact us with the property address to discuss your needs." },
+  { question: "Do you handle pool opening and winterization in Arlington?", answer: "Yes. Seasonal opening and winterization are among our pool services. The scope may include equipment preparation, cleaning, water treatment, and other tasks appropriate to the pool and its systems." },
+  { question: "Can you repair pumps, filters, plaster, tile, and coping?", answer: "MGN Pools provides swimming pool repair and renovation services, including pump and filter work, plaster and resurfacing projects, tile and coping repairs, and plumbing-related repairs. An assessment helps determine the appropriate scope." },
+  { question: "How can I tell whether my swimming pool has a leak?", answer: "Water loss beyond normal evaporation, recurring chemical imbalance, wet areas near equipment or decking, and frequent refilling can indicate a leak. Diagnostic testing helps distinguish a leak from other causes of water loss." },
+  { question: "Do you provide residential pool maintenance in Arlington?", answer: "Yes. MGN Pools offers residential pool services in Arlington, including seasonal maintenance, opening and winterization, equipment repairs, leak detection, and renovations." },
+  { question: "How do I request a pool management proposal in Arlington?", answer: "Use the Request a Proposal button on this page and provide the property address, pool type, operating schedule, and services needed. MGN Pools can review the information and discuss an appropriate scope of work." }
+];
+
 export const ArlingtonPage = () => {
 
   return (
@@ -78,7 +89,7 @@ export const ArlingtonPage = () => {
         <title>Commercial Pool Management & Residential Pool Services Arlington VA | MGN Pools</title>
         <meta
           name="description"
-          content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Arlington since 2007.`}
+          content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Northern Virginia since 2007, including Arlington.`}
         />
         <link
           rel="canonical"
@@ -88,7 +99,7 @@ export const ArlingtonPage = () => {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content={`Commercial Pool Management & Residential Pool Services in ${cityInfo.fullName} | MGN Pools`} />
-        <meta property="og:description" content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Arlington since 2007.`} />
+        <meta property="og:description" content={`MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout ${cityInfo.fullName}. Serving Northern Virginia since 2007, including Arlington.`} />
         <meta property="og:url" content={`https://mgnpools.com/locations/arlington-pool-service`} />
         <meta property="og:site_name" content="MGN Pools" />
 
@@ -145,6 +156,18 @@ export const ArlingtonPage = () => {
             ]
           })}
         </script>
+        {/* FAQ structured data mirrors the visible questions below */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": arlingtonFaqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 md:pt-32">
@@ -164,7 +187,7 @@ export const ArlingtonPage = () => {
             transition={{ duration: 0.6 }}
             className="text-sky-300 text-lg md:text-xl mb-6 font-medium"
           >
-            Serving Arlington Pools Since 2007
+            Serving Northern Virginia Since 2007
           </motion.p>
 
           <motion.h1
@@ -394,10 +417,33 @@ export const ArlingtonPage = () => {
                 We also provide <strong>residential pool services</strong> throughout Arlington, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
               </p>
               <p>
-                Serving Arlington since 2007, MGN Pools provides professional pool services throughout Arlington Heights, Clarendon, Ballston, Crystal City, and surrounding Arlington communities.
+                Operating since 2007, MGN Pools provides professional pool services throughout Arlington Heights, Clarendon, Ballston, Crystal City, and surrounding Arlington communities.
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Arlington FAQs */}
+      <section className="py-20 bg-slate-100" aria-labelledby="arlington-faq-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="arlington-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-5">
+            Arlington Pool Services: Frequently Asked Questions
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-10">
+            Answers for Arlington property managers, condominium boards, HOAs, and homeowners.
+          </p>
+          <div className="space-y-4">
+            {arlingtonFaqs.map((faq, index) => (
+              <details key={index} className="group bg-white rounded-xl shadow-sm border border-slate-200 px-6 py-5">
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-semibold text-gray-900 text-lg">
+                  <span>{faq.question}</span>
+                  <ChevronDown className="w-5 h-5 text-sky-600 shrink-0 transition-transform group-open:rotate-180" />
+                </summary>
+                <p className="mt-4 text-gray-600 leading-relaxed">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -468,5 +514,3 @@ export const ArlingtonPage = () => {
     </>
   );
 };
-
-
