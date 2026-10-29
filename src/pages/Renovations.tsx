@@ -227,7 +227,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Repairs and Renovations</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional pool renovation and repair services for commercial and residential swimming pools throughout Northern Virginia and Washington, DC, including replastering, coping and tile replacement, equipment upgrades, and structural repairs.
+                    MGN Pools provides commercial and residential swimming pool repair and renovation services across Northern Virginia and Washington, DC. Projects may involve replacing deteriorated tile and coping, resurfacing worn pool interiors, repairing damaged components, or modernizing aging circulation equipment. We assess the condition of the pool and discuss the appropriate scope of work with property managers, community associations, and homeowners before preparing an estimate.
                   </p>
                 </div>
               </div>
@@ -252,7 +252,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Filter Repair and Installation</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional pool filter repair, replacement, and installation for commercial and residential swimming pools, including sand, cartridge, and DE filtration systems.
+                    MGN Pools repairs, replaces, and installs swimming pool filtration systems for commercial facilities and residential pools. We work with sand, cartridge, and diatomaceous earth (DE) filters, evaluating issues such as inadequate filtration, leaks, pressure problems, and worn components. Depending on the system's condition, service may include troubleshooting valves and fittings, replacing damaged parts, or recommending a properly sized replacement filter to help restore clear water and dependable circulation.
                   </p>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Commercial & Residential Pool Pump and Motor Repair</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional pool pump and motor repair, replacement, and installation for commercial and residential swimming pools, helping restore proper circulation, filtration, and reliable system operation.
+                    A malfunctioning pool pump or motor can reduce water circulation, interfere with filtration, and disrupt normal pool operations. MGN Pools provides swimming pool pump and motor troubleshooting, repair, replacement, and installation for commercial and residential facilities. Our technicians evaluate problems such as leaks, unusual noise, poor flow, and equipment failure, then recommend repairs or replacement based on the equipment's condition and the pool's operating requirements.
                   </p>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Leak Detection and Pressure Testing</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional swimming pool leak detection and pressure testing to identify leaks in plumbing lines, fittings, equipment, main drains, skimmers, and the pool shell.
+                    Unexplained water loss can result from leaks in pool plumbing, fittings, skimmers, main drains, equipment connections, or the pool shell. MGN Pools offers swimming pool leak detection and plumbing pressure testing to help locate potential sources of water loss in commercial and residential pools. Identifying the affected area helps determine whether a targeted plumbing repair, component replacement, or more extensive pool-shell repair may be necessary.
                   </p>                
                 </div>
               </div>
@@ -327,7 +327,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Pool Deck, Perimeter & Expansion Joint Caulking</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional pool deck, perimeter, and expansion joint caulking to help prevent water intrusion, protect surrounding structures, and maintain a watertight joint between the pool deck and pool shell.
+                    Damaged or deteriorated caulking around a swimming pool can allow water to enter joints between the deck, coping, and pool structure. MGN Pools provides pool perimeter and expansion joint caulking services for commercial and residential swimming pools. We evaluate joint conditions, remove failed material as appropriate, and install suitable replacement sealant to help protect surrounding surfaces and reduce water intrusion. Joint repair is especially important where seasonal movement and weather exposure affect the deck.
                   </p>
                 </div>
               </div>
@@ -352,7 +352,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Pool Interior and Deck Pressure Washing</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional pressure washing for pool interiors, pool decks, and surrounding pool areas to remove dirt, algae, stains, and buildup and prepare surfaces for opening, maintenance, or renovation.
+                    MGN Pools provides pressure washing for swimming pool interiors, decks, and surrounding pool areas as part of seasonal preparation, maintenance, and renovation work. Cleaning can help remove accumulated dirt, algae, and surface buildup before other work begins. Our team considers the surface material and condition when selecting an appropriate cleaning approach, since some finishes require gentler treatment to avoid damage. Pressure washing may also be used to prepare suitable surfaces for further inspection or repair.
                   </p>
                 </div>
               </div>
@@ -377,7 +377,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Replastering and Whitecoating</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional swimming pool replastering and whitecoating for commercial and residential pools. We restore worn, rough, stained, or deteriorated pool surfaces to provide a smooth, durable, and attractive finish.
+                    Worn, rough, stained, or deteriorating plaster can affect the appearance and usability of a swimming pool. MGN Pools provides commercial and residential swimming pool replastering and whitecoating services in Northern Virginia and Washington, DC. A resurfacing project may include draining the pool, preparing the existing surface, addressing identified defects, and applying a new finish. After installation, careful startup procedures, circulation, brushing, and water chemistry management are important during the initial curing period to protect the new plaster.
                   </p>
                 </div>
               </div>
@@ -402,7 +402,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Skimmer Repair and Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional swimming pool skimmer repair and replacement for commercial and residential pools. We repair leaks and deterioration around the skimmer and replace damaged skimmers when necessary to restore proper circulation and prevent water loss.
+                    Swimming pool skimmers collect floating debris and form part of the circulation system. Cracked skimmer bodies, leaking connections, and deterioration around the skimmer opening can contribute to water loss and reduced performance. MGN Pools evaluates and repairs commercial and residential pool skimmers, including associated plumbing and surrounding areas, and replaces damaged units when needed. The recommended approach depends on the location and extent of the damage and the condition of the existing installation.
                   </p>
                 </div>
               </div>
@@ -427,7 +427,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Main Drain Repair, Replacement and Hydrostatic Valve Installation</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides swimming pool main drain repair and replacement, including drain covers, sumps, connecting plumbing, and hydrostatic valves. We can evaluate damaged or deteriorated main drain components and perform the necessary repairs or replacement to restore safe and proper pool circulation.
+                    MGN Pools provides swimming pool main drain repair and replacement services, including work involving drain covers, sumps, connected plumbing, and hydrostatic valves. Damaged or deteriorated components can affect circulation and require careful evaluation before repair. We assess the existing installation and identify appropriate replacement components and necessary work. Main drain and suction outlet projects must account for applicable safety requirements and compatible equipment before the pool is returned to service.
                   </p>
                 </div>
               </div>
@@ -452,7 +452,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center order-1 md:order-2">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Safety Cover Installation & Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional swimming pool safety cover installation and replacement for commercial and residential pools. We install properly fitted safety covers and replacement anchors to help protect the pool during the off-season.
+                    MGN Pools installs and replaces swimming pool safety covers for commercial and residential properties. We assess pool dimensions, deck conditions, existing anchor locations, and cover fit to help select an appropriate replacement or new installation. Work may include fitting the cover and installing or replacing compatible anchors and hardware. A properly selected and installed cover helps protect the pool during the off-season; owners should continue to follow the cover manufacturer's safety and maintenance instructions.
                   </p>
                 </div>
               </div>
@@ -477,7 +477,7 @@ export const RenovationsPage = () => {
                 <div className="p-5 md:p-6 flex flex-col justify-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Swimming Pool Vinyl Liner Installation & Replacement</h3>
                   <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                    MGN Pools provides professional swimming pool vinyl liner installation and replacement for residential and commercial pools. We replace worn, faded, leaking, or damaged liners and install properly fitted new liners to restore the appearance and watertight integrity of the pool.
+                    A damaged or aging vinyl liner may show fading, wrinkles, tears, or leaks that affect the pool's appearance and water retention. MGN Pools provides vinyl liner installation and replacement for residential and suitable commercial swimming pools. We evaluate the pool's dimensions and condition, remove the existing liner as needed, prepare the underlying surfaces, and install a properly fitted replacement. We also check visible fittings and related components that may need attention during the project.
                   </p>
                 </div>
               </div>
