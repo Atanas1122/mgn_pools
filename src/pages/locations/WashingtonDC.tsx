@@ -462,6 +462,29 @@ export const WashingtonDCPage = () => {
         </div>
       </section>
 
+      {/* Visible FAQ Section — matches FAQPage structured data */}
+      <section id="faqs" className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-5">
+            Washington, DC Pool Services — Frequently Asked Questions
+          </h2>
+          <p className="text-gray-600 text-center mb-10">
+            Answers to common questions about commercial pool management, lifeguards, maintenance, and repairs in Washington, DC.
+          </p>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <details key={index} className="group bg-slate-50 rounded-xl border border-slate-200 overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-6 font-semibold text-gray-900 hover:text-sky-700">
+                  <span>{faq.question}</span>
+                  <ChevronDown aria-hidden="true" className="w-5 h-5 shrink-0 text-sky-600 transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 leading-relaxed">{faq.answer}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section
         className="py-20 relative water-bg"
