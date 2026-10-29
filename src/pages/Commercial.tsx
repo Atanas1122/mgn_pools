@@ -143,28 +143,36 @@ const whyMgnPools = [
 
 const commercialFaqs = [
   {
-    "question": "What is included in commercial pool management?",
-    "answer": "Our commercial pool management services include lifeguard staffing, daily pool operations, water chemistry management, cleaning, supervisory visits, inspection coordination, seasonal opening and winterization, and routine maintenance."
+    "question": "What services are included in MGN Pools’ commercial pool management contracts?",
+    "answer": "MGN Pools provides commercial swimming pool management for condominium associations, homeowners associations (HOAs), apartment communities, and recreation facilities throughout Northern Virginia and Washington, DC. Depending on the agreement, services include certified lifeguard staffing, daily pool cleaning, water chemistry testing and treatment, routine equipment maintenance, seasonal pool opening and winterization, health department inspection coordination, and regular supervisory visits. Our in-house technicians can also handle commercial pool equipment repairs, including pumps, filters, heaters, plumbing, and automation systems. Each proposal is tailored to the property’s operating hours, staffing needs, facility conditions, and maintenance requirements."
   },
   {
-    "question": "Do you provide certified lifeguards for commercial pools?",
-    "answer": "Yes. MGN Pools provides certified lifeguards for apartment communities, condominium associations, HOAs, and recreation facilities, with site-specific training and regular supervision."
+    "question": "Does MGN Pools provide certified lifeguards for commercial swimming pools?",
+    "answer": "Yes. MGN Pools provides trained, certified lifeguards for apartment complexes, condominium communities, HOAs, and recreation facilities. Lifeguards receive site-specific training on facility rules, emergency procedures, patron supervision, and daily operating responsibilities. Our regional supervisors make routine site visits to monitor lifeguard performance, facility conditions, and established safety procedures. We coordinate staffing with property managers and community boards based on each pool’s operating schedule, layout, and applicable safety requirements."
   },
   {
-    "question": "Do you coordinate health department inspections and permits?",
-    "answer": "Yes. We coordinate required health department inspections and pool operating permits as part of our commercial pool management services."
+    "question": "Does MGN Pools handle swimming pool inspections, permits, and health department requirements?",
+    "answer": "Yes. Our commercial pool management services include coordinating seasonal health department inspections and required operating permits. We monitor disinfectant and pH levels, check water chemistry, inspect circulation and filtration equipment, and address operational conditions that could affect compliance. Requirements differ by jurisdiction across Northern Virginia and Washington, DC, so we work with property managers to prepare facilities for the applicable inspections. Regulatory approval remains with the relevant authority."
   },
   {
-    "question": "Can MGN Pools repair commercial pool equipment?",
-    "answer": "Yes. Our in-house technicians service commercial pool pumps, filters, heaters, plumbing, and automation systems."
+    "question": "Does MGN Pools provide commercial swimming pool equipment repair and maintenance?",
+    "answer": "Yes. MGN Pools has in-house technicians who service commercial swimming pool pumps, filtration systems, heaters, plumbing, circulation equipment, and automation systems. Combining pool management with technical repair capabilities helps property managers coordinate maintenance and respond efficiently to equipment problems without depending exclusively on outside contractors. We also provide repair estimates and equipment replacement recommendations when needed. Our goal is to reduce unnecessary downtime and maintain dependable pool operations."
   },
   {
-    "question": "Do you provide pool opening and winterization?",
-    "answer": "Yes. We provide seasonal commercial pool opening, startup, closing, winterization, and scheduled winter inspections."
+    "question": "Does MGN Pools provide seasonal pool opening and winterization services?",
+    "answer": "Yes. We provide commercial swimming pool opening, startup, closing, and winterization services for HOAs, condominiums, apartment communities, and recreation facilities. Preseason work includes preparing circulation and filtration systems, checking equipment, cleaning the pool, establishing water chemistry, and coordinating required inspections. At the end of the season, winterization procedures help protect pool plumbing, equipment, and facilities from cold-weather damage. We also offer scheduled winter inspections and off-season water care services."
   },
   {
-    "question": "What areas do you serve?",
-    "answer": "MGN Pools serves commercial swimming pool facilities throughout Northern Virginia and Washington, DC, including apartment communities, condominiums, HOAs, and recreation facilities."
+    "question": "What areas does MGN Pools serve for commercial pool management?",
+    "answer": "MGN Pools provides commercial pool management, lifeguard staffing, maintenance, repairs, and renovation services throughout Northern Virginia and Washington, DC. Areas served include Alexandria, Arlington, Fairfax, Springfield, McLean, Great Falls, Woodbridge, Mount Vernon, and nearby communities. We work with property management companies, condominium associations, homeowners associations, apartment complexes, and recreation facilities. Contact us to confirm availability for your property and request a customized proposal."
+  },
+  {
+    "question": "Why should a condominium association or HOA hire a professional pool management company?",
+    "answer": "Commercial swimming pools require ongoing attention to lifeguard staffing, water chemistry, equipment, daily cleaning, safety procedures, and local inspection requirements. A professional pool management company helps condominium boards and homeowners associations coordinate these responsibilities and reduces the day-to-day administrative workload for property managers. MGN Pools combines routine operations, supervisory oversight, inspection coordination, seasonal service, and in-house technical repairs to support consistent, reliable swimming pool operations."
+  },
+  {
+    "question": "How can our community request a commercial pool management proposal?",
+    "answer": "Property managers, condominium boards, HOA representatives, and apartment communities can request a customized commercial pool management proposal from MGN Pools. We consider the pool’s size and condition, operating schedule, lifeguard requirements, routine maintenance needs, and seasonal services. Depending on the property, a proposal may include lifeguard staffing, daily pool maintenance, water chemistry management, opening and winterization, inspection coordination, and supervisory visits. Established in 2007, MGN Pools serves commercial swimming pool facilities across Northern Virginia and Washington, DC. Use the Request a Commercial Pool Proposal button on this page to get started."
   }
 ];
 
