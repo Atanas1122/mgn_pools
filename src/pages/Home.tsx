@@ -68,35 +68,35 @@ const howWeHelp = [
 const homepageFaqs = [
   {
     question: "What does commercial pool management include?",
-    answer: "MGN Pools supports apartment, condominium, HOA, and community swimming pools with lifeguard staffing, water chemistry management, routine cleaning, maintenance, seasonal opening and closing, and operational supervision. The exact scope is outlined in each property's proposal."
+    answer: "MGN Pools provides commercial swimming pool management for apartment communities, condominium associations, homeowners associations, and recreational facilities throughout Northern Virginia and Washington, DC. Depending on the property\u2019s needs, a management agreement can include certified lifeguard staffing, daily pool cleaning, water chemistry testing and treatment, routine equipment checks, pool opening and winterization, and operational supervision. We also help coordinate pool inspections and address maintenance concerns that arise during the swimming season. Because facilities differ in size, operating hours, and staffing requirements, the services and responsibilities for each location are specified in its individual proposal and agreement. Property managers can request a customized scope for their community."
   },
   {
     question: "Does MGN Pools provide lifeguards for apartment and condominium pools?",
-    answer: "Yes. We provide lifeguard staffing and supervision for commercial swimming pools in Northern Virginia and Washington, DC. Staffing plans depend on the pool's schedule, operating requirements, and property needs."
+    answer: "Yes. Lifeguard staffing is a core part of MGN Pools\u2019 commercial swimming pool management services for apartment buildings, condominium communities, HOAs, and other shared aquatic facilities in Northern Virginia and Washington, DC. We work with property managers to plan coverage around the pool\u2019s operating schedule, expected use, and applicable facility requirements. Lifeguard services may be combined with daily cleaning, water chemistry management, and routine maintenance under a broader management agreement. The number of guards and their scheduled hours depend on the individual pool and its operating needs. Contact us with your pool\u2019s location, hours, and staffing expectations to discuss an appropriate proposal."
   },
   {
     question: "Which areas does MGN Pools serve?",
-    answer: "MGN Pools serves Northern Virginia and Washington, DC, including Alexandria, Arlington, Springfield, Fairfax, Falls Church, McLean, Woodbridge, and surrounding communities. Contact us to confirm service at your property."
+    answer: "MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs, and renovations across Northern Virginia and Washington, DC. Communities in our service area include Alexandria, Arlington, Springfield, Fairfax, Falls Church, Annandale, McLean, Great Falls, Woodbridge, Lorton, and surrounding neighborhoods. We work with apartment properties, condominium associations, HOAs, recreational facilities, and homeowners. Service availability and scheduling may vary depending on the type of work and the property's location. If your community is outside the cities listed here, you can still contact us with the address and requested services. Our team can confirm whether we can support your pool and discuss next steps."
   },
   {
     question: "Can MGN Pools handle pool opening and winterization?",
-    answer: "Yes. Seasonal pool services include opening, preparation for swimming season, and winterization. We can also discuss off-season pool care for properties that need additional visits."
+    answer: "Yes. MGN Pools offers seasonal pool opening and winterization for commercial and residential swimming pools in Northern Virginia and Washington, DC. Opening work can involve preparing pool equipment, starting circulation and filtration systems, cleaning, evaluating water conditions, and getting the facility ready for the swimming season. Winterization focuses on protecting the pool and relevant equipment when seasonal operation ends. The exact work depends on the pool\u2019s design, equipment, and site conditions. For properties that need attention beyond the summer season, we can also discuss off-season or winter water-care visits. Property managers should plan seasonal work early so it fits their intended opening and closing schedule."
   },
   {
     question: "Do you repair commercial swimming pool equipment?",
-    answer: "Yes. Our pool repair services include troubleshooting and repairs involving pumps, filters, plumbing, and other pool equipment. We also offer renovation services such as plaster, tile, and coping work."
+    answer: "Yes. MGN Pools provides swimming pool equipment troubleshooting, maintenance, and repair services for commercial facilities and residential pools. Common areas of work include circulation pumps, filters, plumbing, valves, and related mechanical components. We also handle larger pool improvement projects, including plaster and resurfacing, tile, coping, and other renovation work. When a property experiences low circulation, filtration problems, visible damage, or equipment failures, an assessment can help determine the appropriate repair scope. Some projects require additional parts, approvals, or scheduled downtime. Our repair and renovation services can complement an ongoing pool management contract or be discussed as a separate project, depending on the property\u2019s needs."
   },
   {
     question: "Do you offer swimming pool leak detection?",
-    answer: "Yes. MGN Pools offers pool leak detection, plumbing pressure testing, and repair services to help identify and address water loss from pool plumbing, fittings, and structures."
+    answer: "Yes. MGN Pools offers swimming pool leak detection, plumbing pressure testing, and repair services in Northern Virginia and Washington, DC. Unexplained water loss can come from several sources, including underground plumbing, pool fittings, skimmers, equipment connections, or the pool structure itself. Leak detection starts by evaluating the symptoms and selecting suitable testing methods to help narrow down the source. Once a likely problem area is identified, we can discuss repair options and the scope of work needed. If you notice recurring water loss, air entering the system, wet areas near the pool, or unusual water bills, contact us to describe the issue and arrange an evaluation."
   },
   {
     question: "Does MGN Pools service residential swimming pools?",
-    answer: "Yes. Residential services include pool maintenance, seasonal opening and closing, equipment repairs, leak detection, and renovation work in our service area."
+    answer: "Yes. In addition to managing commercial swimming pools, MGN Pools provides residential pool services for homeowners throughout our Northern Virginia and Washington, DC service area. Available work includes routine pool maintenance, seasonal opening and closing, equipment troubleshooting and repairs, leak detection, and renovation projects such as plaster, tile, and coping improvements. Residential pools vary in equipment, condition, and maintenance needs, so the recommended service schedule and scope will depend on the property. Whether you need ongoing help maintaining water quality or assistance with a specific repair, you can describe your pool and the work requested. Our team can review the details and discuss service availability."
   },
   {
     question: "How can a property manager request a pool management proposal?",
-    answer: "Use the Request a Pool Proposal button to share information about your property, pool, desired operating schedule, and service needs. MGN Pools can then discuss an appropriate service scope and pricing."
+    answer: "Property managers, condominium boards, HOA representatives, and apartment operators can request a customized commercial pool management proposal through the Request a Pool Proposal button on this website. Helpful details include the property address, pool type and approximate size, desired opening and closing dates, daily operating hours, number of lifeguards requested, and any known maintenance or repair concerns. You can also explain whether the property needs full-service management, lifeguard staffing, seasonal opening and winterization, or a combination of services. MGN Pools can use that information to discuss the proposed scope and prepare pricing based on the facility\u2019s specific needs. Providing complete details helps make the proposal more relevant to your property."
   }
 ];
 
