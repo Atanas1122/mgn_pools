@@ -70,6 +70,17 @@ const howWeHelp = [
   },
 ];
 
+const alexandriaFaqs = [
+  { question: "Does MGN Pools provide commercial pool management in Alexandria, VA?", answer: "Yes. MGN Pools serves apartment communities, condominium associations, HOAs, and recreation facilities in Alexandria. Commercial management can include lifeguard staffing, water chemistry management, routine maintenance, pool opening and closing, and inspection coordination. We tailor proposals to the facility and its operating schedule." },
+  { question: "Can MGN Pools provide lifeguards for Alexandria condominium and HOA pools?", answer: "Yes. We provide certified lifeguard staffing for commercial pools, including condominium and HOA communities. Lifeguards receive site-specific operational training, and supervisors make routine visits to support consistent staffing and facility procedures. Staffing needs depend on pool configuration, hours, and applicable requirements." },
+  { question: "What pool repair services are available in Alexandria?", answer: "MGN Pools provides pool equipment repair and replacement, including pumps, motors, filtration systems, plumbing, and other circulation components. We also offer leak detection and pressure testing. The recommended work depends on an evaluation of the equipment or suspected problem." },
+  { question: "Do you offer pool renovation and resurfacing in Alexandria?", answer: "Yes. Our pool repair and renovation services include replastering and resurfacing, tile and coping work, deck and expansion-joint repairs, and equipment upgrades. We can review the condition of a commercial or residential swimming pool and provide an estimate for an appropriate scope of work." },
+  { question: "Can you locate a swimming pool leak without replacing all the plumbing?", answer: "Leak detection begins with evaluating likely sources of water loss, which may include plumbing lines, fittings, skimmers, drains, equipment, or the pool shell. Pressure testing and other diagnostic methods can help narrow down the problem. Repairs are recommended based on the findings rather than assuming the entire plumbing system needs replacement." },
+  { question: "Does MGN Pools provide residential pool maintenance in Alexandria?", answer: "Yes. We provide residential pool services in Alexandria, including routine maintenance, seasonal opening and winterization, equipment repairs, leak detection, and renovations. Contact us with the pool location and service needs so we can discuss availability and an appropriate service plan." },
+  { question: "Which Alexandria neighborhoods do you serve?", answer: "MGN Pools serves Alexandria, including Old Town, Del Ray, West End, Rosemont, and surrounding communities. Service availability can vary depending on the property and work requested. Contact us with your pool address to confirm coverage." },
+  { question: "How can an Alexandria property manager request a pool management proposal?", answer: "Use the Request a Proposal button to contact MGN Pools. Include the property address, pool type, proposed operating hours, staffing needs, and any known maintenance or renovation requirements. This helps our team prepare a proposal tailored to your community or facility." }
+];
+
 export const AlexandriaPage = () => {
 
   return (
@@ -144,6 +155,17 @@ export const AlexandriaPage = () => {
   "Pool Renovation and Resurfacing",
   "Lifeguard Training and Certification"
 ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": alexandriaFaqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -394,10 +416,33 @@ export const AlexandriaPage = () => {
 </p>
 
 <p>
-  Serving Alexandria since 2007, MGN Pools provides professional pool services throughout Old Town, Del Ray, West End, Rosemont, and surrounding Alexandria communities.
+  Established in 2007, MGN Pools combines commercial pool operations with in-house equipment repair capabilities. We serve properties in Old Town, Del Ray, West End, Rosemont, and nearby Alexandria communities. For property-specific needs, our team can discuss pool operating schedules, equipment conditions, and seasonal maintenance requirements.
 </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Alexandria-specific FAQs: visible answers match structured data */}
+      <section className="py-20 bg-white" aria-labelledby="alexandria-faq-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="alexandria-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 mb-5 text-center">
+            Alexandria Pool Management & Repair FAQs
+          </h2>
+          <p className="text-gray-600 text-center mb-10">
+            Answers for Alexandria property managers, condominium and HOA boards, and homeowners.
+          </p>
+          <div className="space-y-4">
+            {alexandriaFaqs.map(({ question, answer }) => (
+              <details key={question} className="group bg-slate-50 border border-slate-200 rounded-xl p-5">
+                <summary className="cursor-pointer font-semibold text-gray-900 flex justify-between items-center gap-4">
+                  {question}
+                  <ChevronDown className="w-5 h-5 text-sky-600 shrink-0 group-open:rotate-180 transition-transform" />
+                </summary>
+                <p className="mt-4 text-gray-700 leading-relaxed">{answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -468,4 +513,3 @@ export const AlexandriaPage = () => {
     </>
   );
 };
-
