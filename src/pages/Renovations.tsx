@@ -16,6 +16,41 @@ import MainDrainImg from '../assets/images/renovations/Main_Drain.webp';
 import SafetyImg from '../assets/images/renovations/Safety.jpg';
 import InstallationImg from '../assets/images/renovations/Installation.jpg';
 
+const renovationFaqs = [
+  {
+    "question": "What commercial and residential pool repair services does MGN Pools provide?",
+    "answer": "MGN Pools repairs and renovates commercial and residential swimming pools in Northern Virginia and Washington, DC. Services include pump and motor repairs, filter replacement, skimmer and main drain repairs, leak detection and pressure testing, replastering, deck caulking, safety covers, and vinyl liners. The appropriate work depends on the pool's condition and the results of an on-site evaluation."
+  },
+  {
+    "question": "When should a swimming pool be replastered or resurfaced?",
+    "answer": "Rough, stained, cracked, or deteriorating plaster can indicate that a pool surface needs professional evaluation. MGN Pools provides swimming pool replastering and whitecoating for commercial facilities and residential pools. The scope of work depends on the condition of the existing finish and substrate. We can discuss surface preparation, finish options, and a project schedule after inspecting the pool."
+  },
+  {
+    "question": "Can MGN Pools repair commercial pool pumps, motors, and filters?",
+    "answer": "Yes. Our team services pool pumps, motors, and filtration equipment for commercial and residential swimming pools. We work on sand, cartridge, and DE filter systems and can assess whether a component should be repaired or replaced. Reliable circulation and filtration are essential to pool operation, so we evaluate the equipment and recommend an appropriate solution."
+  },
+  {
+    "question": "Do you offer swimming pool leak detection and pressure testing?",
+    "answer": "Yes. MGN Pools provides leak detection and pressure testing to help locate water loss in pool plumbing, fittings, equipment, skimmers, main drains, and the pool shell. The diagnostic approach depends on the symptoms and the pool's construction. Once the likely source is identified, we can explain repair options and the next steps."
+  },
+  {
+    "question": "Do you repair pool tile, coping, decks, and expansion joints?",
+    "answer": "MGN Pools offers pool renovation services that include tile and coping replacement, deck repairs, and perimeter and expansion joint caulking. These components affect both appearance and the condition of the surrounding pool structure. We assess the damaged areas and recommend repairs based on the observed condition and the scope of the project."
+  },
+  {
+    "question": "How long does a commercial swimming pool renovation take?",
+    "answer": "Renovation timelines vary based on the pool size, surface condition, repair scope, material availability, weather, and inspection requirements. A limited equipment repair may take much less time than replastering or a larger renovation. For plaster work, startup and water chemistry care after filling are important parts of the schedule. MGN Pools can provide a project-specific estimate and anticipated timeline after evaluating the facility."
+  },
+  {
+    "question": "Do you install safety covers, main drains, and vinyl liners?",
+    "answer": "Yes. MGN Pools offers swimming pool safety cover installation and replacement, main drain repairs and replacement, hydrostatic valve installation, and vinyl liner replacement. We assess the existing equipment and pool configuration before recommending materials or installation work. Any required safety or code considerations are addressed as part of project planning."
+  },
+  {
+    "question": "Which areas do you serve, and how can I request a repair estimate?",
+    "answer": "MGN Pools provides pool repair and renovation services throughout Northern Virginia and Washington, DC, including Springfield, Alexandria, Arlington, Fairfax, Falls Church, McLean, Vienna, Annandale, Lorton, Woodbridge, and Manassas. Commercial property managers, HOA boards, condominium associations, and residential pool owners can use our Request a Free Estimate form to describe their project and arrange a follow-up."
+  }
+];
+
 export const RenovationsPage = () => {
 
   return (
@@ -62,37 +97,16 @@ export const RenovationsPage = () => {
           })}
         </script>
 
-        {/* FAQ Schema */}
+        {/* FAQ structured data matches visible answers */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "What pool repair and renovation services do you offer?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "We offer comprehensive pool repair and renovation services including replastering, equipment installation and replacement, leak detection, deck repair, tile and coping replacement, filter system repair, pump and motor repair, and complete pool renovations."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Are you licensed and insured for pool repairs and renovations?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, we are fully licensed, certified and insured to perform any type of pool repairs and renovations. All our technicians are certified professionals."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "How long does a pool renovation take?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The duration of a pool renovation depends on the scope of work. Simple repairs can take 1-2 days, while complete renovations including replastering may take 1-2 weeks. We provide detailed timelines during the consultation."
-                }
-              }
-            ]
+            "mainEntity": renovationFaqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -124,7 +138,7 @@ export const RenovationsPage = () => {
               </h2>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                <strong>MGN POOLS</strong> MGN Pools provides professional pool repair and renovation services for commercial and residential swimming pools throughout Northern Virginia and Washington, DC.
+                <strong>MGN Pools</strong> provides professional pool repair and renovation services for commercial and residential swimming pools throughout Northern Virginia and Washington, DC.
               </p>
 
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
@@ -468,6 +482,21 @@ export const RenovationsPage = () => {
                 </div>
               </div>
             </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pool Repair & Renovation FAQs */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Pool Repair & Renovation FAQs</h2>
+          <div className="space-y-4">
+            {renovationFaqs.map(({ question, answer }) => (
+              <details key={question} className="rounded-xl bg-white shadow-sm border border-slate-100 p-6">
+                <summary className="cursor-pointer font-bold text-gray-900 leading-relaxed">{question}</summary>
+                <p className="mt-4 text-gray-700 leading-relaxed">{answer}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
