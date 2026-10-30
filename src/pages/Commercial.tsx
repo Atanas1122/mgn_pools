@@ -375,11 +375,13 @@ export const CommercialPage = () => {
     </h2>
 
     <p className="text-lg text-gray-600 leading-relaxed mb-5">
-      Established in 2007, MGN Pools works with apartment communities,
-      condominium associations, HOAs, and property management companies
-      throughout Northern Virginia and Washington, DC. We understand
-      the importance of dependable staffing, consistent water quality,
-      regulatory compliance, and responsive communication with property managers.
+      Established in 2007, MGN Pools is an experienced commercial
+      swimming pool management company serving Northern Virginia
+      and Washington, DC. With nearly 20 years of experience and
+      a portfolio of approximately 80 commercial swimming pools,
+      we provide professional pool management for apartment
+      communities, condominium associations, HOAs, and property
+      management companies.
     </p>
 
     <p className="text-lg text-gray-600 leading-relaxed mb-5">
@@ -400,7 +402,7 @@ export const CommercialPage = () => {
 
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
       <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">Since 2007</p><p className="text-sm text-gray-600">Serving local pool communities</p></div>
-      <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">Commercial Focus</p><p className="text-sm text-gray-600">Apartments, condominiums and HOAs</p></div>
+      <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">80 Commercial Pools</p><p className="text-sm text-gray-600">Approximately 80 commercial swimming pools managed</p></div>
       <div className="rounded-xl bg-slate-50 p-5 text-center"><p className="text-2xl font-bold text-sky-700">In-House Repairs</p><p className="text-sm text-gray-600">Equipment service and maintenance</p></div>
     </div>
     <p className="text-gray-600 mb-6">
