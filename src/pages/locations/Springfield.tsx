@@ -26,25 +26,25 @@ const services = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `MGN Pools provides professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, and recreation facilities. Our services include certified lifeguard staffing, pool maintenance, water chemistry, opening and closing, inspections, and ongoing facility support.`,
+    description: `Springfield-based MGN Pools manages swimming pools for apartment communities, condominium associations, HOAs, and recreational facilities. Commercial pool services can include lifeguard staffing, daily cleaning, water chemistry testing and treatment, equipment checks, seasonal opening and winterization, inspection coordination, and on-site supervision.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `MGN Pools provides professional residential pool services in ${cityInfo.fullName}, including pool maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    description: `Residential pool maintenance in Springfield and nearby communities, including routine cleaning and water care, spring opening, winterization, pump and filter troubleshooting, leak detection, equipment repairs, and renovation planning.`,
     link: "/residential"
   },
   {
     icon: Wrench,
-    title: "Pool Repairs and Renovation",
-    description: `MGN Pools provides professional pool repairs and renovations in ${cityInfo.fullName}, including equipment replacement, plaster and resurfacing, tile and coping repairs, plumbing repairs, and other swimming pool improvements.`,
+    title: "Pool Repairs and Renovations",
+    description: `Pool equipment repairs and renovations for Springfield-area commercial and residential facilities, including pumps, filters, plumbing, plaster and resurfacing, tile, coping, and equipment replacement. Projects are evaluated based on the condition of the pool and the requested scope.`,
     link: "/renovations"
   },
   {
     icon: Search,
     title: "Swimming Pool Leak Detection and Repair",
-    description: `MGN Pools provides professional pool leak detection and repair in ${cityInfo.fullName}, including pressure testing, leak locating, plumbing leak repairs, and evaluation of pool shells, fittings, skimmers, and main drains.`,
+    description: `Swimming pool leak detection and pressure testing in Springfield, including evaluation of underground plumbing, skimmers, fittings, equipment connections, and pool structures. We help investigate unexplained water loss and discuss appropriate repairs.`,
     link: "/repair"
   },
 ];
@@ -53,21 +53,32 @@ const howWeHelp = [
   {
     icon: Building2,
     title: "Commercial Pool Management",
-    description: `Professional commercial pool management in ${cityInfo.fullName} for apartments, condominiums, HOAs, hotels, and recreation facilities, including lifeguard staffing, maintenance, water chemistry, and seasonal operations.`,
+    description: `Commercial pool management and lifeguard staffing for Springfield condominium, apartment, HOA, and recreational pools, with customized seasonal operations, maintenance, and water chemistry services.`,
     link: "/commercial"
   },
   {
     icon: HomeIcon,
     title: "Residential Pool Services",
-    description: `Professional residential pool services in ${cityInfo.fullName}, including maintenance, seasonal opening and winterization, equipment repairs, leak detection, and pool renovations.`,
+    description: `Residential pool maintenance, opening and winterization, water care, equipment repairs, leak detection, and renovations for Springfield homeowners.`,
     link: "/residential"
   },
   {
     icon: Wrench,
-    title: "Pool Repairs And Renovations",
-    description: "Professional pool repairs and renovations in Springfield, VA, including equipment replacement, plumbing repairs, plaster and resurfacing, tile and coping repairs, and other pool improvements.",
+    title: "Pool Repairs and Renovations",
+    description: "Commercial and residential pool repairs and renovations in Springfield, including equipment, plumbing, plaster, tile, coping, and resurfacing projects.",
     link: "/renovations"
   },
+];
+
+const springfieldFaqs = [
+  { question: "What does commercial pool management include in Springfield, VA?", answer: "MGN Pools provides commercial swimming pool management for apartment buildings, condominium associations, homeowners associations, and recreational facilities in Springfield and surrounding Northern Virginia communities. A management proposal can include certified lifeguard staffing, daily cleaning, water chemistry testing and adjustments, equipment checks, pool opening and winterization, and operational supervision. We also help properties prepare for required pool inspections and address maintenance concerns during the swimming season. Each pool has different operating hours, staffing requirements, and equipment, so the specific responsibilities are outlined in the agreement. Property managers can request a customized proposal for their facility." },
+  { question: "Does MGN Pools provide lifeguard staffing for Springfield HOA and condominium pools?", answer: "Yes. MGN Pools provides lifeguard staffing for commercial swimming pools, including condominium communities, apartment properties, HOAs, and recreation facilities in Springfield and nearby areas. We work with property representatives to review operating hours, the number of guards requested, and the pool’s specific needs. Staffing can be combined with daily cleaning, chemical management, seasonal operations, and routine equipment maintenance under a broader pool management agreement. Lifeguard coverage and scheduling are determined for each property rather than offered as a one-size-fits-all package. To discuss staffing, share your facility address, proposed pool schedule, and anticipated coverage requirements." },
+  { question: "Is MGN Pools located in Springfield, Virginia?", answer: "Yes. MGN Pools is based at 5954 Hall Street, Springfield, VA 22152. Established in 2007, the company provides commercial swimming pool management, lifeguard staffing, residential pool services, repairs, renovations, and leak detection throughout Northern Virginia and Washington, DC. Springfield is a convenient base for serving nearby communities such as West Springfield, North Springfield, Burke, Franconia, and Newington. Whether you represent a condominium board, apartment property, HOA, or private residence, contact MGN Pools with the pool location and requested services so our team can review availability and the appropriate scope of work." },
+  { question: "Which neighborhoods near Springfield does MGN Pools serve?", answer: "MGN Pools serves Springfield and surrounding Northern Virginia communities, including West Springfield, North Springfield, Burke, Newington, and Franconia. Our broader service area also includes locations such as Alexandria, Arlington, Fairfax, and Washington, DC. Services may include commercial pool management, lifeguard staffing, residential maintenance, equipment repairs, pool renovations, and leak detection, depending on the property and scheduling availability. For commercial facilities, we review pool size, operating hours, staffing needs, and maintenance responsibilities when preparing a proposal. If your property is in a nearby neighborhood not listed here, contact us with the address and type of service requested." },
+  { question: "Can MGN Pools open and winterize commercial pools in Springfield?", answer: "Yes. Seasonal pool opening and winterization are available for commercial and residential pools in Springfield and surrounding areas. Opening services may include preparing equipment, starting circulation and filtration, cleaning, evaluating water conditions, and preparing the pool for its intended operating season. Winterization involves procedures appropriate to the pool and equipment to help protect the facility during the off-season. The precise scope varies based on the pool’s plumbing, equipment, and site conditions. Commercial properties may also ask about off-season water-care visits. Planning ahead helps property managers coordinate seasonal service with their scheduled opening and closing dates." },
+  { question: "Does MGN Pools repair pumps, filters, plumbing, and pool surfaces?", answer: "Yes. MGN Pools provides swimming pool repairs and renovation services for commercial and residential facilities in Springfield. Work can include circulation pumps, filters, plumbing, valves, equipment replacement, plaster and resurfacing, tile, and coping. When a pool has poor circulation, filtration problems, damaged surfaces, or equipment failures, the first step is to evaluate the symptoms and determine an appropriate scope. Some projects require parts, property approval, or planned downtime, particularly at commercial facilities. Repairs and renovations may be coordinated alongside ongoing management services or considered as separate projects. Visit our pool repairs and renovations page for more information." },
+  { question: "How do I know if my Springfield swimming pool has a leak?", answer: "Unexpected water loss can be caused by evaporation, splash-out, or a leak, so it is important to evaluate the circumstances before assuming a plumbing or structural problem. Signs that may warrant investigation include repeated refilling, unusually wet areas near the pool, air entering the circulation system, or unexplained changes in water level. MGN Pools offers pool leak detection and pressure testing in Springfield to help identify potential issues with underground plumbing, skimmers, fittings, equipment connections, and pool structures. Testing methods depend on the symptoms and the pool’s design. After evaluating the likely source, we can discuss appropriate repair options." },
+  { question: "How can a Springfield property manager request a pool management proposal?", answer: "Property managers, HOA representatives, condominium boards, and apartment operators can request a commercial pool management proposal through the Request a Proposal button on this page. Useful information includes the property address, pool size and type, planned season dates, daily operating hours, lifeguard staffing expectations, and any known equipment or maintenance issues. Let us know whether the property needs full-service management, lifeguard staffing, seasonal opening and closing, repairs, or a combination of services. MGN Pools uses these details to discuss a suitable scope and prepare property-specific pricing. The more complete the information, the easier it is to develop a relevant proposal." }
 ];
 
 export const SpringfieldPage = () => {
@@ -78,7 +89,7 @@ export const SpringfieldPage = () => {
       <title>Commercial Pool Management & Residential Pool Services Springfield VA | MGN Pools</title>
         <meta
           name="description"
-           content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Serving Springfield since 2007."
+           content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Springfield-based company established in 2007."
         />
         <link
           rel="canonical"
@@ -93,7 +104,7 @@ export const SpringfieldPage = () => {
         />
         <meta
          property="og:description"
-         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Serving Springfield since 2007."
+         content="MGN Pools provides commercial pool management, lifeguard staffing, residential pool services, repairs and renovations throughout Springfield, VA. Springfield-based company established in 2007."
          />
         <meta property="og:url" content="https://mgnpools.com/locations/springfield-pool-service" />
         <meta property="og:site_name" content="MGN Pools" />
@@ -139,7 +150,7 @@ export const SpringfieldPage = () => {
             "areaServed": [
               {
                 "@type": "City",
-                "name": cityInfo.name
+                "name": cityInfo.fullName
               }
             ],
             "serviceType": [
@@ -154,6 +165,18 @@ export const SpringfieldPage = () => {
   "Pool Renovation and Resurfacing",
   "Lifeguard Training and Certification"
 ]
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "@id": "https://mgnpools.com/locations/springfield-pool-service#faq",
+            "mainEntity": springfieldFaqs.map(({ question, answer }) => ({
+              "@type": "Question",
+              "name": question,
+              "acceptedAnswer": { "@type": "Answer", "text": answer }
+            }))
           })}
         </script>
       </Helmet>
@@ -175,7 +198,7 @@ export const SpringfieldPage = () => {
             transition={{ duration: 0.6 }}
             className="text-sky-300 text-lg md:text-xl mb-6 font-medium"
           >
-           Serving Springfield Pools Since 2007
+           Springfield-Based Pool Management Company Established in 2007
           </motion.p>
 
           <motion.h1
@@ -278,8 +301,12 @@ export const SpringfieldPage = () => {
                     >
                       
 {service.link === "/commercial"
-  ? "Commercial Pool Management Services"
-  : "Learn More"}
+  ? "Springfield Commercial Pool Management"
+  : service.link === "/residential"
+  ? "Residential Pool Maintenance Services"
+  : service.link === "/renovations"
+  ? "Pool Repairs and Renovations"
+  : "Pool Leak Detection and Repair"}
 <ArrowRight className="w-4 h-4" />
 
                     </Link>
@@ -327,8 +354,10 @@ export const SpringfieldPage = () => {
                 >
                   
 {item.link === "/commercial"
-  ? "Explore Commercial Pool Management"
-  : "Read More"}
+  ? "Explore HOA and Condominium Pool Management"
+  : item.link === "/residential"
+  ? "Explore Residential Pool Services"
+  : "Explore Pool Renovation Services"}
 <ArrowRight className="w-4 h-4" />
 
                 </Link>
@@ -405,10 +434,56 @@ export const SpringfieldPage = () => {
                 We also provide <strong>residential pool services</strong> throughout Springfield, including maintenance, opening and winterization, equipment repairs, leak detection and pressure testing, and pool renovations.
               </p>
               <p>
-                 Serving Springfield since 2007, MGN Pools provides professional pool services throughout West Springfield, North Springfield, Burke, Newington, Franconia, and surrounding Springfield communities.
+                 MGN Pools has operated since 2007 and is based at 5954 Hall Street in Springfield, Virginia. We provide pool services for properties in West Springfield, North Springfield, Burke, Newington, Franconia, and surrounding Fairfax County communities.
               </p>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Springfield local commercial pool management information */}
+      <section className="py-16 bg-white" aria-labelledby="springfield-commercial-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="springfield-commercial-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+            Springfield-Based Commercial Pool Management for HOAs and Condominiums
+          </h2>
+          <p className="text-gray-600 leading-relaxed mb-5">
+            MGN Pools is based in Springfield, Virginia, and works with property managers, condominium boards, apartment communities, and homeowners associations across Northern Virginia and Washington, DC. Our <Link to="/commercial" className="text-sky-700 font-semibold hover:underline">commercial pool management services</Link> are planned around each facility's operating schedule, lifeguard requirements, maintenance needs, and seasonal opening and closing dates.
+          </p>
+          <p className="text-gray-600 leading-relaxed mb-5">
+            For communities in West Springfield, North Springfield, Burke, Franconia, and Newington, we can discuss <Link to="/commercial" className="text-sky-700 font-semibold hover:underline">lifeguard staffing and HOA pool operations</Link>, routine cleaning, chemical testing, equipment maintenance, and inspection preparation. Pool-specific responsibilities and staffing levels are established in each proposal.
+          </p>
+          <p className="text-gray-600 leading-relaxed">
+            Properties needing technical assistance can also explore <Link to="/renovations" className="text-sky-700 font-semibold hover:underline">pool repairs and renovations</Link> or <Link to="/repair" className="text-sky-700 font-semibold hover:underline">pool leak detection and pressure testing</Link>. Homeowners can review our <Link to="/residential" className="text-sky-700 font-semibold hover:underline">residential pool maintenance services</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* Visible Springfield FAQs: same answers as FAQPage structured data */}
+      <section className="py-20 bg-slate-50" aria-labelledby="springfield-faq-heading">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 id="springfield-faq-heading" className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+            Springfield Pool Management & Service FAQs
+          </h2>
+          <p className="text-lg text-gray-600 text-center mb-10">
+            Answers for Springfield property managers, condominium associations, HOAs, and homeowners.
+          </p>
+          <div className="space-y-4">
+            {springfieldFaqs.map((faq, index) => (
+              <details key={index} className="group rounded-2xl border border-slate-200 bg-white p-5 open:shadow-md">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold text-gray-900 [&::-webkit-details-marker]:hidden">
+                  <span>{faq.question}</span>
+                  <ChevronDown className="w-5 h-5 shrink-0 text-sky-600 transition-transform group-open:rotate-180" aria-hidden="true" />
+                </summary>
+                <p className="mt-4 leading-relaxed text-gray-600">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+          <div className="text-center mt-10">
+            <Link to="/commercial" className="inline-flex items-center gap-2 text-sky-700 font-semibold hover:underline">
+              Explore Commercial Pool Management Services <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
