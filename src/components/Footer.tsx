@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
 import Logo from '../assets/images/logo.png';
 
 const SITE_CONFIG = {
-  phones: ["571-275-3696", "571-332-2431"],
+  phones: ["571-332-2431", "571-338-5356"],
   email: "mgnpools@yahoo.com",
   address: "5954 Hall Street, Springfield, VA 22152",
   social: {
