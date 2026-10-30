@@ -293,7 +293,7 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
                       to={service.link}
                       className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700"
                     >
-                      Learn More <ArrowRight className="w-4 h-4" />
+                      Explore {service.title} <ArrowRight className="w-4 h-4" />
                     </Link>
                   </div>
                 </div>
@@ -318,15 +318,15 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
     </p>
 
     <p className="text-lg text-gray-600 leading-relaxed mb-5">
-      Our services include certified lifeguard staffing, daily pool operations,
-      water chemistry management, routine maintenance, health department
+      Our <Link to="/commercial" className="text-sky-700 font-semibold underline underline-offset-2 hover:text-sky-800">commercial pool management and lifeguard staffing services</Link> include daily pool operations,
+      water chemistry management, routine maintenance, support with health department
       inspections, pool opening and winterization, and ongoing supervision.
     </p>
 
     <p className="text-lg text-gray-600 leading-relaxed mb-8">
-      MGN Pools also provides technical maintenance and equipment
-      repairs, helping commercial properties identify problems early and
-      respond efficiently without relying on multiple outside contractors.
+      MGN Pools also provides technical maintenance and <Link to="/renovations" className="text-sky-700 font-semibold underline underline-offset-2 hover:text-sky-800">swimming pool repairs and renovations</Link>,
+      helping commercial properties identify problems early and respond efficiently.
+      For unexplained water loss, explore our <Link to="/repair" className="text-sky-700 font-semibold underline underline-offset-2 hover:text-sky-800">pool leak detection and repair services</Link>.
     </p>
 
     <Link
@@ -374,7 +374,7 @@ Commercial Pool Management, Lifeguard Staffing, Repair & Renovation, and Residen
                   to={item.link}
                   className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700"
                 >
-                  Read More <ArrowRight className="w-4 h-4" />
+                  Explore {item.title} <ArrowRight className="w-4 h-4" />
                 </Link>
               </motion.div>
             ))}
