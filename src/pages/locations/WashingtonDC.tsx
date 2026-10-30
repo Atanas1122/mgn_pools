@@ -151,7 +151,7 @@ export const WashingtonDCPage = () => {
             "@id": "https://mgnpools.com/#localbusiness",
             "name": "MGN Pools",
             "image": "https://mgnpools.com/logo.png",
-            "telephone": "+1-571-275-3696",
+            "telephone": "+1-571-332-2431",
             "email": "mgnpools@yahoo.com",
             "address": {
               "@type": "PostalAddress",
