@@ -134,7 +134,7 @@ export const HomePage = () => {
                 "name": "MGN Pools",
                 "url": "https://mgnpools.com/",
                 "description": "Commercial swimming pool management, lifeguard staffing, pool maintenance, repairs, renovations, and residential pool services in Northern Virginia and Washington, DC.",
-                "telephone": "+1-571-275-3696",
+                "telephone": "+1-571-332-2431",
                 "email": "mgnpools@yahoo.com",
                 "foundingDate": "2007",
                 "address": {
