@@ -1,6 +1,7 @@
 
 import { renderToString } from 'react-dom/server';
 import { StaticRouter } from 'react-router';
+import type { HelmetServerState } from 'react-helmet-async';
 import App from './App';
 
 export function render(url: string) {
@@ -10,5 +11,7 @@ export function render(url: string) {
     </StaticRouter>
   );
 
-  return { html };
+  const helmet: HelmetServerState | null = null;
+
+  return { html, helmet };
 }
