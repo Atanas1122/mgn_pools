@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import { createServer } from 'vite';
+import { preview } from 'vite';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -24,14 +24,17 @@ const routes = [
   '/locations/great-falls-pool-service'
 ];
 
-const server = await createServer({
-  server: { port: 4173, strictPort: true }
+const server = await preview({
+  preview: {
+    host: '127.0.0.1',
+    port: 4173,
+    strictPort: true
+  }
 });
 
 let browser;
 
 try {
-  await server.listen();
 
   browser = await puppeteer.launch({
     headless: true,
