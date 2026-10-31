@@ -32,9 +32,11 @@ import { GreatFallsPage } from './pages/locations/GreatFalls';
 const ScrollToTop = () => {
   const { pathname } = useLocation();
 
-  useEffect(() => {
+ useEffect(() => {
+  if (typeof window !== 'undefined') {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }
+}, [pathname]);
 
   return null;
 };
